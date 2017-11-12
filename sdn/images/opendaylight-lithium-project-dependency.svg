@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-118.5 16.5 1417 724.5" width="1417pt" height="724.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-12 17:46:22 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="DejaVu Sans Mono" font-size="21" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="21" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>OpenDaylight项目相关性</title>
+    <rect fill="white" width="1417" height="724.5"/>
+    <g>
+      <title>Lithium版本相关性示意</title>
+      <rect x="68.5" y="17" width="116" height="37.5" fill="#ffc0c0"/>
+      <rect x="68.5" y="17" width="116" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(73.5 26.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x=".01953125" y="15" textLength="105.96094">reservation</tspan>
+      </text>
+      <rect x="217.5" y="17" width="98.5" height="37.5" fill="#ffc0c0"/>
+      <rect x="217.5" y="17" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(222.5 26.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">GBP</tspan>
+      </text>
+      <rect x="349" y="17" width="98.5" height="37.5" fill="#ffc0c0"/>
+      <rect x="349" y="17" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(354 26.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">NIC</tspan>
+      </text>
+      <rect x="217.5" y="79" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="217.5" y="79" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(222.5 88.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">SFC</tspan>
+      </text>
+      <rect x="349" y="79" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="349" y="79" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(354 88.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">VTN</tspan>
+      </text>
+      <rect x="349" y="147.5" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="349" y="147.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(354 156.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="20.167969" y="15" textLength="48.16406">OVSDB</tspan>
+      </text>
+      <rect x="522.5" y="79" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="79" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 88.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="20.167969" y="15" textLength="48.16406">IoTDM</tspan>
+      </text>
+      <rect x="671" y="79" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="671" y="79" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(676 88.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">LACP</tspan>
+      </text>
+      <rect x="802.5" y="79" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="802.5" y="79" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(807.5 88.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">USC</tspan>
+      </text>
+      <rect x="522.5" y="152.5" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="152.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 161.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">dLux</tspan>
+      </text>
+      <rect x="887" y="152.5" width="98.5" height="37.5" fill="#c0c0ff"/>
+      <rect x="887" y="152.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(892 161.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">AAA</tspan>
+      </text>
+      <rect x="52" y="228" width="56.5" height="37.5" fill="#c0ffff"/>
+      <rect x="52" y="228" width="56.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(57 237.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="3.984375" y="15" textLength="38.53125">TSDR</tspan>
+      </text>
+      <rect x="-6.5" y="228" width="48.5" height="37.5" fill="#c0ffff"/>
+      <rect x="-6.5" y="228" width="48.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(-1.5 237.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="4.800781" y="15" textLength="28.898438">VPN</tspan>
+      </text>
+      <rect x="325" y="228" width="48.5" height="37.5" fill="#c0ffff"/>
+      <rect x="325" y="228" width="48.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(330 237.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="4.800781" y="15" textLength="28.898438">TTP</tspan>
+      </text>
+      <rect x="254" y="228" width="61" height="37.5" fill="#c0ffff"/>
+      <rect x="254" y="228" width="61" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(259 237.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="6.234375" y="15" textLength="38.53125">PCMM</tspan>
+      </text>
+      <rect x="118.5" y="228" width="125.5" height="37.5" fill="#c0ffff"/>
+      <rect x="118.5" y="228" width="125.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(123.5 227.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="4.769531" y="15" textLength="105.96094">Topoprocess</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="43.30078" y="34" textLength="28.898438">ing</tspan>
+      </text>
+      <rect x="522.5" y="226" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="226" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 235.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="5.71875" y="15" textLength="77.0625">L2Switch</tspan>
+      </text>
+      <rect x="522.5" y="299.5" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="299.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 299.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="5.71875" y="15" textLength="77.0625">OpenFlow</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="34" textLength="57.796875">plugin</tspan>
+      </text>
+      <rect x="671" y="226" width="98.5" height="37.5" fill="#ff8080"/>
+      <rect x="671" y="226" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(676 235.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">ALTO</tspan>
+      </text>
+      <rect x="671" y="299.5" width="98.5" height="37.5" fill="#ffc0ff"/>
+      <rect x="671" y="299.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(676 308.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="15" textLength="57.796875">BGPCEP</tspan>
+      </text>
+      <rect x="671" y="373" width="98.5" height="37.5" fill="#40ff40"/>
+      <rect x="671" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(676 382.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="15" textLength="57.796875">tcpmd5</tspan>
+      </text>
+      <rect x="802.5" y="299.5" width="98.5" height="37.5" fill="#ffc0ff"/>
+      <rect x="802.5" y="299.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(807.5 308.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">SDNi</tspan>
+      </text>
+      <rect x="802.5" y="373" width="98.5" height="37.5" fill="#40ff40"/>
+      <rect x="802.5" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(807.5 382.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="29.80078" y="15" textLength="28.898438">SXP</tspan>
+      </text>
+      <rect x="977.5" y="299.5" width="98.5" height="37.5" fill="#ffc0ff"/>
+      <rect x="977.5" y="299.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(982.5 308.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">DIDM</tspan>
+      </text>
+      <rect x="977.5" y="373" width="98.5" height="37.5" fill="#40ff40"/>
+      <rect x="977.5" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(982.5 372.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="38.53125">SNMP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="34" textLength="57.796875">plugin</tspan>
+      </text>
+      <rect x="1088.5" y="373" width="98.5" height="37.5" fill="#40ff40"/>
+      <rect x="1088.5" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1093.5 382.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="15" textLength="57.796875">CAPWAP</tspan>
+      </text>
+      <rect x="1199.5" y="373" width="98.5" height="37.5" fill="#40ff40"/>
+      <rect x="1199.5" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1204.5 382.25)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.351562" y="15" textLength="57.796875">OpFlex</tspan>
+      </text>
+      <rect x="522.5" y="373" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="373" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 372.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="5.71875" y="15" textLength="77.0625">OpenFlow</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="34" textLength="38.53125">Java</tspan>
+      </text>
+      <rect x="522.5" y="446.5" width="107.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="446.5" width="107.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 455.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".5859375" y="15" textLength="96.32812">Controller</tspan>
+      </text>
+      <rect x="522.5" y="520" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="520" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 519.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.984375" y="15" textLength="48.16406">YANG </tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="20.167969" y="34" textLength="48.16406">Tools</tspan>
+      </text>
+      <rect x="522.5" y="593.5" width="98.5" height="37.5" fill="#ccc"/>
+      <rect x="522.5" y="593.5" width="98.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(527.5 602.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".9023438" y="15" textLength="86.69531">odlparent</tspan>
+      </text>
+      <line x1="398.25" y1="54.5" x2="398.25" y2="69.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="397.75" y1="116.5" x2="397.96207" y2="137.6005" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="266.25" y1="54.5" x2="266.4188" y2="69.10066" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="184.5" y1="35.75" x2="207.6" y2="35.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="116.5" x2="571.48836" y2="142.60041" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="190" x2="571.48836" y2="216.1004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="263.5" x2="571.48836" y2="289.6004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="337" x2="571.48836" y2="363.1004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="410.5" x2="573.6373" y2="436.64103" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="484" x2="571.48836" y2="510.1004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="571.25" y1="557.5" x2="571.48836" y2="583.6004" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="671" y1="244.75" x2="630.9" y2="244.75" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="621" y1="171.25" x2="877.1" y2="171.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="802.5" y1="317.9506" x2="779.3998" y2="317.8102" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="802.5" y1="391.25" x2="779.3998" y2="391.39043" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1026.75" y1="337" x2="1026.75" y2="363.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 262.5 117.5 L 262.5 130.99602 L 397.8957 130.99602 L 390.8957 130.99602 L 397.8957 130.99602" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 217.5 97.75 L -91.44531 97.75 L -91.44531 181.88281 L -91.72335 356.6" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="-55.5" y="366.5" width="81.5" height="37.5" fill="#c0ffc0"/>
+      <rect x="-55.5" y="366.5" width="81.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(-50.5 375.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="2.0351562" y="15" textLength="67.42969">Neutron</tspan>
+      </text>
+      <rect x="-118" y="366.5" width="52.5" height="37.5" fill="#c0ffc0"/>
+      <rect x="-118" y="366.5" width="52.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(-113 375.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="1.984375" y="15" textLength="38.53125">LISP</tspan>
+      </text>
+      <rect x="36" y="366.5" width="116" height="37.5" fill="#c0ffc0"/>
+      <rect x="36" y="366.5" width="116" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(41 375.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".01953125" y="15" textLength="105.96094">persistence</tspan>
+      </text>
+      <rect x="162" y="366.5" width="94.5" height="37.5" fill="#c0ffc0"/>
+      <rect x="162" y="366.5" width="94.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(167 375.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="3.71875" y="15" textLength="77.0625">SNMP4SDN</tspan>
+      </text>
+      <rect x="266.5" y="366.5" width="94.5" height="37.5" fill="#c0ffc0"/>
+      <rect x="266.5" y="366.5" width="94.5" height="37.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(271.5 375.75)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="22.984375" y="15" textLength="38.53125">SNBI</tspan>
+      </text>
+      <path d="M 349 166.25 L -14.648438 166.25 L -14.648438 265.83203 L -14.734178 356.6" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M -14.75 404 L -14.75 465.4883 L 82.1875 465.4883 L 512.6 465.2756" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 17.794184 265.5 L 17.933594 302.57422 L 17.933594 318.25 L 522.5 318.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 1248.75 410.5 L 1248.75 465.3099 L 1230.5078 465.3099 L 639.9 465.2548" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 851.6932 116.5 L 851.6133 133.01562 L 578.4023 133.17601 L 571.4023 133.17601" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="80.05025" y1="265.5" x2="79.48828" y2="318.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="181.44668" y1="265.5" x2="182" y2="318.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="284.6311" y1="265.5" x2="285" y2="318.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="349.3158" y1="265.5" x2="349.5" y2="318" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="398.4042" y1="185" x2="399.5" y2="318.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="94.23421" y1="404" x2="95.00221" y2="465.48195" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="209.42556" y1="404" x2="210.0007" y2="465.4251" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="313.80866" y1="404" x2="314.0007" y2="465.3737" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="720.3766" y1="410.5" x2="720.7462" y2="465.26236" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="936.2814" y1="190" x2="936.7427" y2="465.2825" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1026.6862" y1="410.5" x2="1026.4997" y2="465.2909" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1137.7133" y1="410.5" x2="1137.606" y2="465.30123" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(422.25 706)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="21" font-weight="bold" x=".14160156" y="22" textLength="151.7168">OpenDaylight</tspan>
+        <tspan font-family="PingFang SC" font-size="21" font-weight="bold" x="151.8584" y="22" textLength="147">版本项目相关性</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
