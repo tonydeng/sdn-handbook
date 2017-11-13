@@ -62,6 +62,7 @@
 ## SDN&NFV
 
 - [6. SDN](sdn/index.md)
+  - [YANG Language](sdn/yang-language.md)
   - [SDN控制器](sdn/controller.md)
     - [OpenDaylight](sdn/opendaylight.md)
     - [OpenDaylight Projects介绍](sdn/opendaylight-projects.md)
