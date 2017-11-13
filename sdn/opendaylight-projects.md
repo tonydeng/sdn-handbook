@@ -1,6 +1,8 @@
-# OpenDaylight Features介绍
+# OpenDaylight Projects介绍
 
 ## Controller(控制器)项目
+
+> 项目地址： [opendaylight/controller](https://github.com/opendaylight/controller)
 
 为多厂商网络的SDN部署提供一个高可用、模块化、可以扩展并可支持多协议的控制器基础框架。
 
@@ -10,15 +12,21 @@
 
 ## OpenDaylight Root Parent项目
 
+> 项目地址： [opendaylight/odlparent](https://github.com/opendaylight/odlparent)
+
 OpenDaylight中所有项目的Maven配置基础，包含外部依赖、默认版本、依赖管理、插件管理、库信息等所有共同信息。
 
 它能为参与版本发布的所有项目提供统一的设置，其他项目的配置只需要继承`odlparent`即可获得ODL的统一设置，这在很大程度上能够帮助简化项目配置。
 
 ## YANG Tools项目
 
+> 项目地址： [opendaylight/yangtools](https://github.com/opendaylight/yangtools)
+
 旨在开发必须的工具和库的基础设置项目，它能为Java项目（基于JVM语言）和应用提供`NETCONF`和`YANG`支持，在OpenDaylight中，使用`YANG`作为模型化语言的应用有控制器`MD-SDL`和`NETCONF/OFConfig`插件。
 
 ## AAA项目
+
+> 项目地址： [opendaylight/aaa](https://github.com/opendaylight/aaa)
 
 为用户开发身份认证、授权、计费等功能。
 
@@ -26,19 +34,28 @@ OpenDaylight中所有项目的Maven配置基础，包含外部依赖、默认版
 
 ## BGP LS PCEP（BGPCEP）项目
 
+> 项目地址： [opendaylight/bgpcep](https://github.com/opendaylight/bgpcep)
+
+
 为控制器提供两种南向接口插件--作为L3拓扑信息来源BGP（包括作为BGP扩展的BGP-LS、BGP-FlowSpec）和为底层网络提供实例化路径的PCEP（Path Computation Element Protocol）。
 
 ## DLUX项目
 
+> 项目地址： [opendaylight/dlux](https://github.com/opendaylight/dlux)
+
 为控制器的使用者提供新的交互式Web UI应用，它选择了`AngularJS`作为主要的前端技术，希望能够通过图形化的用户界面提高用户体验。
 
 ## L2Switch项目
+
+> 项目地址： [opendaylight/l2switch](https://github.com/opendaylight/l2switch)
 
 该项目将L2的具体处理代码分离出来，组成一个独立的项目，提供基本的L2交换机功能并创建一些可重用的服务。
 
 如提供模块化的事件驱动的数据包处理程序(packet handler)、地址跟踪、最优路径计算、基本的生成树协议等。
 
 ## LISP Flow Mapping Service项目
+
+> 项目地址： [opendaylight/lispflowmapping](https://github.com/opendaylight/lispflowmapping)
 
 该项目提供`LISP`映射系统服务，包括`LISP Map-Server`和`LISP Map-Resolver`服务，负责提供和存储数据到数据屏幕节点和OpenDaylight应用的映射。
 
@@ -50,15 +67,22 @@ OpenDaylight应用和服务可使用北向REST API在LISP映射服务中定义�
 
 ## Neutron Northbound项目
 
+> 项目地址： [opendaylight/neutron](https://github.com/opendaylight/neutron)
+
 一个像OpenStack网络管理项目Neutron提供北街项目的插件项目，是使OpenDaylight和OpenStack协同工作的重要项目。
 
 它提供网络、子网、端口、负载均衡、VPN、安全策略等REST API，并随着OpenDaylight的发展，不断的增加。
 
 ## ODL SDNi App项目
 
+> 项目地址： [opendaylight/sdninterfaceapp](https://github.com/opendaylight/sdninterfaceapp)
+
+
 OpenDaylight SDN接口应用项目旨在通过开发软件定义网络接口应用(Software Defined Networking interface, SDNi)保证SDN控制器之间的通信，该应用可在Helium版本的OpenDaylight上部署。
 
 ## OpenFlow Protocol Library项目
+
+> 项目地址： [opendaylight/openflowjava](https://github.com/opendaylight/openflowjava)
 
 OpenFlow协议库将会实施OpenFlow v1.3及后续版本协议。
 
@@ -66,11 +90,15 @@ OpenFlow协议库将会实施OpenFlow v1.3及后续版本协议。
 
 ## OpenDaylight OpenFlow Plugin项目
 
+> 项目地址： [opendaylight/openflowplugin](https://github.com/opendaylight/openflowplugin)
+
 OpenFlow是SDN架构中实现控制层和转发层之间交互的厂商中里的标准通信接口。
 
 该项目旨在开发一个支持OpenFlow规范的插件，该插件将实现OF 1.0、OF 1.3、OF 1.4及后续版本的支持和整合。
 
 ## Persistence Store Service项目
+
+> 项目地址： [opendaylight/persistence](https://github.com/opendaylight/persistence)
 
 本项目是一个数据库统一操作服务框架，该框架的作用是实现营业在查询时的查询逻辑持久性，主要应用在需要连接数据库查询数据的应用中，例如`AAA`项目和`TSDR(Time Series Data Repository)`项目。
 
@@ -79,6 +107,8 @@ OpenFlow是SDN架构中实现控制层和转发层之间交互的厂商中里的
 框架可以支持不同类型的数据库，关系型数据库如`MySQL`，费关系型数据库如`MongoDB`或者内存数据库。
 
 ## SNBI(Secure Network Bootstrapping Infrastructure)项目
+
+> 项目地址： [opendaylight/snbi](https://github.com/opendaylight/snbi)
 
 提供安全、自动、集成的网络设备和控制器。
 
@@ -92,6 +122,8 @@ SNBI还包括控制器和转发单元上创建的组件和功能，这些组件�
 
 ## SNMP4SDN项目
 
+> 项目地址： [opendaylight/snmp4sdn](https://github.com/opendaylight/snmp4sdn)
+
 提供一个SNMP南向插件实现OpenDaylight控制器对现有商用以太网交换机的控制，该插件可提供管理配置的能力。
 
 该项目使SDN不在局限于OpenFlow，支持以太网交换机作为SDN网络的数据面设备，它主要经历以下三个阶段的演进：
@@ -101,6 +133,8 @@ SNBI还包括控制器和转发单元上创建的组件和功能，这些组件�
 3. 实现SAL API的扩展
 
 ## SNMP Plugin项目
+
+> 项目地址： [opendaylight/snmp](https://github.com/opendaylight/snmp)
 
 SNMP是一个实现网络管理的协议。
 
@@ -112,6 +146,8 @@ SNMP南向插件使应用充当SNMP管理者与支持SNMP代理的设备的交�
 
 ## SXP(Source-Group Tag eXchange Protocol)项目
 
+> 项目地址： [opendaylight/sxp](https://github.com/opendaylight/sxp)
+
 SXP是一个传送IP地址和源组标签(Source Group Tag, SGT)之间绑定信息的控制协议。
 
 在SXP中，源组是一系列具有共同网络策略的连接网络的端节点。每个源组通过一个特殊的SGT值(16字节)标识(大多数思科设备都支持SGT标识)。
@@ -122,6 +158,8 @@ SXP是一个传送IP地址和源组标签(Source Group Tag, SGT)之间绑定信�
 
 ## TCP-MD5项目
 
+> 项目地址： [opendaylight/archived-tcpmd5](https://github.com/opendaylight/archived-tcpmd5)
+
 本项目库为操作系统提供TCP-MD5([RFC2385](https://tools.ietf.org/html/rfc2385))支持，可用于保护BGP会话和PCEP会话。
 
 该项目定义了一个使用Java本地接口库(Java Native Interface, JNI)实现简单API，可用于设置与TCP channel关联的MD5密钥。
@@ -131,6 +169,8 @@ SXP是一个传送IP地址和源组标签(Source Group Tag, SGT)之间绑定信�
 
 ## Topology Protocol Framework项目
 
+> 项目地址： [opendaylight/topoprocessing](https://github.com/opendaylight/topoprocessing)
+
 旨在创建拓扑聚合的框架，提供统一的拓扑视图。
 
 该项目主要提供量大产品特点：拓扑聚合和拓扑过滤。
@@ -139,13 +179,21 @@ SXP是一个传送IP地址和源组标签(Source Group Tag, SGT)之间绑定信�
 
 这个框架还提供过滤拓扑视图，该过滤可应用到交换机、交换机组、特定链接和其他对象。
 
+### Use Case
+
+![OpenDaylight Topology Protocol Framework Use Case](https://wiki.opendaylight.org/images/thumb/0/02/Topoprocessing_Proposal_Topology.png/800px-Topoprocessing_Proposal_Topology.png)
+
 ## ALTO(Application-Layer Traffic Optimization)项目
+
+> 项目地址： [opendaylight/alto](https://github.com/opendaylight/alto)
 
 ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务、过滤映射服务、端节点属性服务、端节点服务成本等网络服务，从而引导应用使用网络资源。
 
 该项目致力于在OpenDaylight中实现ALTO。为了实现ALTO基础协议([RFC7285](https://tools.ietf.org/html/rfc7285))，该项目将在OpenDaylight中实现这些服务并通过北向API开放给他人使用。
 
 ## CAPWAP(Cotrol And Provisioning of Wireless Accesss Points)项目
+
+> 项目地址： [opendaylight/capwap](https://github.com/opendaylight/capwap)
 
 该项目是为了“有线和无线网络通过适当抽象实现统一管理”的长远目标而提出的。
 
@@ -157,7 +205,9 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 4. CAPWAP和IEEE 802.11间绑定关系的标准测试应用
 5. 本地映射支持
 
-## Controller Core Funcationality Tutorils项目
+## Controller Core Funcationality Tutorials项目
+
+> 项目地址： [opendaylight/coretutorials](https://github.com/opendaylight/coretutorials)
 
 该项目面向开发者提供各种基础功能的教程，以期开发者快速理解OpenDaylight的项目结构、基础功能，从而能加入到OpenDaylight社区开发。
 
@@ -166,6 +216,8 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 该项目提供的各个教程均是使用标准的项目结构(例如`ArcheType`)，并且每个教程均采用分步式方法介绍。
 
 ## Defense4All项目
+
+> 项目地址： [opendaylight/archived-defense4all](https://github.com/opendaylight/archived-defense4all)
 
 一个检测和缓解DDoS攻击的SDN应用。
 
@@ -179,11 +231,15 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 
 ## DIDM(Device Identification and Driver Management)项目
 
+> 项目地址： [opendaylight/didm](https://github.com/opendaylight/didm)
+
 提供一个可用于通知控制器发现它所控制的新设备、标识设备类型、将设备驱动注册为路由类型的RPC(Remote Procedure Call, 远程过程调用)、搜集设备数据、定义库存模型、调用设备驱动的框架。
 
 该项目使用SNMP协议与设备进行交互时需要进行安全认证，因此它需要使用SNMP南向协议插件项目、AAA项目(进行认证管理)中的一些组件。
 
 ## Documentation项目
+
+> 项目地址： [opendaylight/docs](https://github.com/opendaylight/docs)
 
 提供OpenDaylight项目群的文档。
 
@@ -193,11 +249,18 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 
 ## Group Based Policy(GBP)项目
 
+> 项目地址： [opendaylight/groupbasedpolicy](https://github.com/opendaylight/groupbasedpolicy)
+
 定义以应用为中心的策略模型，将应用的网络连接从底层网络抽象出来。
 
 该工程提供了一个简单的自我记录的机制来获取策略，而不需要关心底层网络信息的框架，另外通过将网络端点分组，可以同时操作多个节点，提升了策略下发的自动化，同时也可以方便的统一和简洁的处理策略的变化。
 
 ## Integration Group项目
+
+> 项目地址：
+[opendaylight/integration-test](https://github.com/opendaylight/integration-test)
+[opendaylight/integration-packaging](https://github.com/opendaylight/integration-packaging)
+[opendaylight/integration-distribution](https://github.com/opendaylight/integration-distribution)
 
 提供协调、促进集成以及持续集成测试的基础框架，以期能够发布成功的OpenDaylight版本。
 
@@ -213,6 +276,8 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 
 ## IoTDM(Internet of Things Data Management)项目
 
+> 项目地址：[opendaylight/iotdm](https://github.com/opendaylight/iotdm)
+
 提供以数据为中心的中间件，运行通过验证的应用访问设备上传的物联网数据。
 
 该项目使用ODL平台模型化`oneM2M`的`DataStore(分层容器树)`，其中书上每个节点均表示`oneM2M`的物联网某个资源。
@@ -221,6 +286,8 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 
 ## LACP(Link Aggregation Control Protocol)项目
 
+> 项目地址：[opendaylight/lacp](https://github.com/opendaylight/lacp)
+
 一种实现链路动态汇聚的协议。
 
 在带宽比较紧张的情况下，该协议可通过逻辑聚合将带宽扩展到原链路的`n`倍，还可通过配置链路聚合实现同一聚合组的各个端口之间彼此动态备份。
@@ -228,6 +295,8 @@ ALTO是一个为应用提供网络信息的IETF协议，定义映射成本服务
 在OpenDaylight中，LACP项目使用MD-SAL的方式实现了LACP协议，可用于ODL控制网络或支持LACP的交换机/设备的自动发现和多链路聚合。
 
 ## NIC(Network Intent Composition)项目
+
+> 项目地址：[opendaylight/nic](https://github.com/opendaylight/nic)
 
 使控制器能够按照网络行为和网络策略定义的“意图”对网络服务的网络资源进行调度和管理。
 
@@ -243,11 +312,55 @@ NIC被设计Wie协议无关的，可以使用OpenFlow、OVSDB、I2RS、NETCONFG�
 
 ## OpenvSwitch Database Integration项目
 
+> 项目地址：[opendaylight/ovsdb](https://github.com/opendaylight/ovsdb)
+
 一个为OpenDaylight实施OpenvSwitch Database([RFC7047](https://tools.ietf.org/html/rfc7047))管理协议的项目，可实现虚拟交换机的南向配置。
 
 该项目包含一个OVSDB库及相关的各种插件的用法。
 
+> [OpenDaylight OVSDB Integration:Design](https://wiki.opendaylight.org/view/OVSDB_Integration:Design)
+
+```
++--------------+--------------+-----------+
+|  Connection  |Network Config|  Neutron  |
+|  Service APIs|     APIs     |    APIs   |
++--------------+--------------+-----------+
+|       NorthBound API Layer (REST)       |
++-----------------------------------------+
++-----------------------------------------+
+| +------------+ +---------+ +---------+  |
+| |Connection  | |Topology | | Switch  |  |
+| |  Manager   | | Manager | | Manager |  |
+| +------------+ +---------+ +---------+  |
+|    Network Service Functions Layer      |
++-----------------------------------------+
++-----------------------------------------+
+|  +------------+ +---------+ +---------+ |
+|  |Connection  | |Data Pkt | |Inventory| |
+|  |  Service   | | Service | | Service | |
+|  +------------+ +---------+ +---------+ |
+|     Service Abstraction Layer (SAL)     |
++-----------------------------------------+
++-----------------------------------------+
+|            SouthBound API Layer         |
+|  +----------------+ +----------------+  |
+|  | OpenFlow Plugin| | OVSDB Plugin   |  |
+|  | +------------+ | | +------------+ |  |
+|  | | Flow Prog  | | | | Connection | |  |
+|  | |  Service   | | | |  Service   | |  |
+|  | +------------+ | | +------------+ |  |
+|  | +------------+ | | +------------+ |  |
+|  | | Data Pkt   | | | | Net Config | |  |
+|  | |  Service   | | | |  Service   | |  |
+|  | +-----.------+ | | +-----.------+ |  |
+|  |       .        | |       .        |  |
+|  +----------------+ +----------------+  |
++-----------------------------------------+
+```
+
 ## OpFlex项目
+
+> 项目地址：[opendaylight/opflex](https://github.com/opendaylight/opflex)
 
 主要提供相关OpFlex协议的实现，该协议基于策略模型实现一个分布式控制系统。
 
@@ -261,6 +374,8 @@ NIC被设计Wie协议无关的，可以使用OpenFlow、OVSDB、I2RS、NETCONFG�
 
 ## PCMM(Packet Cable MultiMedia)项目
 
+> 项目地址：[opendaylight/packetcable](https://github.com/opendaylight/packetcable)
+
 提供控制和管理`CMTS(Cable Modem Terminatin System, 线缆调制解调器终端系统)`网络单元服务流的接口。
 
 PCMM架构包含以下组件：
@@ -273,6 +388,7 @@ PCMM架构包含以下组件：
 该项目的目标是利用OpenDaylight控制平台作为应用管理器和部分策略服务器，并最大程度的利用该平台提供的现有组件。
 
 ## Release Engineering-Autorelease项目
+> 项目地址：[opendaylight/releng-autorelease](https://github.com/opendaylight/releng-autorelease)
 
 该项目致力于对所有相关脚本进行版本管理和位置标记。
 
@@ -280,9 +396,13 @@ PCMM架构包含以下组件：
 
 ## Reservation项目
 
+> 项目地址：[opendaylight/reservation](https://github.com/opendaylight/reservation)
+
 提供动态的低级别的资源预留，使用在指定时间段获得网络及服务、连通性、相应的资源池(端口、带宽)等。
 
 ## Service Function Chaining(SFC)项目
+
+> 项目地址：[opendaylight/sfc](https://github.com/opendaylight/sfc)
 
 定义有顺序的网络服务(如防火墙、负载均衡)链表的能力，这些网络服务按照一定顺序连接在一起称为业务链。
 
@@ -290,11 +410,15 @@ PCMM架构包含以下组件：
 
 ## TTP(Table Type Patterns)项目
 
+> 项目地址：[opendaylight/ttp](https://github.com/opendaylight/ttp)
+
 ONF的转发抽象工作组(Forwarding Abstractions Working Group, FAWG)的第一个具体输出，其目标是使OpenFlow控制器和OpenFlow交换机对一系列功能进行协商，从而实现OF 1.1+版本的多样性管理。
 
 TTP项目是在“数据路径协商模型”下提出的，当前主要聚焦于OpenFlow。
 
 ## TSDR(Time Series Data Repository)项目
+
+> 项目地址：[opendaylight/tsdr](https://github.com/opendaylight/tsdr)
 
 目的是创建一个可伸缩、可扩展的时间序列采集数据的持久化框架，其中采集的数据保护`DataStore`的统计数据以及消息总线的消息。
 
@@ -302,17 +426,23 @@ TTP项目是在“数据路径协商模型”下提出的，当前主要聚焦�
 
 ## Unified Secure Channel项目
 
+> 项目地址：[opendaylight/usc](https://github.com/opendaylight/usc)
+
 在企业网中，越来越多的控制器和网络管理系统正在远程部署(如在云端部署)，除此之外，企业网页越来越多样化，如分支、物联网、无线等。
 
 因此，企业客户需要一个收敛的网络控制器和管理系统解决方案，该项目在网络单元和控制器之间建立一个统一的安全通信隧道： 创建安全通道和支持多种通信协议的通用机制。
 
 ## VPN Service项目
 
+> 项目地址：[opendaylight/vpnservice](https://github.com/opendaylight/vpnservice)
+
 目标是提供建立基于BGP-MPLS([RFC4364](https://tools.ietf.org/html/rfc4364))的L3 VPN服务所需的基础设施，以后的版本将提供基于EVPN的L2 VPN服务。
 
 该项目与OVSDB Integration项目、BGP-LS、SDNi的相关组件具有一定的依赖关系。
 
 ## VTN(Virtual Tenant Network)项目
+
+> 项目地址：[opendaylight/vtn](https://github.com/opendaylight/vtn)
 
 为用户提供多租户级别的虚拟网络。
 
