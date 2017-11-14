@@ -10,6 +10,12 @@ Google Andromeda是一个网络功能虚拟化（NFV）堆栈，通过融合软�
 
 ![](andromeda.png)
 
+[@googlecloud](https://twitter.com/googleclud) tweet [Andromeda 2.1's optimized datapath using hypervisor bypass.](https://twitter.com/googlecloud/status/929091548985413632)
+
+![andromeda 2.0 vs 2.1](images/andromeda-2.0-vs-2.1.jpg)
+
+[Andromeda 2.1 reduces GCP’s intra-zone latency by 40%](https://cloudplatform.googleblog.com/2017/11/Andromeda-2-1-reduces-GCPs-intra-zone-latency-by-40-percent.html)
+
 ## Espresso
 
 Espresso将SDN扩展到Google网络的对等边缘，连接到全球其他网络。Espresso使得Google根据网络连接实时性的测量动态智能化地为个人用户提供服务。
