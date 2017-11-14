@@ -19,7 +19,7 @@
 
 ### ONOS集群
 
-![](images/onos-communication.png)
+![onos communication](images/onos-communication.png)
 
 - 分布式: 由多个实例组成一个集群
 - 对称性: 每一个实例运行相同的软件和配置
