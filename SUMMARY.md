@@ -61,7 +61,7 @@
 -->
 ## SDN&NFV
 
-- [6. SDN](sdn/index.md)
+- [6. SDN](sdn/README.md)
   - [YANG Language](sdn/yang-language.md)
   - [SDN控制器](sdn/controller.md)
     - [OpenDaylight](sdn/opendaylight.md)
@@ -76,8 +76,8 @@
     - [NETCONF](sdn/netconf.md)
     - [P4](sdn/p4.md)
   - [数据平面](sdn/dataplane.md)
-- [7. NFV](nfv/index.md)
-- [8. SDWAN](sdwan/index.md)
+- [7. NFV](nfv/README.md)
+- [8. SDWAN](sdwan/READMEmd)
 <!--
 ## 容器网络
 
@@ -103,9 +103,9 @@
 -->
 ## SDN实践
 
-- [10. Mininet](mininet/index.md)
-- [11. Neutron](neutron/index.md)
-- [12. SDN实践案例](practice/index.md)
+- [10. Mininet](mininet/README.md)
+- [11. Neutron](neutron/README.md)
+- [12. SDN实践案例](practice/READMEmd)
   - [Goolge网络](practice/google.md)
 
 ## 参考文档
