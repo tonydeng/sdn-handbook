@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="38 232.5 986 1192.5" width="986pt" height="1192.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata> Produced by OmniGraffle 7.5 
-    <dc:date>2017-11-15 16:25:52 +0000</dc:date>
+    <dc:date>2017-11-15 16:46:28 +0000</dc:date>
   </metadata>
   <defs>
     <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
@@ -15,14 +15,14 @@
         <font-face-name name="DejaVuSansMono"/>
       </font-face-src>
     </font-face>
-    <font-face font-family="DejaVu Sans Mono" font-size="23" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+    <font-face font-family="DejaVu Sans Mono" font-size="23" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="bold">
       <font-face-src>
-        <font-face-name name="DejaVuSansMono"/>
+        <font-face-name name="DejaVuSansMono-Bold"/>
       </font-face-src>
     </font-face>
-    <font-face font-family="PingFang SC" font-size="23" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+    <font-face font-family="PingFang SC" font-size="23" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
       <font-face-src>
-        <font-face-name name="PingFangSC-Light"/>
+        <font-face-name name="PingFangSC-Semibold"/>
       </font-face-src>
     </font-face>
   </defs>
@@ -276,8 +276,8 @@
         <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="11.136719" y="15" textLength="125.22656">OpenStack API</tspan>
       </text>
       <text transform="translate(498.75 888.5)" fill="black">
-        <tspan font-family="DejaVu Sans Mono" font-size="23" font-weight="400" x=".22924805" y="24" textLength="41.541504">SCP</tspan>
-        <tspan font-family="PingFang SC" font-size="23" font-weight="300" x="41.77075" y="24" textLength="46">架构</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="23" font-weight="bold" x=".22924805" y="24" textLength="41.541504">SCP</tspan>
+        <tspan font-family="PingFang SC" font-size="23" font-weight="bold" x="41.77075" y="24" textLength="46">架构</tspan>
       </text>
     </g>
   </g>
