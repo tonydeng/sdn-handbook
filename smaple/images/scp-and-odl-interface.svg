@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="213.5 1059.5 423 365.5" width="423pt" height="365.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-15 16:28:06 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Light"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" viewBox="-9 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M -8 0 L 0 3 L 0 -3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="17" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="17" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>ODL SCP架构</title>
+    <rect fill="white" width="423" height="365.5"/>
+    <g>
+      <title>SCP与ODL系统接口</title>
+      <path d="M 234 1156 L 616 1156 C 627.0457 1156 636 1164.9543 636 1176 L 636 1340 C 636 1351.0457 627.0457 1360 616 1360 L 234 1360 C 222.9543 1360 214 1351.0457 214 1340 L 214 1176 C 214 1164.9543 222.9543 1156 234 1156 Z" fill="#c0ffff"/>
+      <path d="M 234 1156 L 616 1156 C 627.0457 1156 636 1164.9543 636 1176 L 636 1340 C 636 1351.0457 627.0457 1360 616 1360 L 234 1360 C 222.9543 1360 214 1351.0457 214 1340 L 214 1176 C 214 1164.9543 222.9543 1156 234 1156 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="221" y="1060" width="408" height="56" fill="#ccc"/>
+      <rect x="221" y="1060" width="408" height="56" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(226 1078.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="184.55078" y="15" textLength="28.898438">SCP</tspan>
+      </text>
+      <path d="M 384.22146 1171 L 451.77854 1171 C 457.3014 1171 461.77854 1175.4772 461.77854 1181 L 461.77854 1237 C 461.77854 1242.5228 457.3014 1247 451.77854 1247 L 384.22146 1247 C 378.6986 1247 374.22146 1242.5228 374.22146 1237 L 374.22146 1181 C 374.22146 1175.4772 378.6986 1171 384.22146 1171 Z" fill="white"/>
+      <path d="M 384.22146 1171 L 451.77854 1171 C 457.3014 1171 461.77854 1175.4772 461.77854 1181 L 461.77854 1237 C 461.77854 1242.5228 457.3014 1247 451.77854 1247 L 384.22146 1247 C 378.6986 1247 374.22146 1242.5228 374.22146 1237 L 374.22146 1181 C 374.22146 1175.4772 378.6986 1171 384.22146 1171 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(379.22146 1187)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="6.778539" y="17" textLength="64">策略管理</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="22.77854" y="39" textLength="32">模块</tspan>
+      </text>
+      <path d="M 280.5 1171 L 348.05708 1171 C 353.57993 1171 358.05708 1175.4772 358.05708 1181 L 358.05708 1237 C 358.05708 1242.5228 353.57993 1247 348.05708 1247 L 280.5 1247 C 274.97715 1247 270.5 1242.5228 270.5 1237 L 270.5 1181 C 270.5 1175.4772 274.97715 1171 280.5 1171 Z" fill="white"/>
+      <path d="M 280.5 1171 L 348.05708 1171 C 353.57993 1171 358.05708 1175.4772 358.05708 1181 L 358.05708 1237 C 358.05708 1242.5228 353.57993 1247 348.05708 1247 L 280.5 1247 C 274.97715 1247 270.5 1242.5228 270.5 1237 L 270.5 1181 C 270.5 1175.4772 274.97715 1171 280.5 1171 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(275.5 1187)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="6.778539" y="17" textLength="64">业务链管</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="14.778539" y="39" textLength="48">理模块</tspan>
+      </text>
+      <path d="M 487.9429 1171 L 555.5 1171 C 561.02285 1171 565.5 1175.4772 565.5 1181 L 565.5 1237 C 565.5 1242.5228 561.02285 1247 555.5 1247 L 487.9429 1247 C 482.4201 1247 477.9429 1242.5228 477.9429 1237 L 477.9429 1181 C 477.9429 1175.4772 482.4201 1171 487.9429 1171 Z" fill="white"/>
+      <path d="M 487.9429 1171 L 555.5 1171 C 561.02285 1171 565.5 1175.4772 565.5 1181 L 565.5 1237 C 565.5 1242.5228 561.02285 1247 555.5 1247 L 487.9429 1247 C 482.4201 1247 477.9429 1242.5228 477.9429 1237 L 477.9429 1181 C 477.9429 1175.4772 482.4201 1171 487.9429 1171 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(482.9429 1187)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="6.778539" y="17" textLength="64">程序转发</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="6.778539" y="39" textLength="64">管理模块</tspan>
+      </text>
+      <path d="M 370.75 1342.4 L 370.75 1297.6 C 370.75 1294.5088 391.918 1292 418 1292 C 444.082 1292 465.25 1294.5088 465.25 1297.6 L 465.25 1342.4 C 465.25 1345.4912 444.082 1348 418 1348 C 391.918 1348 370.75 1345.4912 370.75 1342.4" fill="white"/>
+      <path d="M 370.75 1342.4 L 370.75 1297.6 C 370.75 1294.5088 391.918 1292 418 1292 C 444.082 1292 465.25 1294.5088 465.25 1297.6 L 465.25 1342.4 C 465.25 1345.4912 444.082 1348 418 1348 C 391.918 1348 370.75 1345.4912 370.75 1342.4 M 370.75 1297.6 C 370.75 1300.6912 391.918 1303.2 418 1303.2 C 444.082 1303.2 465.25 1300.6912 465.25 1297.6" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(375.75 1313.3)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="32.617188" y="15" textLength="19.265625">DB</tspan>
+      </text>
+      <line x1="315" y1="1171" x2="315" y2="1124.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="417.5" y1="1116" x2="417.5" y2="1162.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="520" y1="1172" x2="520" y2="1125.9" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="356.4256" y1="1254.1047" x2="385.89353" y2="1285.6405" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="418" y1="1247" x2="418" y2="1282.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="479.5744" y1="1254.1047" x2="450.1065" y2="1285.6405" marker-end="url(#FilledArrow_Marker)" marker-start="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(231 1323.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".392" y="15" textLength="97.216">OpenDaylight</tspan>
+      </text>
+      <text transform="translate(305.5 1395.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x=".2385254" y="18" textLength="30.70459">SCP</tspan>
+        <tspan font-family="PingFang SC" font-size="17" font-weight="bold" x="30.943115" y="18" textLength="17">与</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x="47.943115" y="18" textLength="122.81836">OpenDaylight</tspan>
+        <tspan font-family="PingFang SC" font-size="17" font-weight="bold" x="170.76147" y="18" textLength="68">系统接口</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

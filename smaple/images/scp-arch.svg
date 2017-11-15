@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="38 232.5 986 1192.5" width="986pt" height="1192.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-15 16:25:52 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Light"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="23" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="23" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Light"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>ODL SCP架构</title>
+    <rect fill="white" width="986" height="1192.5"/>
+    <g>
+      <title>arch</title>
+      <rect x="103" y="233" width="905" height="381" fill="white"/>
+      <rect x="103" y="233" width="905" height="381" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 132.5 243 L 360.5 243 C 366.02285 243 370.5 247.47715 370.5 253 L 370.5 346 C 370.5 351.52285 366.02285 356 360.5 356 L 132.5 356 C 126.97715 356 122.5 351.52285 122.5 346 L 122.5 253 C 122.5 247.47715 126.97715 243 132.5 243 Z" fill="#c0ffff"/>
+      <path d="M 132.5 243 L 360.5 243 C 366.02285 243 370.5 247.47715 370.5 253 L 370.5 346 C 370.5 351.52285 366.02285 356 360.5 356 L 132.5 356 C 126.97715 356 122.5 351.52285 122.5 346 L 122.5 253 C 122.5 247.47715 126.97715 243 132.5 243 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="221.5" y="254" width="135" height="42" fill="white"/>
+      <rect x="221.5" y="254" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(226.5 264)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="30.5" y="17" textLength="64">项目增删</tspan>
+      </text>
+      <rect x="221.5" y="303" width="135" height="42" fill="white"/>
+      <rect x="221.5" y="303" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(226.5 313)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="30.5" y="17" textLength="64">项目状态</tspan>
+      </text>
+      <rect x="136.5" y="272.5" width="42" height="54" fill="#c0ffff"/>
+      <text transform="translate(141.5 277.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">项目</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">管理</tspan>
+      </text>
+      <path d="M 388 243 L 744.5 243 C 750.02285 243 754.5 247.47715 754.5 253 L 754.5 346 C 754.5 351.52285 750.02285 356 744.5 356 L 388 356 C 382.47715 356 378 351.52285 378 346 L 378 253 C 378 247.47715 382.47715 243 388 243 Z" fill="#c0ffff"/>
+      <path d="M 388 243 L 744.5 243 C 750.02285 243 754.5 247.47715 754.5 253 L 754.5 346 C 754.5 351.52285 750.02285 356 744.5 356 L 388 356 C 382.47715 356 378 351.52285 378 346 L 378 253 C 378 247.47715 382.47715 243 388 243 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="461" y="254" width="135" height="42" fill="white"/>
+      <rect x="461" y="254" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(466 264)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="30.5" y="17" textLength="64">流量导入</tspan>
+      </text>
+      <rect x="461" y="303" width="135" height="42" fill="white"/>
+      <rect x="461" y="303" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(466 313)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="48">用户组</tspan>
+      </text>
+      <rect x="607" y="254" width="135" height="42" fill="white"/>
+      <rect x="607" y="254" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(612 264)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="20.867188" y="17" textLength="32">用户</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="52.86719" y="17" textLength="19.265625">DB</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="72.13281" y="17" textLength="32">同步</tspan>
+      </text>
+      <rect x="607" y="303" width="135" height="42" fill="white"/>
+      <rect x="607" y="303" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(612 313)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="22.5" y="17" textLength="80">用户组定义</tspan>
+      </text>
+      <rect x="392" y="272.5" width="42" height="54" fill="#c0ffff"/>
+      <text transform="translate(397 277.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">用户</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">管理</tspan>
+      </text>
+      <path d="M 772 243 L 979 243 C 984.5228 243 989 247.47715 989 253 L 989 346 C 989 351.52285 984.5228 356 979 356 L 772 356 C 766.47715 356 762 351.52285 762 346 L 762 253 C 762 247.47715 766.47715 243 772 243 Z" fill="#c0ffff"/>
+      <path d="M 772 243 L 979 243 C 984.5228 243 989 247.47715 989 253 L 989 346 C 989 351.52285 984.5228 356 979 356 L 772 356 C 766.47715 356 762 351.52285 762 346 L 762 253 C 762 247.47715 766.47715 243 772 243 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="842" y="254" width="135" height="42" fill="white"/>
+      <rect x="842" y="254" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(847 264)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="30.5" y="17" textLength="64">业务创建</tspan>
+      </text>
+      <rect x="842" y="303" width="135" height="42" fill="white"/>
+      <rect x="842" y="303" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(847 313)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="30.5" y="17" textLength="64">模板定制</tspan>
+      </text>
+      <rect x="777.25" y="272.5" width="42" height="54" fill="#c0ffff"/>
+      <text transform="translate(782.25 277.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">业务</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">管理</tspan>
+      </text>
+      <path d="M 132.5 367 L 496 367 C 501.52285 367 506 371.47715 506 377 L 506 470 C 506 475.52285 501.52285 480 496 480 L 132.5 480 C 126.97715 480 122.5 475.52285 122.5 470 L 122.5 377 C 122.5 371.47715 126.97715 367 132.5 367 Z" fill="#c0c0ff"/>
+      <path d="M 132.5 367 L 496 367 C 501.52285 367 506 371.47715 506 377 L 506 470 C 506 475.52285 501.52285 480 496 480 L 132.5 480 C 126.97715 480 122.5 475.52285 122.5 470 L 122.5 377 C 122.5 371.47715 126.97715 367 132.5 367 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="216" y="378" width="135" height="42" fill="white"/>
+      <rect x="216" y="378" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(221 388)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="30.5" y="17" textLength="64">策略模板</tspan>
+      </text>
+      <rect x="216" y="427" width="135" height="42" fill="white"/>
+      <rect x="216" y="427" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(221 437)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="48">增删改</tspan>
+      </text>
+      <rect x="362" y="378" width="135" height="42" fill="white"/>
+      <rect x="362" y="378" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(367 388)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="36.867188" y="17" textLength="19.265625">PM</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="56.13281" y="17" textLength="32">维护</tspan>
+      </text>
+      <rect x="362" y="427" width="135" height="42" fill="white"/>
+      <rect x="362" y="427" width="135" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(367 437)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="48">组策略</tspan>
+      </text>
+      <rect x="136.5" y="385.5" width="42" height="76" fill="#c0c0ff"/>
+      <text transform="translate(141.5 390.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">业务</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">策略</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="61" textLength="32">管理</tspan>
+      </text>
+      <path d="M 626.5 468.7 L 626.5 378.3 C 626.5 372.0624 648.116 367 674.75 367 C 701.384 367 723 372.0624 723 378.3 L 723 468.7 C 723 474.9376 701.384 480 674.75 480 C 648.116 480 626.5 474.9376 626.5 468.7" fill="white"/>
+      <path d="M 626.5 468.7 L 626.5 378.3 C 626.5 372.0624 648.116 367 674.75 367 C 701.384 367 723 372.0624 723 378.3 L 723 468.7 C 723 474.9376 701.384 480 674.75 480 C 648.116 480 626.5 474.9376 626.5 468.7 M 626.5 378.3 C 626.5 384.5376 648.116 389.6 674.75 389.6 C 701.384 389.6 723 384.5376 723 378.3" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(631.5 397.65)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="27.25" y="17" textLength="32">用户</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="27.25" y="39" textLength="32">会话</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="33.617188" y="59" textLength="19.265625">DB</tspan>
+      </text>
+      <path d="M 521.75 367 L 610.75 367 C 616.27285 367 620.75 371.47715 620.75 377 L 620.75 470 C 620.75 475.52285 616.27285 480 610.75 480 L 521.75 480 C 516.22715 480 511.75 475.52285 511.75 470 L 511.75 377 C 511.75 371.47715 516.22715 367 521.75 367 Z" fill="white"/>
+      <path d="M 521.75 367 L 610.75 367 C 616.27285 367 620.75 371.47715 620.75 377 L 620.75 470 C 620.75 475.52285 616.27285 480 610.75 480 L 521.75 480 C 516.22715 480 511.75 475.52285 511.75 470 L 511.75 377 C 511.75 371.47715 516.22715 367 521.75 367 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(516.75 404.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="35.05078" y="15" textLength="28.898438">Web</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="20.601562" y="34" textLength="57.796875">Portal</tspan>
+      </text>
+      <path d="M 738.75 367 L 979.75 367 C 985.2728 367 989.75 371.47715 989.75 377 L 989.75 470 C 989.75 475.52285 985.2728 480 979.75 480 L 738.75 480 C 733.22715 480 728.75 475.52285 728.75 470 L 728.75 377 C 728.75 371.47715 733.22715 367 738.75 367 Z" fill="#c0c0ff"/>
+      <path d="M 738.75 367 L 979.75 367 C 985.2728 367 989.75 371.47715 989.75 377 L 989.75 470 C 989.75 475.52285 985.2728 480 979.75 480 L 738.75 480 C 733.22715 480 728.75 475.52285 728.75 470 L 728.75 377 C 728.75 371.47715 733.22715 367 738.75 367 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <rect x="812" y="378" width="83" height="42" fill="white"/>
+      <rect x="812" y="378" width="83" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(817 388)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="12.5" y="17" textLength="48">地址池</tspan>
+      </text>
+      <rect x="812" y="427" width="83" height="42" fill="white"/>
+      <rect x="812" y="427" width="83" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(817 437)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="10.867188" y="17" textLength="19.265625">VM</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="30.132812" y="17" textLength="32">管理</tspan>
+      </text>
+      <rect x="742.1454" y="396.5" width="42" height="54" fill="#c0c0ff"/>
+      <text transform="translate(747.1454 401.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">业务</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">管理</tspan>
+      </text>
+      <rect x="901" y="378" width="83" height="42" fill="white"/>
+      <rect x="901" y="378" width="83" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(906 388)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="1.234375" y="17" textLength="38.53125">vNet</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="39.765625" y="17" textLength="32">维护</tspan>
+      </text>
+      <rect x="901" y="427" width="83" height="42" fill="white"/>
+      <rect x="901" y="427" width="83" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(906 437)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="4.5" y="17" textLength="64">设备定位</tspan>
+      </text>
+      <path d="M 132.5 491 L 528 491 C 533.52285 491 538 495.47715 538 501 L 538 594 C 538 599.52285 533.52285 604 528 604 L 132.5 604 C 126.97715 604 122.5 599.52285 122.5 594 L 122.5 501 C 122.5 495.47715 126.97715 491 132.5 491 Z" fill="#ffffc0"/>
+      <path d="M 132.5 491 L 528 491 C 533.52285 491 538 495.47715 538 501 L 538 594 C 538 599.52285 533.52285 604 528 604 L 132.5 604 C 126.97715 604 122.5 599.52285 122.5 594 L 122.5 501 C 122.5 495.47715 126.97715 491 132.5 491 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="216" y="502" width="151" height="42" fill="white"/>
+      <rect x="216" y="502" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(221 512)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.05078" y="17" textLength="28.898438">BNG</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="68.94922" y="17" textLength="32">设备</tspan>
+      </text>
+      <rect x="216" y="551" width="151" height="42" fill="white"/>
+      <rect x="216" y="551" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(221 561)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="64">会话监控</tspan>
+      </text>
+      <rect x="378" y="502" width="151" height="42" fill="white"/>
+      <rect x="378" y="502" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(383 512)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="64">主机状态</tspan>
+      </text>
+      <rect x="378" y="551" width="151" height="42" fill="white"/>
+      <rect x="378" y="551" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(383 561)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.05078" y="17" textLength="28.898438">APP</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="68.94922" y="17" textLength="32">状态</tspan>
+      </text>
+      <rect x="136.5" y="520.5" width="42" height="54" fill="#ffffc0"/>
+      <text transform="translate(141.5 525.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">系统</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">监控</tspan>
+      </text>
+      <path d="M 568 491 L 979.75 491 C 985.2728 491 989.75 495.47715 989.75 501 L 989.75 594 C 989.75 599.52285 985.2728 604 979.75 604 L 568 604 C 562.47715 604 558 599.52285 558 594 L 558 501 C 558 495.47715 562.47715 491 568 491 Z" fill="#ffffc0"/>
+      <path d="M 568 491 L 979.75 491 C 985.2728 491 989.75 495.47715 989.75 501 L 989.75 594 C 989.75 599.52285 985.2728 604 979.75 604 L 568 604 C 562.47715 604 558 599.52285 558 594 L 558 501 C 558 495.47715 562.47715 491 568 491 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="668.25" y="502" width="151" height="42" fill="white"/>
+      <rect x="668.25" y="502" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(673.25 512)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="64">设施配置</tspan>
+      </text>
+      <rect x="668.25" y="551" width="151" height="42" fill="white"/>
+      <rect x="668.25" y="551" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(673.25 561)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="64">管理接口</tspan>
+      </text>
+      <rect x="829.75" y="502" width="151" height="42" fill="white"/>
+      <rect x="829.75" y="502" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(834.75 512)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.05078" y="17" textLength="28.898438">OSS</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="68.94922" y="17" textLength="32">接口</tspan>
+      </text>
+      <rect x="829.75" y="551" width="151" height="42" fill="white"/>
+      <rect x="829.75" y="551" width="151" height="42" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(834.75 561)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="38.5" y="17" textLength="64">系统权限</tspan>
+      </text>
+      <rect x="585.375" y="520.5" width="42" height="54" fill="#ffffc0"/>
+      <text transform="translate(590.375 525.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="17" textLength="32">基本</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="0" y="39" textLength="32">配置</tspan>
+      </text>
+      <rect x="995.5" y="356" width="28" height="135" fill="white"/>
+      <rect x="995.5" y="356" width="28" height="135" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1e3 486) rotate(-90)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="14.335938" y="15" textLength="96.32812">RADIUS CoA</tspan>
+      </text>
+      <text transform="translate(91 408.5) rotate(90)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".05078125" y="15" textLength="28.898438">SCP</tspan>
+      </text>
+      <rect x="103" y="724" width="905" height="113" fill="#ccc"/>
+      <rect x="103" y="724" width="905" height="113" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="114.75" y="796" width="875" height="36" fill="white"/>
+      <rect x="114.75" y="796" width="875" height="36" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(119.75 803)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="400.5" y="17" textLength="64">配置模块</tspan>
+      </text>
+      <rect x="114.75" y="731" width="206" height="54" fill="white"/>
+      <rect x="114.75" y="731" width="206" height="54" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(119.75 747)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="62.734375" y="17" textLength="32">策略</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="94.73438" y="17" textLength="38.53125">Mgr.</tspan>
+      </text>
+      <path d="M 337.75 779.6 L 337.75 736.4 C 337.75 733.4192 383.894 731 440.75 731 C 497.606 731 543.75 733.4192 543.75 736.4 L 543.75 779.6 C 543.75 782.5808 497.606 785 440.75 785 C 383.894 785 337.75 782.5808 337.75 779.6" fill="white"/>
+      <path d="M 337.75 779.6 L 337.75 736.4 C 337.75 733.4192 383.894 731 440.75 731 C 497.606 731 543.75 733.4192 543.75 736.4 L 543.75 779.6 C 543.75 782.5808 497.606 785 440.75 785 C 383.894 785 337.75 782.5808 337.75 779.6 M 337.75 736.4 C 337.75 739.3808 383.894 741.8 440.75 741.8 C 497.606 741.8 543.75 739.3808 543.75 736.4" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(342.75 749.7)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" fill="black" x="72.36719" y="17" textLength="32">策略</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="104.36719" y="17" textLength="19.265625">DB</tspan>
+      </text>
+      <rect x="560.75" y="731" width="206" height="54" fill="white"/>
+      <rect x="560.75" y="731" width="206" height="54" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(565.75 748.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="64.28516" y="15" textLength="67.42969">SC Mgr.</tspan>
+      </text>
+      <rect x="783.75" y="731" width="206" height="54" fill="white"/>
+      <rect x="783.75" y="731" width="206" height="54" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(788.75 748.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="45.01953" y="15" textLength="105.96094">ODL plug-in</tspan>
+      </text>
+      <text transform="translate(92.5 754) rotate(90)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".05078125" y="17" textLength="28.898438">ODL</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="28.94922" y="17" textLength="48">控制器</tspan>
+      </text>
+      <path d="M 370 620.75 L 397 650.75 L 383.5 650.75 L 383.5 687.25 L 397 687.25 L 370 717.25 L 343 687.25 L 356.5 687.25 L 356.5 650.75 L 343 650.75 Z" fill="#ffff40"/>
+      <path d="M 370 620.75 L 397 650.75 L 383.5 650.75 L 383.5 687.25 L 397 687.25 L 370 717.25 L 343 687.25 L 356.5 687.25 L 356.5 650.75 L 343 650.75 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 695.25 620.75 L 722.25 650.75 L 708.75 650.75 L 708.75 687.25 L 722.25 687.25 L 695.25 717.25 L 668.25 687.25 L 681.75 687.25 L 681.75 650.75 L 668.25 650.75 Z" fill="#ffff40"/>
+      <path d="M 695.25 620.75 L 722.25 650.75 L 708.75 650.75 L 708.75 687.25 L 722.25 687.25 L 695.25 717.25 L 668.25 687.25 L 681.75 687.25 L 681.75 650.75 L 668.25 650.75 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(157 659)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".4375" y="15" textLength="154.125">OpenDaylight API</tspan>
+      </text>
+      <text transform="translate(759.5 659)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="11.136719" y="15" textLength="125.22656">OpenStack API</tspan>
+      </text>
+      <text transform="translate(498.75 888.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="23" font-weight="400" x=".22924805" y="24" textLength="41.541504">SCP</tspan>
+        <tspan font-family="PingFang SC" font-size="23" font-weight="300" x="41.77075" y="24" textLength="46">架构</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

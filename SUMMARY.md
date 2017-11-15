@@ -108,6 +108,11 @@
 - [12. SDN实践案例](practice/READMEmd)
   - [Goolge网络](practice/google.md)
 
+## SDN业务类型示例
+
+- [13. 业务示例](sample/README.md)
+    - [业务控制平台-SCP](smaple/scp.md)
+
 ## 参考文档
 
 - [13. FAQ](FAQ.md)
