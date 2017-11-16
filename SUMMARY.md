@@ -111,6 +111,7 @@
 ## SDN业务类型示例
 
 - [13. 业务示例](sample/README.md)
+    - [SDN控制器应用场景](smaple/application-scenarios.md)
     - [业务控制平台-SCP](smaple/scp.md)
 
 ## 参考文档

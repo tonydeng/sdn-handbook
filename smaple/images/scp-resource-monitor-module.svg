@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="667.5 1433.5 687 493.5" width="687pt" height="493.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-16 03:12:20 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="PingFang SC" font-size="12" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Light"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="12" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="PingFang SC" font-size="20" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>SCP Monitor Module</title>
+    <rect fill="white" width="687" height="493.5"/>
+    <g>
+      <title>图层 1</title>
+      <rect x="908" y="1434" width="99" height="63" fill="white"/>
+      <rect x="908" y="1434" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(913 1457)" fill="black">
+        <tspan font-family="PingFang SC" font-size="12" font-weight="300" x="8.5" y="13" textLength="72">资源监控界面</tspan>
+      </text>
+      <rect x="890" y="1447" width="30" height="12" fill="white"/>
+      <rect x="890" y="1447" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="890" y="1472" width="30" height="12" fill="white"/>
+      <rect x="890" y="1472" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="686" y="1605" width="99" height="63" fill="white"/>
+      <rect x="686" y="1605" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(691 1628)" fill="black">
+        <tspan font-family="PingFang SC" font-size="12" font-weight="300" x="20.5" y="13" textLength="48">拓扑查询</tspan>
+      </text>
+      <rect x="668" y="1618" width="30" height="12" fill="white"/>
+      <rect x="668" y="1618" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="668" y="1643" width="30" height="12" fill="white"/>
+      <rect x="668" y="1643" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="908" y="1776" width="99" height="63" fill="white"/>
+      <rect x="908" y="1776" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(913 1800.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="12" font-weight="400" x="15.601562" y="11" textLength="57.796875">Mongoose</tspan>
+      </text>
+      <rect x="890" y="1789" width="30" height="12" fill="white"/>
+      <rect x="890" y="1789" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="890" y="1814" width="30" height="12" fill="white"/>
+      <rect x="890" y="1814" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1114" y="1605" width="99" height="63" fill="white"/>
+      <rect x="1114" y="1605" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1119 1628)" fill="black">
+        <tspan font-family="PingFang SC" font-size="12" font-weight="300" x="14.5" y="13" textLength="60">交换机查询</tspan>
+      </text>
+      <rect x="1096" y="1618" width="30" height="12" fill="white"/>
+      <rect x="1096" y="1618" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1096" y="1643" width="30" height="12" fill="white"/>
+      <rect x="1096" y="1643" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="908" y="1605" width="99" height="63" fill="white"/>
+      <rect x="908" y="1605" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(913 1628)" fill="black">
+        <tspan font-family="PingFang SC" font-size="12" font-weight="300" x="20.5" y="13" textLength="48">主机查询</tspan>
+      </text>
+      <rect x="890" y="1618" width="30" height="12" fill="white"/>
+      <rect x="890" y="1618" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="890" y="1643" width="30" height="12" fill="white"/>
+      <rect x="890" y="1643" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1255" y="1764" width="99" height="63" fill="white"/>
+      <rect x="1255" y="1764" width="99" height="63" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1260 1787)" fill="black">
+        <tspan font-family="PingFang SC" font-size="12" font-weight="300" x="26.5" y="13" textLength="36">采集器</tspan>
+      </text>
+      <rect x="1237" y="1777" width="30" height="12" fill="white"/>
+      <rect x="1237" y="1777" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1237" y="1802" width="30" height="12" fill="white"/>
+      <rect x="1237" y="1802" width="30" height="12" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="957.5" y1="1497" x2="744.4024" y2="1600.669" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="957.5" y1="1497" x2="957.5" y2="1595.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="957.5" y1="1497" x2="1154.732" y2="1600.4032" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="957.5" y1="1668" x2="957.5" y2="1766.1" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="735.5" y1="1668" x2="948.9808" y2="1770.957" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1163.5" y1="1668" x2="966.2681" y2="1771.4032" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1237" y1="1807.9694" x2="1016.9" y2="1807.5202" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(888.5 1893.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="20" font-weight="bold" x="0" y="21" textLength="120">资源监控模块</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
