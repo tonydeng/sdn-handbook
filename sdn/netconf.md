@@ -36,4 +36,5 @@ NETCONF通过RPC与交换机通信，其协议包含四层
 
 ## 参考文档
 
-- [RFC6241](https://tools.ietf.org/html/rfc6241)
+1. [RFC6241](https://tools.ietf.org/html/rfc6241)
+1. [基于NETCONF协议的网管系统Agent端设计和实](http://doc.mbalib.com/view/e2d0c5b3faf4a205059ba5bc9704020d.html)
