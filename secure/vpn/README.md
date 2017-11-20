@@ -53,22 +53,22 @@ VPN的隧道协议主要有四种，[PPTP](https://en.wikipedia.org/wiki/Point-t
 
 ### 2. 按VPN的应用分类：
 
-Access VPN（远程接入VPN）：客户端到网关，使用公网作为骨干网在设备之间传输VPN数据流量；
-Intranet VPN（内联网VPN）：网关到网关，通过公司的网络架构连接来自同公司的资源；
-Extranet VPN（外联网VPN）：与合作伙伴企业网构成Extranet，将一个公司与另一个公司的资源进行连接。
+1. `Access VPN`（远程接入VPN）：客户端到网关，使用公网作为骨干网在设备之间传输VPN数据流量；
+1. `Intranet VPN`（内联网VPN）：网关到网关，通过公司的网络架构连接来自同公司的资源；
+1. `Extranet VPN`（外联网VPN）：与合作伙伴企业网构成Extranet，将一个公司与另一个公司的资源进行连接。
 
 ### 3. 按所用的设备类型进行分类：
 
 网络设备提供商针对不同客户的需求，开发出不同的VPN网络设备，主要为交换机、路由器和防火墙：
 
-路由器式VPN：路由器式VPN部署较容易，只要在路由器上添加VPN服务即可；
-交换机式VPN：主要应用于连接用户较少的VPN网络；
-防火墙式VPN：防火墙式VPN是最常见的一种VPN的实现方式，许多厂商都提供这种配置类型
+1. 路由器式VPN：路由器式VPN部署较容易，只要在路由器上添加VPN服务即可；
+1. 交换机式VPN：主要应用于连接用户较少的VPN网络；
+1. 防火墙式VPN：防火墙式VPN是最常见的一种VPN的实现方式，许多厂商都提供这种配置类型
 
 ### 4. 按照实现原理划分：
 
-重叠VPN：此VPN需要用户自己建立端节点之间的VPN链路，主要包括：GRE、L2TP、IPSec等众多技术。
-对等VPN：由网络运营商在主干网上完成VPN通道的建立，主要包括MPLS、VPN技术。
+1. 重叠VPN：此VPN需要用户自己建立端节点之间的VPN链路，主要包括：GRE、L2TP、IPSec等众多技术。
+1. 对等VPN：由网络运营商在主干网上完成VPN通道的建立，主要包括MPLS、VPN技术。
 
 ## VPN技术介绍
 
@@ -77,6 +77,8 @@ Extranet VPN（外联网VPN）：与合作伙伴企业网构成Extranet，将一
 1. PPTP（点到点隧道协议）、L2TP（二层隧道协议）、SSL VPN（安全会话层VPN）：这两个技术主要用于异地PC向总部方向建立VPN，但PPTP、L2TP不支持加密（PPTP的兼容性没有L2TP好），SSL VPN则必须要求加密；这三类技术都有很灵活的动态身份认证机制，SSL VPN不但拥有灵活安全的认证机制，在用户角色权限控制上具备极强的扩展性，因此这3类技术非常适合远程PC拨号接入场景，随着SSL VPN技术成熟，部署成本下降，正在不断地侵占L2TP原有市场。
 
 2. IPSec：通用性最强的VPN安全技术，能够适应异地分支和总部互联，也适用于异地PC向总部发起连接；可以单独使用，也可以和L2TP结合，保证L2TP的安全，但是IPSec的动态身份认证功能较弱，不太适用于大量动态用户拨号的场景，比较适合接入数量相对稳定的场景，此外IPSec功能复杂，PC上通常是通过各厂家专用客户端实现，因此IPSec技术更适合异地分支和总部网络互连的场景。
+
+3. SSL VPN是以HTTPS（Secure HTTP，安全的HTTP，即支持SSL的HTTP协议）为基础的VPN技术，工作在传输层和应用层之间。**SSL VPN充分利用了SSL协议提供的基于证书的身份认证、数据加密和消息完整性验证机制，可以为应用层之间的通信建立安全连接**。SSL VPN广泛应用于基于Web的远程安全接入，为用户远程访问公司内部网络提供了安全保证。
 
 
 下面对集中VPN技术和应用场景进行详细介绍。由于PPTP功能和L2TP重叠，且应用较窄，在此文中不作介绍。
@@ -134,3 +136,11 @@ Extranet VPN（外联网VPN）：与合作伙伴企业网构成Extranet，将一
 |隧道穿越NAT|可以|可以|可以|
 
 从上表可以看出，L2TP和SSL VPN确实更适合远端PC，特别是SSL VPN就是专门为远端PC开发的VPN技术。而IPSec更适合在分支和总部之间搭建VPN隧道。
+
+## 参考
+1. [PPTP(Point to Point Tunneling Protocol)](https://en.wikipedia.org/wiki/Point-to-Point_Tunneling_Protocol)
+1. [L2TP(Layer 2 Tunneling Protocol)](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)
+1. [IPSec](https://en.wikipedia.org/wiki/IPsec)
+1. [SSL/TLS(Secure Sockets Layer / Transport Layer Security)](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+1. [Client/Serveur SSL/TLS multiplateformes avec OpenSSL](https://www.asafety.fr/projects-and-tools/c-client-serveur-ssl-tls-multiplateformes-avec-openssl/)
+1. [OSI 7 LAYER MODEL](http://www.escotal.com/osilayer.html)
