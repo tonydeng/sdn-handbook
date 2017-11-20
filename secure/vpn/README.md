@@ -1,4 +1,4 @@
-# VPN概述
+# VPN(Virtual Private Network)概述
 
 ## 为什么需要VPN
 
@@ -138,6 +138,7 @@ VPN的隧道协议主要有四种，[PPTP](https://en.wikipedia.org/wiki/Point-t
 从上表可以看出，L2TP和SSL VPN确实更适合远端PC，特别是SSL VPN就是专门为远端PC开发的VPN技术。而IPSec更适合在分支和总部之间搭建VPN隧道。
 
 ## 参考
+1.  [VPN](https://zh.wikipedia.org/wiki/%E8%99%9B%E6%93%AC%E7%A7%81%E4%BA%BA%E7%B6%B2%E8%B7%AF)
 1. [PPTP(Point to Point Tunneling Protocol)](https://en.wikipedia.org/wiki/Point-to-Point_Tunneling_Protocol)
 1. [L2TP(Layer 2 Tunneling Protocol)](https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol)
 1. [IPSec](https://en.wikipedia.org/wiki/IPsec)
