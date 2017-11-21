@@ -1,0 +1,30 @@
+@startuml
+
+start
+
+:入口 ：从应用协议层\n模块得到**RPC报文头**和\n**Session**;
+if (判断RPC\n是否符合NETCONF协议\n的Schema?) then (yes)
+    if (循环判断RPC元素的属性?) then (yes)
+        if (Message-id是否在范围内?) then (yes)
+            if (命名空间名字是否正确?) then (yes)
+                if (命名空间内容是否徐正确?) then (yes)
+                    : 保存名字空间列表;
+                    : 得到操作层报文;
+                    : 根据操作名实例化该操作;
+                    if(判断是否实例化成功?) then (yes)
+                        : 根据得到的**session**，命名空间，\n操作块内容执行相应操作，\n得到操作层返回报文;
+                        :根据操作返回报文来封装RPC返回报文;
+                    endif
+                endif
+            endif
+        endif
+    endif
+endif
+if(上述任意流程有错误?) then(yes)
+    : 按定义的错误报文构造方式生成错误报文;
+endif
+: 出口：交由应用协议层模块处理 ;
+
+stop
+
+@enduml

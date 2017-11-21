@@ -1,0 +1,28 @@
+@startuml
+start
+
+:入口 ：get-config类;
+: 依次判断get-config的子元素 ;
+
+if (是否是source元素?) then (yes)
+    if (是否是规定源数据库?) then (no)
+        : 按照定义的错误报文\n构造方式生成错误报文;
+    endif
+else (no)
+    if (是否是filter元素) then (yes)
+        if(filter元素的type属性) then (subtree)
+            :提取subtree内容;
+            :通过子树过滤方式\n获取相应数据库的\n相应数据;
+        else(xpath)
+        :提取xpath内容;
+        :通过xpath过滤方式\n获取相应数据库的\n相应数据;
+        endif
+        :将得到的内容封装为操作层报文;
+    else (no)
+        : 按照定义的错误报文\n构造方式生成错误报文;
+    endif
+endif
+
+:出口: 交给RPC模块封装RPC报文;
+stop
+@enduml
