@@ -12,7 +12,7 @@ OpenFlow协议规范定义了OpenFlow交换机、流表、OpenFlow通道以及Op
 
 一个典型的OpenFlow交换机如下图所示
 
-![openflow](images/openflow.png)
+![openflow](../images/openflow.png)
 
 它主要由OpenFlow通道和数据平面组成，而数据平面又包括流表、端口、组表和Meter表等：
 
@@ -26,11 +26,11 @@ OpenFlow协议规范定义了OpenFlow交换机、流表、OpenFlow通道以及Op
 
 流表用于存储流表项，多级流表以流水线的方式处理。
 
-![flow table](images/flow.png)
+![flow table](../images/flow.png)
 
 每个流表项由匹配域（包括输入端口、包头以及其他流表设置的元数据）、优先级、指令集、计数器、计时器、Cookie和用于管理流表项的flag组成：
 
-![flow table item](images/item.png)
+![flow table item](../images/item.png)
 
 <!--
 | Match Fiedls | Priority | Counters | Instructions | Timeouts | Cookies | Flags |
@@ -38,15 +38,15 @@ OpenFlow协议规范定义了OpenFlow交换机、流表、OpenFlow通道以及Op
 -->
 一个典型的流表匹配过程如下所示
 
-![flow table match](images/match.png)
+![flow table match](../images/match.png)
 
 而典型的指令执行过程如下所示
 
-![flow talbe instruction](images/instruction.png)
+![flow talbe instruction](../images/instruction.png)
 
 除了流表，还可以定义Meter表
 
-![meter table](images/meter.png)
+![meter table](../images/meter.png)
 
 ### OpenFlow通道
 

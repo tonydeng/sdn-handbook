@@ -6,7 +6,7 @@
 
 ### 系统层次
 
-![onos layers](images/onos.png)
+![onos layers](../images/onos.png)
 
 ### 组件和服务
 
@@ -15,11 +15,11 @@
 - 抽象：ONOS 抽象出了统一的网络资源和网元模型奠定了第三方SDN应用程序互通的基础，使得运营商可以做灵活的业务协同和低成本业务创新。
 - 简单：ONOS屏蔽了复杂的分布式等通用机制，对外只暴露业务接口，使得应用开发十分简单。
 
-![onos module](images/onos-subsystem.png)
+![onos module](../images/onos-subsystem.png)
 
 ### ONOS集群
 
-![onos communication](images/onos-communication.png)
+![onos communication](../images/onos-communication.png)
 
 - 分布式: 由多个实例组成一个集群
 - 对称性: 每一个实例运行相同的软件和配置

@@ -6,7 +6,7 @@ Floodlight的架构可以分为控制层和应用层，应用层通过北向API�
 
 Floodlight模块结果如下所示：
 
-![floodlight module](images/floodlight.png)
+![floodlight module](../images/floodlight.png)
 
 由于Floodlight更新迭代速度较慢，特别是OpenDaylight诞生以后，Floodlight已经丧失了
 
