@@ -86,7 +86,7 @@ NETCONF提供了[九种基本操作](https://tools.ietf.org/html/rfc6241#section
 
 ## NETCONF实现流程
 
-
+![NETCONF实现流程](../images/netconf-implementation-process.jpg)
 
 ## NETCONF实现的关键技术
 
