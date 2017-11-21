@@ -4,7 +4,6 @@
 
 ## 网络基础
 
-<!--
 - [2. 网络基础理论](basic/index.md)
   - [TCP/IP网络模型](basic/tcpip.md)
   - [ARP](basic/arp.md)
@@ -16,6 +15,8 @@
   - [TCP](basic/tcp.md)
   - [VLAN](basic/vlan.md)
   - [Overlay](basic/overlay.md)
+
+<!--
 - [3. Linux网络](linux/index.md)
   - [Linux网络配置](linux/config.md)
     - [虚拟网络设备](linux/virtual-device.md)
