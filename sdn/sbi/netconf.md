@@ -88,6 +88,8 @@ NETCONF提供了[九种基本操作](https://tools.ietf.org/html/rfc6241#section
 
 ![NETCONF实现流程](../images/netconf-implementation-process.jpg)
 
+> NETCONF实现流程PlantUML请查看[netconf-implementation-process.puml](https://raw.githubusercontent.com/tonydeng/sdn-handbook/master/puml/netconf-implementation-process.puml)
+>
 ## NETCONF实现的关键技术
 
 关键的环节包括：**安全认证**、**建立加密传输通道**、**rpc-xml消息收发**、**rpc-xml文件解析**、**rpc-reply消息** 的生成。
