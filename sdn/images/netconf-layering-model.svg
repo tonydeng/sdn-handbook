@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="1076.5 1762 822 491" width="822pt" height="491pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-22 08:55:28 +0000</dc:date>
+  </metadata>
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="22" panose-1="2 11 6 9 3 3 4 11 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="-500" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-style="italic" font-weight="500">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono-Oblique"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>NETCONF Layering Model</title>
+    <rect fill="white" width="822" height="491"/>
+    <g>
+      <title>图层 1</title>
+      <g>
+        <xl:use xl:href="#id23_Graphic" filter="url(#Shadow)"/>
+        <xl:use xl:href="#id24_Graphic" filter="url(#Shadow)"/>
+      </g>
+      <rect x="1077" y="1813" width="137" height="46" fill="#c0ffff"/>
+      <rect x="1077" y="1813" width="137" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1082 1826.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="29.785156" y="15" textLength="67.42969">Content</tspan>
+      </text>
+      <rect x="1077" y="1914" width="137" height="46" fill="#ffc0c0"/>
+      <rect x="1077" y="1914" width="137" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1082 1927.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="15.335938" y="15" textLength="96.32812">Operations</tspan>
+      </text>
+      <rect x="1077" y="2015" width="137" height="46" fill="#c0c0ff"/>
+      <rect x="1077" y="2015" width="137" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1082 2028.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="24.96875" y="15" textLength="77.0625">Messages</tspan>
+      </text>
+      <rect x="1077" y="2116" width="137" height="46" fill="#ffff80"/>
+      <rect x="1077" y="2116" width="137" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1082 2120)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="34.601562" y="15" textLength="57.796875">Secure</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="20.152344" y="34" textLength="86.69531">Transport</tspan>
+      </text>
+      <rect x="1280" y="1813" width="147" height="46" fill="#c0ffff"/>
+      <rect x="1280" y="1813" width="147" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1285 1817)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="5.886719" y="15" textLength="125.22656">Configuration</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="49.234375" y="34" textLength="38.53125">data</tspan>
+      </text>
+      <rect x="1451" y="1813" width="147" height="46" fill="#c0ffff"/>
+      <rect x="1451" y="1813" width="147" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1456 1817)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="10.703125" y="15" textLength="115.59375">Notification</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="49.234375" y="34" textLength="38.53125">data</tspan>
+      </text>
+      <rect x="1280" y="1914" width="147" height="46" fill="#ffc0c0"/>
+      <rect x="1280" y="1914" width="147" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1285 1918)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="44.41797" y="15" textLength="48.16406">&lt;get&gt;</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="10.703125" y="34" textLength="115.59375">&lt;get-config&gt;</tspan>
+      </text>
+      <rect x="1280" y="2015" width="147" height="46" fill="#c0c0ff"/>
+      <rect x="1280" y="2015" width="147" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1285 2028.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="44.41797" y="15" textLength="48.16406">&lt;rpc&gt;</tspan>
+      </text>
+      <rect x="1280" y="2116" width="318" height="46" fill="#ffff80"/>
+      <rect x="1280" y="2116" width="318" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1285 2120)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="9.507812" y="15" textLength="288.98438">SSH, TLS, BEEP/TLS, SOAP/HTTP/</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="115.46875" y="34" textLength="77.0625">TLS, ...</tspan>
+      </text>
+      <rect x="1451" y="2015" width="147" height="46" fill="#c0c0ff"/>
+      <rect x="1451" y="2015" width="147" height="46" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1456 2028.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="1.0703125" y="15" textLength="134.85938">&lt;notification&gt;</tspan>
+      </text>
+      <rect x="1662.5" y="1819" width="236" height="86" fill="#c0c0ff"/>
+      <text transform="translate(1667.5 1824)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="15" textLength="38.53125">&lt;rpc</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="34" textLength="221.5547">xmlns=“urn:ietf:params:</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="53" textLength="192.65625">xml:ns:netconf:base:</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="72" textLength="48.16406">1.0”&gt;</tspan>
+      </text>
+      <rect x="1691" y="1905" width="207.5" height="29" fill="#ffc0c0"/>
+      <text transform="translate(1696 1910)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="15" textLength="125.22656">&lt;edit-config&gt;</tspan>
+      </text>
+      <rect x="1691" y="2001" width="207.5" height="29" fill="#ffc0c0"/>
+      <text transform="translate(1696 2006)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="15" textLength="134.85938">&lt;/edit-config&gt;</tspan>
+      </text>
+      <rect x="1719" y="1934" width="179.5" height="67" fill="#c0ffff"/>
+      <text transform="translate(1724 1939)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="15" textLength="77.0625">&lt;config&gt;</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="34" textLength="144.49219">      …Content…</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="53" textLength="86.69531">&lt;/config&gt;</tspan>
+      </text>
+      <rect x="1662.5" y="2030" width="236" height="29" fill="#c0c0ff"/>
+      <text transform="translate(1667.5 2035)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="0" y="15" textLength="57.796875">&lt;/rpc&gt;</tspan>
+      </text>
+      <text transform="translate(1280 2222)" fill="#003776">
+        <tspan font-family="DejaVu Sans Mono" font-size="22" font-style="italic" font-weight="500" fill="#003776" x=".30371094" y="20" textLength="291.39258">NETCONF Layering Model</tspan>
+      </text>
+      <text transform="translate(1121 1770)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".41796875" y="15" textLength="48.16406">Layer</tspan>
+      </text>
+      <text transform="translate(1405 1770)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".28515625" y="15" textLength="67.42969">NETCONF</tspan>
+      </text>
+      <text transform="translate(1746.5 1770)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".28515625" y="15" textLength="67.42969">Example</tspan>
+      </text>
+      <g id="id23_Graphic">
+        <line x1="1244" y1="1764" x2="1243.457" y2="2191.4492" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="id24_Graphic">
+        <line x1="1630.293" y1="1765" x2="1629.75" y2="2192.4492" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <line x1="1145.5" y1="1859" x2="1145.5" y2="1914" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1145.5" y1="1960" x2="1145.5" y2="2015" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1145.5" y1="2061" x2="1145.5" y2="2116" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1353.5" y1="1859" x2="1353.5" y2="1914" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1353.5" y1="1960" x2="1353.5" y2="2015" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 1353.1349 2061 L 1352.2617 2116 L 1352.1211 2116" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1524.5" y1="1859" x2="1524.5" y2="2015" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="1524.553" y1="2061" x2="1524.6797" y2="2116" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

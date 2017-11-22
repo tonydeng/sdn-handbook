@@ -36,6 +36,10 @@ NETCONF通过RPC与交换机通信，其协议包含四层
 - (3) 操作层，定义了一系列的RPC调用方法，并可以通过Capabilities来扩展
 - (4) 内容层，定义RPC调用的数据内容
 
+### NETCONF Layering Model And Example
+
+![NETCONF Layering Model And Example](../images/netconf-layering-model.svg)
+
 ## NETCONF技术规范
 
 ### 安全传输层
