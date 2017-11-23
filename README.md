@@ -18,7 +18,7 @@ SDN （Software Defined Networking）作为当前最重要的热门技术之一�
 
 可以通过[GitBook](https://tonydeng.gitbooks.io/sdn/)或者[Github](https://github.com/tonydeng/sdn-handbook)来在线阅读。
 
-也可以下载[ePub](https://www.gitbook.com/download/epub/book/tonydeng/sdn)或者[PDF]((https://www.gitbook.com/download/pdf/book/tonydeng/sdn))版本。
+也可以下载[ePub](https://www.gitbook.com/download/epub/book/tonydeng/sdn)或者[PDF](https://www.gitbook.com/download/pdf/book/tonydeng/sdn)版本。
 
 ## 项目源码
 
