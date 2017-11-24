@@ -24,7 +24,7 @@
   - [流量控制](linux/tc.md)
   - [SR-IOV](linux/sr-iov.md)
   - [内核VRF](linux/vrf.md)
-  - [eBPF](linux/bpf/index.md)
+  - [eBPF](linux/bpf/README.md)
     - [bcc](linux/bpf/bcc.md)
     - [故障排查](linux/bpf/troubleshooting.md)
   - [XDP](linux/XDP/index.md)

@@ -167,7 +167,7 @@ $ virsh attach-device MyGuest /tmp/interface. xml --live --config
 - SR-IOV NIC forces switching features into the HW
 - All the Switching Features in the Hardware or nothing
 
-## 参考文档
+## 参考
 
 - [Intel SR-IOV Configuration Guide](http://www.intel.com/content/www/us/en/embedded/products/networking/xl710-sr-iov-config-guide-gbe-linux-brief.html)
 - [OpenStack SR-IOV Passthrough for Networking](https://wiki.openstack.org/wiki/SR-IOV-Passthrough-For-Networking)
