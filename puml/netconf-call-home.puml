@@ -1,0 +1,13 @@
+@startuml
+title __NETCONF Call home overview__ over SSH
+
+participant "NETCONF Server\n(NE)" as server
+participant "NETCONF Client\n(controller)" as client
+
+server -[#red]> client : TCP connection
+note left: NETCONF服务端先\n启动一个TCP连接到\nNETCONF客户端
+client -[#blue]> server : SSH/TLS Session
+note right: 使用这个TCP连接，\nNETCON客户端\n启动到NETCONF\n服务器的SSH/TLS\n会话
+client -[#blue]> server : NETCONF Session
+note right: 使用此SSH/TLS会话，\nNETCON客户端启动\n一个到NETCONF服务器\n的NETCONF会话
+@enduml
