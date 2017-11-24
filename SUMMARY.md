@@ -16,8 +16,7 @@
   - [VLAN](basic/vlan.md)
   - [Overlay](basic/overlay.md)
 
-<!--
-- [3. Linux网络](linux/index.md)
+- [3. Linux网络](linux/README.md)
   - [Linux网络配置](linux/config.md)
     - [虚拟网络设备](linux/virtual-device.md)
   - [iptables/netfilter](linux/iptables.md)
@@ -61,7 +60,6 @@
   - [SPDK](dpdk/spdk.md)
   - [OpenFastPath](dpdk/OpenFastPath.md)
   -
--->
 
 - [6. 安全设备](secure/README.md)
     - [VPN](secure/vpn/README.md)
