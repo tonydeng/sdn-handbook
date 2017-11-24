@@ -86,3 +86,4 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 - [TRILL ("TRansparent Interconnection of Lots of Links")](https://en.wikipedia.org/wiki/TRILL_(computing))
 - [Multiprotocol Label Switching (MPLS)](https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching)
 - [RFC3031 - Multiprotocol Label Switching Architecture](https://tools.ietf.org/html/rfc3031)
+- [TCP/IP协议详解卷一 -- IP选路](https://www.kancloud.cn/lifei6671/tcp-ip/142337)
