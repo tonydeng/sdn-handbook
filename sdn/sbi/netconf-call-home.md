@@ -31,6 +31,8 @@
 
 ![NETCONF Call Home Sequence](../images/netconf-call-home-sequence.png)
 
+> 消息层流程PlantUML请查看[netconf-messages-layer-flow.puml](https://raw.githubusercontent.com/tonydeng/sdn-handbook/master/puml/netconf-call-home.puml)
+
 这张图有以下几点：
 
  1. `NETCONF`服务器首先启动一个`TCP`连接到`NETCONF`客户端。
@@ -55,7 +57,9 @@
 
 ### 客户端配置数据模型
 
-如何配置`NETCONF`或`RESTCONF`客户端超出了本文的范围。 例如，可以使用这样的配置来启用对`call home`的监听，配置可信证书颁发者，或者为预期的连接配置标识符。 也就是说，在[NETCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-NETCONF-MODELS)和[RESTCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-RESTCONF-MODELS)中提供了用于配置`NETCONF`和`RESTCONF`客户端的`YANG` [RFC7950](https://tools.ietf.org/html/rfc7950)数据模块，包括`call home`。
+如何配置`NETCONF`或`RESTCONF`客户端超出了本文的范围。
+
+例如，可以使用什么样的配置来启用对`call home`的监听，配置可信证书颁发者，或者为预期的连接配置标识符。 也就是说，在[NETCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-NETCONF-MODELS)和[RESTCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-RESTCONF-MODELS)中提供了用于配置`NETCONF`和`RESTCONF`客户端的`YANG` [RFC7950](https://tools.ietf.org/html/rfc7950)数据模块，包括`call home`。
 
 ## NETCONF服务器
 
@@ -71,7 +75,65 @@
 - S6 一旦建立了`SSH`或`TLS`连接，`NETCONF`/`RESTCONF`服务器将启动`NETCONF`服务器[RFC6241](https://tools.ietf.org/html/rfc6241)或`RESTCONF`服务器[RFC8040](https://tools.ietf.org/html/rfc8040)协议，具体取决于如何配置。 假设使用`IANA`分配的端口，则在连接到远程端口`4334`或远程端口`4335`之后使用`NETCONF`服务器协议，并且在连接到远程端口`4336`之后使用`RESTCONF`服务器协议。
 - S7 如果需要长连接，作为连接发起者的`NETCONF`/`RESTCONF`服务器应该使用`keep-alive`机制主动测试连接的活跃性。 对于基于`TLS`的连接，`NETCONF`/`RESTCONF`服务器应该发送[RFC6520](https://tools.ietf.org/html/rfc6520)定义的`HeartbeatRequest`消息。 对于基于`SSH`的连接，根据[RFC4254的第4节](https://tools.ietf.org/html/rfc4254#section-4)，服务器应该发送一个`SSH_MSG_GLOBAL_REQUEST`消息，其中包含一个特别不存在的`"request name"`值（例如keepalive@ietf.org）和`"want reply"`值设置为`"1"`。
 
+### 服务器配置数据模型
+
+如何配置`NETCONF`或`RESTCONF`服务器超出了本文的范围。
+
+这包括可能用于指定主机名，`IP`地址，端口，算法或其他相关参数的配置。 也就是说，[NETCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-NETCONF-MODELS)和[RESTCONF-MODELS](https://tools.ietf.org/html/rfc8071#ref-RESTCONF-MODELS)中提供了用于配置NETCONF和RESTCONF服务器的YANG [RFC7950](https://tools.ietf.org/html/rfc7950)数据模块，包括`call home`。
+
+## 安全考虑
+
+[RFC6242](https://tools.ietf.org/html/rfc6242)和[RFC7589](https://tools.ietf.org/html/rfc7589)以及扩展[RFC4253](https://tools.ietf.org/html/rfc4253)，[RFC5246 ](https://tools.ietf.org/html/rfc5246)和[RFC8040](https://tools.ietf.org/html/rfc8040)中描述的安全考虑也适用于此处。
+
+这个`RFC`与`SSH`/`TLS`服务器启动底层TCP连接的方式背离了标准的`SSH`和`TLS`的使用。 这种逆转与[RFC4253](https://tools.ietf.org/html/rfc4253)中的“客户端启动连接”和[RFC6125](https://tools.ietf.org/html/rfc6125)不一致，它们表示**“客户端必须构建可接受的引用标识符列表，并且必须独立于服务提供的标识符“** 。
+
+与这些差异有关的风险主要集中在服务器认证上，客户无法将独立构建的引用标识符与服务器提供的引用标识符进行比较。为了减轻这些风险，要求`NETCONF`/`RESTCONF`客户端验证服务器的`SSH`主机密钥或证书，通过对预先配置的发行者证书进行证书路径验证，或者通过将主机密钥或证书与先前信任或“固定”值。此外，当使用证书时，要求客户端能够将在提供的证书中编码的标识符与客户端预先配置的标识符（例如，序列号）相匹配。
+
+对于`NETCONF`/`RESTCONF`服务器提供`X.509`证书的情况，`NETCONF`/`RESTCONF`客户端应确保用于证书路径验证的`"\"`预配置颁发者证书对于服务器的制造商是唯一的。也就是说，证书不应该属于可能为多个制造商颁发证书的第三方认证机构。当使用将共享秘密（例如，密码）传递给服务器的客户机认证机制时，这是特别重要的。否则可能会导致客户端将共享密钥发送到恰好与客户端配置期望的服务器具有相同身份（例如，序列号）的另一个服务器的情况。
+
+接下来会考虑与服务器身份验证无关的问题。
+
+运行`NETCONF Call Home`或`RESTCONF Call Home`的面向`Internet`的主机将通过诸如"[zmap](https://tools.ietf.org/html/rfc8071#ref-zmap)"之类的扫描工具进行指纹识别。 `SSH`和`TLS`都提供了许多方法可以在主机上进行指纹识别。 `SSH`和`TLS`服务器相当成熟，能够抵御攻击，但是`SSH`和`TLS`客户端可能不够强大。实施者和部署需要确保提供软件更新机制，以便及时修复漏洞。
+
+攻击者可以在推断出攻击者没有拥有有效密钥之前，对`NETCONF`/`RESTCONF`客户端进行拒绝服务（`DoS`）攻击，执行计算量大的操作。 例如，在[TLS1.3]()中，`ClientHello`消息包含成本很高的非对称密钥操作的密钥共享值。 推荐使用常见的减轻`DoS`攻击的预防措施，例如在一系列不成功的登录尝试后暂时将源地址列入黑名单。
+
+当使用带有`RESTCONF`协议的`call home`时，在使用一些`HTTP`认证方案时，特别要注意传送共享密钥（例如密码）的`Basic` [RFC7617](https://tools.ietf.org/html/rfc7617)和`Digest` [RFC7616](https://tools.ietf.org/html/rfc7616)方案。 对于使用的任何`HTTP`客户机认证方案，实施者和部署都应确保查看`RFC`中的“安全注意事项”部分。
+
+## IANA考虑事项
+
+IANA已经在“用户端口”范围内为服务名称“`netconf-ch-ssh`”，“`netconf-ch-tls`”和“`restconf-ch-tls`”分配了三个`TCP`端口号。 这些端口将是`NETCONF Call Home`和`RESTCONF Call Home`协议的默认端口。 以下是遵循[RFC6335](https://tools.ietf.org/html/rfc6335)中的规则的注册模板。
+
+```txt
+Service Name:           netconf-ch-ssh
+Port Number:            4334
+Transport Protocol(s):  TCP
+Description:            NETCONF Call Home (SSH)
+Assignee:               IESG <iesg@ietf.org>
+Contact:                IETF Chair <chair@ietf.org>
+Reference:              RFC 8071
+
+Service Name:           netconf-ch-tls
+Port Number:            4335
+Transport Protocol(s):  TCP
+Description:            NETCONF Call Home (TLS)
+Assignee:               IESG <iesg@ietf.org>
+Contact:                IETF Chair <chair@ietf.org>
+Reference:              RFC 8071
+
+Service Name:           restconf-ch-tls
+Port Number:            4336
+Transport Protocol(s):  TCP
+Description:            RESTCONF Call Home (TLS)
+Assignee:               IESG <iesg@ietf.org>
+Contact:                IETF Chair <chair@ietf.org>
+Reference:              RFC 8071
+```
 
 ## 参考
 
 - [RFC 8071 - NETCONF Call Home and RESTCONF Call Home](https://tools.ietf.org/html/rfc8071)
+- [RFC6242 - Using the NETCONF Protocol over Secure Shell (SSH)](https://tools.ietf.org/html/rfc6242)
+- [RFC7589 - Using the NETCONF Protocol over Transport Layer Security (TLS) with Mutual X.509 Authentication](https://tools.ietf.org/html/rfc7589)
+- [RFC4253 -  The Secure Shell (SSH) Transport Layer Protocol](https://tools.ietf.org/html/rfc4253)
+- [RFC5246 -  The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
+- [RFC8040 - RESTCONF Protocol](https://tools.ietf.org/html/rfc8040)
