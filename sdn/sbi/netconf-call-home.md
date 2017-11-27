@@ -1,6 +1,7 @@
 # NETCONF Call Home
 
-本文主要内容都来自于[RFC8071](https://tools.ietf.org/html/rfc8071)。
+![rfc8071 datatracker status](../images/rfc8071-datatracker-status.jpg)
+本文主要内容都来自于今年二月发布的[RFC8071 - NETCONF Call Home and RESTCONF Call Home](https://tools.ietf.org/html/rfc8071)，该RFC从2015年4月提出到最终发布一共修改了17个版本，其间修改内容可以[点击查看详细内容](https://datatracker.ietf.org/doc/rfc8071/)。
 
 ## 介绍
 
