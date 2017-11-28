@@ -129,6 +129,9 @@ Assignee:               IESG <iesg@ietf.org>
 Contact:                IETF Chair <chair@ietf.org>
 Reference:              RFC 8071
 ```
+## 参考实现
+
+关于`NETCONF Call Home`的实现，可以参考`Juniper`在[github](https://github.com/Juniper)上开源的[netconf-call-home](https://github.com/Juniper/netconf-call-home)。
 
 ## 参考
 
@@ -138,3 +141,4 @@ Reference:              RFC 8071
 - [RFC4253 -  The Secure Shell (SSH) Transport Layer Protocol](https://tools.ietf.org/html/rfc4253)
 - [RFC5246 -  The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
 - [RFC8040 - RESTCONF Protocol](https://tools.ietf.org/html/rfc8040)
+- [Juniper netconf-call-home](https://github.com/Juniper/netconf-call-home)
