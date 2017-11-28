@@ -117,4 +117,153 @@ session
     会话的唯一标识符。 该值是[RFC4741](https://tools.ietf.org/html/rfc4741)中定义的`NETCONF`会话标识符。
 - `transport (identityref, transport)`
     标识每个会话的传输。 本文档定义了“`netconf-ssh`”，“`netconf-soap-over-beep`”，“`netconf-soap-over-https`”，“`netconf-beep`”和“`netconf-tls`”（见[第5节](https://tools.ietf.org/html/rfc6022#section-5)）。
--
+- `username (string)`
+    `username`是由`NETCONF`传输协议验证的客户端身份。 用于导出用户名的算法是`NETCONF`传输协议特定的，另外还特定于`NETCONF`传输协议使用的验证机制。
+- `source-host (inet:host)`
+    主机标识符（`IP`地址或名称）的`NETCONF`客户端。
+- `login-time (yang:date-and-time)`
+    在服务器上建立会话的时间。
+- `in-rpcs (yang:zero-based-counter32)`
+    接收到正确的`<rpc>`消息的数量。
+- `in-bad-rpcs (yang:zero-based-counter32)`
+    预期发送`<rpc>`消息时收到的消息数量，不正确的`<rpc>`消息。 这包括`rpc`层上的`XML`解析错误和错误。
+- `out-rpc-errors (yang:zero-based-counter32)`
+    在`<rpc-reply>`中包含`<rpc-error>`元素的消息数量。
+- `out-notifications (yang:zero-based-counter32)`
+    发送的`<notification>`消息的数量。
+
+#### `/netconf-state/statistics`子树
+
+有关`NETCONF`服务器的统计数据。
+
+```
+statistics
+      /netconf-start-time
+      /in-bad-hellos
+      /in-sessions
+      /dropped-sessions
+      /in-rpcs
+      /in-bad-rpcs
+      /out-rpc-errors
+      /out-notifications
+```
+
+statistics:
+
+    包含`NETCONF`服务器的与管理会话相关的性能数据。
+
+- `netconf-start-time (yang:date-and-time)`
+    管理子系统启动的日期和时间。
+- `in-bad-hellos (yang:zero-based-counter32)`
+    收到无效的<hello>消息的数量。
+- `in-sessions (yang:zero-based-counter32)`
+    会话开始的数量。
+- `dropped-sessions (yang:zero-based-counter32)`
+    异常终止的会话数，例如，由于空闲超时或传输关闭。
+- `in-rpcs (yang:zero-based-counter32)`
+    接收到的消息的数量。
+- `in-bad-rpcs (yang:zero-based-counter32)`
+    预期发送`<rpc>`消息时收到的消息数量，不正确的`<rpc>`消息。 这包括`rpc`层上的`XML`解析错误和错误。
+- `out-notifications (yang:zero-based-counter32)`
+    在`<rpc-reply>`中包含`<rpc-error>`元素的消息数量。
+
+## 模式的具体操作
+
+### <get-schema>操作
+
+- 描述：
+
+    此操作用于从`NETCONF`服务器检索模式。
+
+- 参数：
+    - identifier (string)：模式列表条目的标识符。 强制性参数。
+    - version (string)：请求的模式的版本。 可选参数。
+    - format (identityref, schema-format)：模式的数据建模语言。 未指定时，默认值为“yang”。 可选参数。
+
+- 正面回应：
+
+    `NETCONF`服务器返回请求的模式。
+
+- 负面的回应：
+
+    如果请求的模式不存在，那么`<error-tag>`是“无效值”。
+    如果多个模式匹配请求的参数，那么`<error-tag>`是'`operation-failed`'，而`<error-app-tag>`是'`data-not-unique`'。
+
+## 例子
+
+### 通过`<get>`操作检索模式列表
+
+`NETCONF`客户端通过`<get>`操作检索`/netconf-state/schemas`子树，从`NETCONF`服务器中检索支持的模式列表。
+
+请求会话的可用模式将在包含`<identifier>`，`<version>`，`<format>`和`<location>`元素的答复中返回。
+
+响应数据可用于确定可用模式及其版本。 模式本身（即模式内容）不会在响应中返回。 可选的`<location>`元素包含一个`URI`，可以通过其他协议（如`ftp` [RFC0959](https://tools.ietf.org/html/rfc0959)或`http(s)`[RFC2616](https://tools.ietf.org/html/rfc2616) [RFC2818](https://tools.ietf.org/html/rfc2818)）或特殊值“`NETCONF`”来检索架构，这意味着 可以通过`<get-schema>`操作从设备检索模式。
+
+例子：
+
+```XML
+<rpc message-id="101"
+     xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <get>
+    <filter type="subtree">
+      <netconf-state xmlns=
+      "urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">
+        <schemas/>
+      </netconf-state>
+    </filter>
+  </get>
+</rpc>
+```
+
+`NETCONF`服务器返回可用于检索的模式列表。
+
+```xml
+<rpc-reply message-id="101"
+           xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <data>
+    <netconf-state
+    xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">
+      <schemas>
+        <schema>
+          <identifier>foo</identifier>
+          <version>1.0</version>
+          <format>xsd</format>
+          <namespace>http://example.com/foo</namespace>
+          <location>ftp://ftp.example.com/schemas/foo_1.0.xsd</location>
+          <location>http://www.example.com/schema/foo_1.0.xsd</location>
+          <location>NETCONF</location>
+        </schema>
+        <schema>
+          <identifier>foo</identifier>
+          <version>1.1</version>
+          <format>xsd</format>
+          <namespace>http://example.com/foo</namespace>
+          <location>ftp://ftp.example.com/schemas/foo_1.1.xsd</location>
+          <location>http://www.example.com/schema/foo_1.1.xsd</location>
+          <location>NETCONF</location>
+        </schema>
+        <schema>
+          <identifier>bar</identifier>
+          <version>2008-06-01</version>
+          <format>yang</format>
+          <namespace>http://example.com/bar</namespace>
+          <location>
+            http://example.com/schema/bar@2008-06-01.yang
+          </location>
+          <location>NETCONF</location>
+        </schema>
+        <schema>
+          <identifier>bar-types</identifier>
+          <version>2008-06-01</version>
+          <format>yang</format>
+          <namespace>http://example.com/bar</namespace>
+          <location>
+            http://example.com/schema/bar-types@2008-06-01.yang
+          </location>
+          <location>NETCONF</location>
+        </schema>
+      </schemas>
+    </netconf-state>
+  </data>
+</rpc-reply>
+```
