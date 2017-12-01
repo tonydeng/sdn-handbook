@@ -39,7 +39,7 @@
   - [OVS编译](ovs/build.md)
   - [OVS原理](ovs/internal.md)
   - [Open Virtual Network](ovs/ovn.md)
-    - [OVN编译](ovs/ovn-ubuntu.md)
+    - [OVN在Ubuntu编译](ovs/ovn-ubuntu.md)
     - [OVN实践](ovs/ovn-internal.md)
     - [OVN高可用](ovs/ovn-ha.md)
     - [OVN Kubernetes插件](ovs/ovn-kubernetes.md)
