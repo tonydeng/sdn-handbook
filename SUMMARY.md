@@ -132,3 +132,7 @@
 
 - [15. FAQ](FAQ.md)
 - [16. 参考文档](reference.md)
+
+## ChangeLog
+
+- [ChangeLog](CHANGELOG.md)
