@@ -45,7 +45,7 @@
     - [OVN Kubernetes插件](ovs/ovn-kubernetes.md)
     - [OVN Docker插件](ovs/ovn-docker.md)
     - [OVN OpenStack](ovs/ovn-openstack.md)
-- [5. DPDK](dpdk/index.md)
+- [5. DPDK](dpdk/README.md)
   - [DPDK简介](dpdk/introduction.md)
   - [DPDK安装](dpdk/install.md)
   - [报文转发模型](dpdk/forwarding.md)
