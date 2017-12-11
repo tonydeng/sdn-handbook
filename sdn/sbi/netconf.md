@@ -123,7 +123,8 @@ NETCONF提供了[九种基本操作](https://tools.ietf.org/html/rfc6241#section
 
 原则上需要调用配置数据库的相关数据，执行并返回`rpc-xml`请求的结果。
 
-## 参考文档
+## 参考
 
+1. [rfc6241-zh](https://github.com/tonydeng/rfc6241-zh)
 1. [RFC6241](https://tools.ietf.org/html/rfc6241)
 1. [基于NETCONF协议的网管系统Agent端设计和实](http://doc.mbalib.com/view/e2d0c5b3faf4a205059ba5bc9704020d.html)
