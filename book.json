@@ -1,0 +1,8 @@
+{
+    "plugins" : [ "anchors", "ga" ],
+    "pluginsConfig": {
+        "ga": {
+            "token": "UA-80673215-1"
+        }
+    }
+}

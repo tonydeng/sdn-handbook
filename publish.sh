@@ -26,3 +26,6 @@ git push origin gh-pages
 
 # checkout to the master branch
 git checkout master
+
+# clean gh-pages branch
+git br -D gh-pages
