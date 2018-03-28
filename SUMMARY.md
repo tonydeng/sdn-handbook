@@ -15,6 +15,8 @@
   - [TCP](basic/tcp.md)
   - [VLAN](basic/vlan.md)
   - [Overlay](basic/overlay.md)
+  - [SNMP](basic/snmp.md)
+  - [LLDP](basic/lldp.md)
 
 - [3. Linux网络](linux/README.md)
   - [Linux网络配置](linux/config.md)
