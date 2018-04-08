@@ -67,7 +67,9 @@
         - [IPSec VPN](secure/vpn/ipsecvpn.md)
         - [SSL VPN](secure/vpn/sslvpn.md)
     - [ICG](secure/icg/README.md)
-    - [FW](secure/fw/README.md)
+    - [Firewall](secure/fw/README.md)
+        - [工作原理](secure/fw/principle.md)
+        - [常见分类](secure/fw/classify.md)
 
 ## SDN&NFV
 
