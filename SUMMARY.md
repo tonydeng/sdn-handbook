@@ -124,8 +124,8 @@
 
 - [11. Mininet](mininet/README.md)
 - [12. Neutron](neutron/README.md)
-- [13. SDN实践案例](practice/READMEmd)
-  - [Goolge网络](practice/google.md)
+- [13. SDN实践案例](practice/README.md)
+  - [Goolge网络](practice/google/README.md)
 
 ## SDN业务类型示例
 
