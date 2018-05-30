@@ -92,6 +92,8 @@
         - [YANG Module for NETCONF Monitoring](sdn/sbi/yang-module-for-netconf-monitoring.md)
         - [NETCONF请求和响应中的标签](sdn/sbi/netconf-tags.md)
     - [P4](sdn/sbi/p4.md)
+    - [AAA](sdn/aaa/README.md)
+        - [Radius](sdn/aaa/radius.md)
   - [数据平面](sdn/dataplane.md)
 - [8. NFV](nfv/README.md)
 - [9. SDWAN](sdwan/README.md)
