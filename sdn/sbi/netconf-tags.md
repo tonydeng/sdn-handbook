@@ -243,7 +243,7 @@
         - 如果`payload`元素可以与错误关联，则上下文节点是`rpc`请求的文档节点（即`<rpc>`元素）。
         - 否则，上下文节点是所有数据模型的根，即所有数据模型中具有作为子节点的顶级节点的节点。
 - `error-message`：包含一个适合人类阅读的字符串，用于描述错误情况。 如果没有为特定错误条件提供适当的消息，则该元素将不存在。 这个元素应该包含一个在[[W3C.REC-xml-20001006]](https://tools.ietf.org/html/rfc6241#ref-W3C.REC-xml-20001006)中定义并在[[RFC3470]](https://tools.ietf.org/html/rfc3470)中讨论的`"xml：lang"`属性。
-- `error-info`：包含协议或数据模型特定的错误内容。 如果没有为特定的错误条件提供这样的错误内容，则该元素将不存在。 [RFC6261 - Network Configuration Protocol (NETCONF) - 附录A](https://tools.ietf.org/html/rfc6241#appendix-A)中的列表定义了每个错误的任何强制错误信息内容。 在任何协议规定的内容之后，数据模型定义可能会要求某些应用层错误信息包含在错误信息容器中。 一个实现可以包含额外的元素来提供扩展和/或实现特定的调试信息。
+- `error-info`：包含协议或数据模型特定的错误内容。 如果没有为特定的错误条件提供这样的错误内容，则该元素将不存在。 [RFC6241 - Network Configuration Protocol (NETCONF) - 附录A](https://tools.ietf.org/html/rfc6241#appendix-A)中的列表定义了每个错误的任何强制错误信息内容。 在任何协议规定的内容之后，数据模型定义可能会要求某些应用层错误信息包含在错误信息容器中。 一个实现可以包含额外的元素来提供扩展和/或实现特定的调试信息。
 
 例子：
 
