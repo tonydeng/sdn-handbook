@@ -126,6 +126,7 @@
 - [12. Neutron](neutron/README.md)
 - [13. SDN实践案例](practice/README.md)
   - [Goolge网络](practice/google/README.md)
+      - [B4](practice/google/b4.md)
 
 ## SDN业务类型示例
 
