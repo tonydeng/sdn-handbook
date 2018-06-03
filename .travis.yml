@@ -1,0 +1,26 @@
+language: node_js
+node_js: stable
+before_install:
+- export TZ='Asia/Shanghai'
+install:
+- npm install -g gitbook
+- npm install -g gitbook-cli
+- gitbook install
+script:
+- gitbook build
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token:
+    secure: 1hdGpqo5g0DQ5ZphQO2mMz/rtVG3QUJRCA/a/rX9FMXe8rBl0MdB4pHjBW0kUJ37c7bN4Xq15b1d3vEDlHWdRJWHtbLg4A/ePxpUcqfaB4Fz42Wq+/VYezEvTLceCk9ruMiSWAcjViFrCPI7rRysF02U8kRgP12hrMVty5Zth4hFbMEjp3iJPXSLPvD1GqysedZjXqcxDqRixNJo/x0g9OfoHuKRFV8K0f4PlMQgEhqm2Y6D8otoDKUNPcOl8eBswW4Ph1nbzxbZFwfeTaZXlDQVqkbI9yNuN6r5JGqdH6F211nb9qe5qmWfft1OTY1KMKypLZhKMpaoMHtedIpdQtbiKRun9Vh7Za943LKTk2ZuAjtTMUF6aGVg4QjsTEdtwSpE4+LOcXtCPTJXFt28jftoqiK/w/PlekVxjvtTsgrW/mFz93LPZzBewulE9VWTlaXzxaGlUbOUSUO9nx6WN+4y596GIT5bWM+sCO9+qOrKUrlQDvzY/gQeEyBu3jqjgMbY7UM3ve+OmmAdbxawSY6qGVcatarjtYKVWjsE0eRUpNzTI1XTJP4NZyWxCjyKK6Wo4qozTuZF2hxwNqDBuaSLut2Ga+QoHBv99E8gEZmWoARBYBO2K7Oe9c6PvTsQzu6prDGQ+CjCdsB5sZGVv4M3msTLMuB1QnZmnWDN4Qo=
+  local_dir: _book
+  fqdn: tonydeng.github.io
+  name: Travis CI
+  email: travis@travis-ci.org
+  on:
+    branch: master
