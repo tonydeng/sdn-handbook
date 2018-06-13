@@ -1,8 +1,30 @@
 {
-    "plugins" : [ "anchors", "ga" ],
+    "plugins": ["anchors", "ga", "github-buttons"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-80673215-1"
+        },
+        "github-buttons": {
+            "buttons": [{
+                    "user": "tonydeng",
+                    "repo": "sdn-handbook",
+                    "type": "star",
+                    "size": "small",
+                    "count": true
+                },
+                {
+                    "user": "tonydeng",
+                    "type": "follow",
+                    "size": "small",
+                    "width": "170",
+                    "count": true
+                }, {
+                    "user": "tonydeng",
+                    "type": "watch",
+                    "size": "small",
+                    "count": true
+                }
+            ]
         }
     }
 }
