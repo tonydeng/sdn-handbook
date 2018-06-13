@@ -34,7 +34,7 @@
 `IEEE`提出了`802.1x`标准，这是基于端口的标准，用于对无线网络的接入认证，在认证时，也是采用了`RADIUS`协议。
 
 ## 基本工作原理
-![RADIUS sequence](images/RADIUS.gif)
+![RADIUS sequence](images/radius.gif)
 ### 认证过程
 
 1. 用户接入`NAS`，`NAS`向`RADIUS`服务器使用`Access-Request`数据包提交用户信息 ，包括用户名、密码等相关信息，其中用户密码是经过`MD5`加密的，双方使用共享密钥，这个密钥不经过网络传播
