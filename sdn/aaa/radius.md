@@ -109,5 +109,7 @@
 
 ## 扩展阅读
 
+- [RFC2865-Remote Authentication Dial In User Service (RADIUS)](https://tools.ietf.org/html/rfc2865)
+- [RFC2866-RADIUS Accounting](https://tools.ietf.org/html/rfc2866)
 - [在 Linux 上构建一个 RADIUS 服务器](https://www.ibm.com/developerworks/cn/linux/l-RADIUS/index.html)
 - [Radius 认证协议介绍](https://blog.byneil.com/radius-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE%E4%BB%8B%E7%BB%8D/)
