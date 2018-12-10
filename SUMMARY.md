@@ -71,6 +71,7 @@
         - [工作原理](secure/fw/principle.md)
         - [常见分类](secure/fw/classify.md)
         - [演进过程](secure/fw/evolution.md)
+    - [IPS](secure/ips/README.md)
 
 ## SDN&NFV
 
