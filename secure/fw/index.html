@@ -1,0 +1,1772 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Firewall · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="principle.html" />
+    
+    
+    <link rel="prev" href="../icg/" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../basic/">
+            
+                <a href="../../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../basic/tcpip.html">
+            
+                <a href="../../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../basic/arp.html">
+            
+                <a href="../../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../basic/icmp.html">
+            
+                <a href="../../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../basic/route.html">
+            
+                <a href="../../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../basic/switch.html">
+            
+                <a href="../../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../basic/udp.html">
+            
+                <a href="../../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../basic/dhcp.html">
+            
+                <a href="../../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../basic/tcp.html">
+            
+                <a href="../../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../basic/vlan.html">
+            
+                <a href="../../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../basic/overlay.html">
+            
+                <a href="../../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../basic/snmp.html">
+            
+                <a href="../../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../basic/lldp.html">
+            
+                <a href="../../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../linux/">
+            
+                <a href="../../linux/">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../linux/config.html">
+            
+                <a href="../../linux/config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../../linux/virtual-device.html">
+            
+                <a href="../../linux/virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../linux/iptables.html">
+            
+                <a href="../../linux/iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../linux/loadbalance.html">
+            
+                <a href="../../linux/loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../linux/tc.html">
+            
+                <a href="../../linux/tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../linux/sr-iov.html">
+            
+                <a href="../../linux/sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../linux/vrf.html">
+            
+                <a href="../../linux/vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../linux/bpf/">
+            
+                <a href="../../linux/bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../../linux/bpf/bcc.html">
+            
+                <a href="../../linux/bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../../linux/bpf/troubleshooting.html">
+            
+                <a href="../../linux/bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../linux/XDP/">
+            
+                <a href="../../linux/XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="../../linux/XDP/design.html">
+            
+                <a href="../../linux/XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="../../linux/XDP/use-cases.html">
+            
+                <a href="../../linux/XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../linux/tools.html">
+            
+                <a href="../../linux/tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../../linux/tcpdump.html">
+            
+                <a href="../../linux/tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../../linux/scapy.html">
+            
+                <a href="../../linux/scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../linux/kernel-network-params.html">
+            
+                <a href="../../linux/kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../ovs/build.html">
+            
+                <a href="../../ovs/build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../ovs/internal.html">
+            
+                <a href="../../ovs/internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../../ovs/ovn.html">
+            
+                <a href="../../ovs/ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="../../ovs/ovn-ubuntu.html">
+            
+                <a href="../../ovs/ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="../../ovs/ovn-internal.html">
+            
+                <a href="../../ovs/ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="../../ovs/ovn-ha.html">
+            
+                <a href="../../ovs/ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="../../ovs/ovn-kubernetes.html">
+            
+                <a href="../../ovs/ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="../../ovs/ovn-docker.html">
+            
+                <a href="../../ovs/ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.6" data-path="../../ovs/ovn-openstack.html">
+            
+                <a href="../../ovs/ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../dpdk/">
+            
+                <a href="../../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../dpdk/introduction.html">
+            
+                <a href="../../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../dpdk/install.html">
+            
+                <a href="../../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../dpdk/forwarding.html">
+            
+                <a href="../../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../dpdk/numa.html">
+            
+                <a href="../../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../dpdk/ivshmem.html">
+            
+                <a href="../../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../dpdk/PCIe.html">
+            
+                <a href="../../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../dpdk/hardware.html">
+            
+                <a href="../../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../dpdk/queue.html">
+            
+                <a href="../../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../dpdk/offload.html">
+            
+                <a href="../../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../dpdk/io-virtualization.html">
+            
+                <a href="../../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../dpdk/ovs-dpdk.html">
+            
+                <a href="../../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../dpdk/spdk.html">
+            
+                <a href="../../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../vpn/">
+            
+                <a href="../vpn/">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../vpn/ipsecvpn.html">
+            
+                <a href="../vpn/ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../vpn/sslvpn.html">
+            
+                <a href="../vpn/sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../icg/">
+            
+                <a href="../icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="principle.html">
+            
+                <a href="principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="classify.html">
+            
+                <a href="classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="evolution.html">
+            
+                <a href="evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../sdn/">
+            
+                <a href="../../sdn/">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../sdn/yang-language.html">
+            
+                <a href="../../sdn/yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../sdn/controller/">
+            
+                <a href="../../sdn/controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../sdn/controller/odl/">
+            
+                <a href="../../sdn/controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../../sdn/controller/odl/projects.html">
+            
+                <a href="../../sdn/controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../../sdn/controller/odl/datastore.html">
+            
+                <a href="../../sdn/controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../sdn/controller/onos.html">
+            
+                <a href="../../sdn/controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../sdn/controller/floodlight.html">
+            
+                <a href="../../sdn/controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../sdn/controller/ryu.html">
+            
+                <a href="../../sdn/controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../sdn/controller/pox.html">
+            
+                <a href="../../sdn/controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../sdn/sbi/README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../sdn/sbi/openflow.html">
+            
+                <a href="../../sdn/sbi/openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../sdn/sbi/of-config.html">
+            
+                <a href="../../sdn/sbi/of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../sdn/sbi/netconf.html">
+            
+                <a href="../../sdn/sbi/netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.3.1" data-path="../../sdn/sbi/netconf-call-home.html">
+            
+                <a href="../../sdn/sbi/netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.2" data-path="../../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                <a href="../../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="../../sdn/sbi/netconf-tags.html">
+            
+                <a href="../../sdn/sbi/netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../sdn/sbi/p4.html">
+            
+                <a href="../../sdn/sbi/p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../sdn/aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../../sdn/aaa/radius.html">
+            
+                <a href="../../sdn/aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../sdn/dataplane.html">
+            
+                <a href="../../sdn/dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../nfv/">
+            
+                <a href="../../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../sdwan/">
+            
+                <a href="../../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../mininet/">
+            
+                <a href="../../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../neutron/">
+            
+                <a href="../../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../practice/google.html">
+            
+                <a href="../../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../sample/">
+            
+                <a href="../../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../sample/application-scenarios.html">
+            
+                <a href="../../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../sample/scp.html">
+            
+                <a href="../../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../reference.html">
+            
+                <a href="../../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Firewall</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9632;&#x706B;&#x5899;&#xFF08;firewall&#xFF09;&#x4ECB;&#x7ECD;"><a name="&#x9632;&#x706B;&#x5899;&#xFF08;firewall&#xFF09;&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#&#x9632;&#x706B;&#x5899;&#xFF08;firewall&#xFF09;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9632;&#x706B;&#x5899;&#xFF08;<code>Firewall</code>&#xFF09;&#x4ECB;&#x7ECD;</h1>
+<h2 id="&#x6765;&#x6E90;"><a name="&#x6765;&#x6E90;" class="plugin-anchor" href="#&#x6765;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6765;&#x6E90;</h2>
+<p><img src="images/firewall-origin.jpg" alt="&#x9632;&#x706B;&#x5899;&#x8D77;&#x6E90;"></p>
+<p>&#x9632;&#x706B;&#x5899;&#x7684;&#x672C;&#x4E49;&#xFF0C;&#x662F;&#x6307;&#x53E4;&#x4EE3;&#x6784;&#x7B51;&#x548C;&#x4F7F;&#x7528;&#x6728;&#x5236;&#x7ED3;&#x6784;&#x623F;&#x5C4B;&#x65F6;&#xFF0C;&#x4E3A;&#x9632;&#x6B62;&#x706B;&#x707E;&#x53D1;&#x751F;&#x53CA;&#x8513;&#x5EF6;&#xFF0C;&#x4EBA;&#x4EEC;&#x5C06;&#x575A;&#x56FA;&#x77F3;&#x5757;&#x5806;&#x780C;&#x5728;&#x623F;&#x5C4B;&#x5468;&#x56F4;&#x505A;&#x4E3A;&#x5C4F;&#x969C;&#xFF0C;&#x8FD9;&#x79CD;&#x9632;&#x62A4;&#x7ED3;&#x6784;&#x5EFA;&#x7B51;&#x5C31;&#x88AB;&#x79F0;&#x4E3A;&#x9632;&#x706B;&#x5899;&#x3002;</p>
+<p>&#x73B0;&#x4EE3;&#x7F51;&#x7EDC;&#x65F6;&#x4EE3;&#x5F15;&#x7528;&#x6B64;&#x55BB;&#x610F;&#xFF0C;&#x6307;&#x9694;&#x79BB;&#x672C;&#x5730;&#x7F51;&#x7EDC;&#x4E0E;&#x5916;&#x754C;&#x7F51;&#x7EDC;&#x6216;&#x662F;&#x5C40;&#x57DF;&#x7F51;&#x95F4;&#x4E0E;&#x4E92;&#x8054;&#x7F51;&#x6216;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x4E00;&#x9053;&#x9632;&#x5FA1;&#x7CFB;&#x7EDF;&#xFF0C;&#x501F;&#x7531;&#x63A7;&#x5236;&#x8FC7;&#x6EE4;&#x9650;&#x5236;&#x6D88;&#x606F;&#x6765;&#x4FDD;&#x62A4;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x3002;</p>
+<p><img src="images/Firewall_networking.png" alt="&#x9632;&#x706B;&#x5899;&#x9694;&#x5F00;&#x4FE1;&#x4EFB;&#x533A;&#x57DF;&#x548C;&#x975E;&#x4FE1;&#x4EFB;&#x533A;&#x57DF;"></p>
+<h2 id="&#x57FA;&#x7840;&#x5B9A;&#x4E49;"><a name="&#x57FA;&#x7840;&#x5B9A;&#x4E49;" class="plugin-anchor" href="#&#x57FA;&#x7840;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x5B9A;&#x4E49;</h2>
+<p>&#x4F20;&#x7EDF;&#x610F;&#x4E49;&#x4E0A;&#xFF0C;&#x9632;&#x706B;&#x5899;&#xFF08;<code>Firewall</code>&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x67B6;&#x8BBE;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E0E;&#x4F01;&#x4E1A;&#x5185;&#x7F51;&#x4E4B;&#x95F4;&#x7684;&#x4FE1;&#x606F;&#x5B89;&#x5168;&#x7CFB;&#x7EDF;&#xFF0C;&#x6839;&#x636E;&#x4F01;&#x4E1A;&#x9884;&#x5B9A;&#x7684;&#x7B56;&#x7565;&#x6765;&#x76D1;&#x63A7;&#x5F80;&#x6765;&#x7684;&#x4F20;&#x8F93;&#x3002;</p>
+<p>&#x9632;&#x706B;&#x5899;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x53F0;&#x4E13;&#x5C5E;&#x7684;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x6216;&#x662F;&#x8FD0;&#x884C;&#x4E8E;&#x4E3B;&#x673A;&#x4E0A;&#x6765;&#x68C0;&#x67E5;&#x5404;&#x4E2A;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x4E0A;&#x7684;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x3002;</p>
+<p>&#x9632;&#x706B;&#x5899;&#x662F;&#x76EE;&#x524D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x79CD;&#x7F51;&#x7EDC;&#x9632;&#x62A4;&#x8BBE;&#x5907;&#xFF0C;&#x4ECE;&#x4E13;&#x4E1A;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x662F;&#x4F4D;&#x4E8E;&#x4E24;&#x4E2A;(&#x6216;&#x591A;&#x4E2A;)&#x7F51;&#x7EDC;&#x95F4;&#xFF0C;&#x5B9E;&#x884C;&#x7F51;&#x7EDC;&#x95F4;&#x8BBF;&#x95EE;&#x6216;&#x63A7;&#x5236;&#x7684;&#x4E00;&#x7EC4;&#x7EC4;&#x4EF6;&#x96C6;&#x5408;&#x4E4B;&#x786C;&#x4EF6;&#x6216;&#x8F6F;&#x4EF6;&#x3002;</p>
+<p><img src="images/firewall-basic-network-topology.jpg" alt="&#x9632;&#x706B;&#x5899;&#x57FA;&#x7840;&#x7F51;&#x7EDC;&#x62D3;&#x6251;"></p>
+<h2 id="&#x529F;&#x80FD;"><a name="&#x529F;&#x80FD;" class="plugin-anchor" href="#&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x529F;&#x80FD;</h2>
+<p>&#x9632;&#x706B;&#x5899;&#x6700;&#x57FA;&#x672C;&#x7684;&#x529F;&#x80FD;&#x5C31;&#x662F;&#x9694;&#x79BB;&#x7F51;&#x7EDC;&#xFF0C;&#x901A;&#x8FC7;&#x5C06;&#x7F51;&#x7EDC;&#x5212;&#x5206;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x533A;&#x57DF;&#xFF08;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x79F0;&#x4E3A;<code>ZONE</code>&#xFF09;&#xFF0C;&#x5236;&#x5B9A;&#x51FA;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x4E4B;&#x95F4;&#x7684;<a href="#access_control">&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a>&#x7B56;&#x7565;&#x6765;&#x63A7;&#x5236;&#x4E0D;&#x540C;&#x4FE1;&#x4EFB;&#x7A0B;&#x5EA6;&#x533A;&#x57DF;&#x95F4;&#x4F20;&#x9001;&#x7684;&#x6570;&#x636E;&#x6D41;&#x3002;&#x4EE5;&#x907F;&#x514D;&#x5B89;&#x5168;&#x7B56;&#x7565;&#x4E2D;&#x7981;&#x6B62;&#x7684;&#x4E00;&#x4E9B;&#x901A;&#x4FE1;&#x3002;&#x5B83;&#x6709;&#x63A7;&#x5236;&#x4FE1;&#x606F;&#x57FA;&#x672C;&#x7684;&#x4EFB;&#x52A1;&#x5728;&#x4E0D;&#x540C;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;&#x3002;</p>
+<blockquote>
+<p>&#x4F8B;&#x5982;&#x4E92;&#x8054;&#x7F51;&#x662F;&#x4E0D;&#x53EF;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x800C;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x662F;&#x9AD8;&#x5EA6;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;&#x3002;</p>
+</blockquote>
+<p>&#x5178;&#x578B;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;&#x5305;&#x62EC;&#x4E92;&#x8054;&#x7F51;(&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;) &#x548C;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x7F51;&#x7EDC;(&#x4E00;&#x4E2A;&#x9AD8;&#x4FE1;&#x4EFB;&#x7684;&#x533A;&#x57DF;) &#x3002;</p>
+<p><img src="images/Firewall.png" alt="&#x9632;&#x706B;&#x5899;&#x5728;&#x7F51;&#x7EDC;&#x62D3;&#x6251;&#x4E2D;"></p>
+<p>&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x7684;&#x529F;&#x80FD;&#x6709;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x822C;&#x90FD;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;<strong>&#x57FA;&#x672C;&#x529F;&#x80FD;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x9650;&#x5236;&#x672A;&#x6388;&#x6743;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x5165;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#xFF0C;&#x8FC7;&#x6EE4;&#x6389;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x670D;&#x52A1;&#x548C;&#x975E;&#x6CD5;&#x7528;&#x6237;</li>
+<li>&#x9632;&#x6B62;&#x5165;&#x4FB5;&#x8005;&#x89E3;&#x51B3;&#x7F51;&#x7EDC;&#x9632;&#x5FA1;&#x8BBE;&#x65BD;</li>
+<li>&#x9650;&#x5236;&#x5185;&#x90E8;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7279;&#x6B8A;&#x7AD9;&#x70B9;</li>
+</ul>
+<h2 id="&#x76EE;&#x6807;"><a name="&#x76EE;&#x6807;" class="plugin-anchor" href="#&#x76EE;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x6807;</h2>
+<p>&#x9632;&#x706B;&#x5899;&#x5177;&#x6709;&#x4E09;&#x4E2A;&#x76EE;&#x6807;&#xFF1A;</p>
+<ul>
+<li>&#x4ECE;&#x5916;&#x90E8;&#x5230;&#x5185;&#x90E8;&#x548C;&#x4ECE;&#x5185;&#x90E8;&#x5230;&#x5916;&#x90E8;&#x7684;&#x6240;&#x6709;&#x6D41;&#x91CF;&#x90FD;&#x901A;&#x8FC7;&#x9632;&#x706B;&#x5899;&#x3002;</li>
+<li>&#x4EC5;&#x88AB;&#x6388;&#x6743;&#x7684;&#x6D41;&#x91CF;&#xFF08;&#x7531;&#x5B89;&#x5168;&#x7B56;&#x7565;&#x5B9A;&#x4E49;&#xFF09;&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x3002;</li>
+<li>&#x9632;&#x706B;&#x5899;&#x81EA;&#x8EAB;&#x514D;&#x4E8E;&#x6E17;&#x900F;&#x3002;</li>
+</ul>
+<h3 id="&#x6700;&#x7EC8;&#x76EE;&#x6807;"><a name="&#x6700;&#x7EC8;&#x76EE;&#x6807;" class="plugin-anchor" href="#&#x6700;&#x7EC8;&#x76EE;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x7EC8;&#x76EE;&#x6807;</h3>
+<p>&#x603B;&#x7ED3;&#x6765;&#x8BF4;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x7684;&#x6700;&#x7EC8;&#x76EE;&#x6807;&#x662F;<strong>&#x6839;&#x636E;&#x6A21;&#x578B;&#x4E4B;&#x95F4;&#x6700;&#x5C11;&#x7279;&#x6743;&#x539F;&#x5219;&#xFF0C;&#x63D0;&#x4F9B;&#x53D7;&#x63A7;&#x8FDE;&#x901A;&#x6027;&#x5728;&#x4E0D;&#x540C;&#x6C34;&#x5E73;&#x7684;&#x4FE1;&#x4EFB;&#x533A;&#x57DF;&#x901A;&#x8FC7;&#x5B89;&#x5168;&#x653F;&#x7B56;&#x7684;&#x8FD0;&#x884C;&#x548C;&#x8FDE;&#x901A;&#x6027;</strong>&#x3002;</p>
+<blockquote>
+<p>&#x4F8B;&#x5982;&#xFF0C;<code>TCP/IP Port</code> 135~139&#x662F; Microsoft Windows &#x7684;&#x3010;&#x7F51;&#x4E0A;&#x90BB;&#x5C45;&#x3011;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x3002;&#x5982;&#x679C;&#x7535;&#x8111;&#x6709;&#x4F7F;&#x7528;&#x3010;&#x7F51;&#x4E0A;&#x90BB;&#x5C45;&#x3011;&#x7684;&#x3010;&#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x5939;&#x3011;&#xFF0C;&#x53C8;&#x6CA1;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x9632;&#x706B;&#x5899;&#x76F8;&#x5173;&#x7684;&#x9632;&#x62A4;&#x63AA;&#x65BD;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x7B49;&#x4E8E;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x3010;&#x5171;&#x4EAB;&#x6587;&#x4EF6;&#x5939;&#x3011;&#x516C;&#x5F00;&#x5230;Internet&#xFF0C;&#x4F9B;&#x4E0D;&#x7279;&#x5B9A;&#x7684;&#x4EFB;&#x4F55;&#x4EBA;&#x6709;&#x673A;&#x4F1A;&#x6D4F;&#x89C8;&#x76EE;&#x5F55;&#x5185;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5C40;&#x9650;&#x6027;"><a name="&#x5C40;&#x9650;&#x6027;" class="plugin-anchor" href="#&#x5C40;&#x9650;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C40;&#x9650;&#x6027;</h2>
+<p> &#x6CA1;&#x6709;&#x4E07;&#x80FD;&#x7684;&#x7F51;&#x7EDC;&#x5B89;&#x5168;&#x6280;&#x672F;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;&#x9632;&#x706B;&#x5899;&#x4E3B;&#x8981;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x65B9;&#x9762;&#x7684;&#x5C40;&#x9650;&#x3002;</p>
+<ul>
+<li>&#x9632;&#x706B;&#x5899;&#x4E0D;&#x80FD;&#x9632;&#x8303;&#x7F51;&#x7EDC;&#x5185;&#x90E8;&#x7684;&#x653B;&#x51FB;&#x3002;&#x6BD4;&#x5982;&#xFF1A;&#x9632;&#x706B;&#x5899;&#x65E0;&#x6CD5;&#x7981;&#x6B62;&#x5185;&#x90E8;&#x4EBA;&#x5458;&#x5C06;&#x654F;&#x611F;&#x6570;&#x636E;&#x62F7;&#x8D1D;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x5B58;&#x50A8;&#x4ECB;&#x8D28;&#x4E0A;</li>
+<li>&#x9632;&#x706B;&#x5899;&#x4E5F;&#x4E0D;&#x80FD;&#x9632;&#x8303;&#x54EA;&#x4E9B;&#x4F2A;&#x88C5;&#x6210;&#x8D85;&#x7EA7;&#x7528;&#x6237;&#x6216;&#x8BC8;&#x79F0;&#x65B0;&#x5458;&#x5DE5;&#x7684;&#x9ED1;&#x5BA2;&#x4EEC;&#x529D;&#x8BF4;&#x6CA1;&#x6709;&#x9632;&#x8303;&#x5FC3;&#x7406;&#x7684;&#x7528;&#x6237;&#x516C;&#x5F00;&#x5176;&#x53E3;&#x4EE4;&#xFF0C;&#x5E76;&#x6388;&#x4E88;&#x5176;&#x4E34;&#x65F6;&#x7684;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;</li>
+<li>&#x9632;&#x706B;&#x5899;&#x4E0D;&#x80FD;&#x9632;&#x6B62;&#x4F20;&#x9001;&#x5DF2;&#x611F;&#x67D3;&#x75C5;&#x6BD2;&#x7684;&#x8F6F;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x80FD;&#x671F;&#x671B;&#x9632;&#x706B;&#x5899;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x626B;&#x63CF;&#xFF0C;&#x67E5;&#x51FA;&#x6F5C;&#x5728;&#x7684;&#x75C5;&#x6BD2;&#x3002;</li>
+</ul>
+<h2 id="&#x7C7B;&#x578B;"><a name="&#x7C7B;&#x578B;" class="plugin-anchor" href="#&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x578B;</h2>
+<h3 id="&#x4EE3;&#x7406;&#x9632;&#x706B;&#x5899;"><a name="&#x4EE3;&#x7406;&#x9632;&#x706B;&#x5899;" class="plugin-anchor" href="#&#x4EE3;&#x7406;&#x9632;&#x706B;&#x5899;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7406;&#x9632;&#x706B;&#x5899;</h3>
+<p>&#x4EE3;&#x7406;&#x9632;&#x706B;&#x5899;&#x662F;&#x4E00;&#x79CD;&#x65E9;&#x671F;&#x7684;&#x9632;&#x706B;&#x5899;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#xFF0C;&#x5B83;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x5E94;&#x7528;&#x5145;&#x5F53;&#x4ECE;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x7684;&#x7F51;&#x5173;&#x3002;</p>
+<p>&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x963B;&#x6B62;&#x6765;&#x81EA;&#x7F51;&#x7EDC;&#x5916;&#x90E8;&#x7684;&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x6765;&#x63D0;&#x4F9B;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#xFF08;&#x4F8B;&#x5982;&#x5185;&#x5BB9;&#x7F13;&#x5B58;&#x548C;&#x5B89;&#x5168;&#x6027;&#xFF09;&#x3002; &#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD;&#x8BBE;&#x5907;&#x7684;&#x541E;&#x5410;&#x91CF;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x6240;&#x80FD;&#x652F;&#x6301;&#x7684;&#x5E94;&#x7528;&#x3002;</p>
+<h3 id="&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;"><a name="&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;" class="plugin-anchor" href="#&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;</h3>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;&#x666E;&#x904D;&#x88AB;&#x89C6;&#x4E3A;&#x201C;&#x4F20;&#x7EDF;&#x201D;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x8FD9;&#x79CD;&#x9632;&#x706B;&#x5899;&#x6839;&#x636E;&#x72B6;&#x6001;&#x3001;&#x7AEF;&#x53E3;&#x548C;&#x534F;&#x8BAE;&#x6765;&#x5141;&#x8BB8;&#x6216;&#x963B;&#x6B62;&#x6D41;&#x91CF;&#x3002;</p>
+<p>&#x5B83;&#x8D1F;&#x8D23;&#x76D1;&#x63A7;&#x4ECE;&#x8FDE;&#x63A5;&#x6253;&#x5F00;&#x5230;&#x8FDE;&#x63A5;&#x5173;&#x95ED;&#x671F;&#x95F4;&#x7684;&#x6240;&#x6709;&#x6D3B;&#x52A8;&#x3002; &#x8FC7;&#x6EE4;&#x51B3;&#x7B56;&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x5B9A;&#x4E49;&#x7684;&#x89C4;&#x5219;&#x4EE5;&#x53CA;&#x60C5;&#x666F;&#x4E3A;&#x4F9D;&#x636E;&#xFF08;&#x60C5;&#x666F;&#x662F;&#x6307;&#x4EE5;&#x524D;&#x7684;&#x8FDE;&#x63A5;&#x4EE5;&#x53CA;&#x5C5E;&#x4E8E;&#x8BE5;&#x8FDE;&#x63A5;&#x7684;&#x6570;&#x636E;&#x5305;&#x7684;&#x4F7F;&#x7528;&#x4FE1;&#x606F;&#xFF09;&#x3002;</p>
+<h3 id="&#x7EDF;&#x4E00;&#x5A01;&#x80C1;&#x7BA1;&#x7406;-utm-&#x9632;&#x706B;&#x5899;"><a name="&#x7EDF;&#x4E00;&#x5A01;&#x80C1;&#x7BA1;&#x7406;-utm-&#x9632;&#x706B;&#x5899;" class="plugin-anchor" href="#&#x7EDF;&#x4E00;&#x5A01;&#x80C1;&#x7BA1;&#x7406;-utm-&#x9632;&#x706B;&#x5899;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EDF;&#x4E00;&#x5A01;&#x80C1;&#x7BA1;&#x7406; (UTM) &#x9632;&#x706B;&#x5899;</h3>
+<p><code>UTM</code> &#x8BBE;&#x5907;&#x901A;&#x5E38;&#x4EE5;&#x4E00;&#x79CD;&#x677E;&#x6563;&#x8026;&#x5408;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x9632;&#x706B;&#x5899;&#x7684;&#x529F;&#x80FD;&#x4E0E;&#x5165;&#x4FB5;&#x9632;&#x5FA1;&#x548C;&#x9632;&#x75C5;&#x6BD2;&#x529F;&#x80FD;&#x7ED3;&#x5408;&#x5230;&#x4E00;&#x8D77;&#x3002;</p>
+<p>&#x8FD9;&#x7C7B;&#x9632;&#x706B;&#x5899;&#x4E5F;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x670D;&#x52A1;&#xFF0C;&#x800C;&#x4E14;&#x901A;&#x5E38;&#x4F1A;&#x5305;&#x542B;&#x4E91;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#x3002; <code>UTM</code> &#x4E3B;&#x8981;&#x4FA7;&#x91CD;&#x4E8E;&#x7B80;&#x5355;&#x6027;&#x548C;&#x6613;&#x7528;&#x6027;&#x3002;</p>
+<h3 id="&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;-ngfw"><a name="&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;-ngfw" class="plugin-anchor" href="#&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;-ngfw"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899; (NGFW)</h3>
+<p>&#x5982;&#x4ECA;&#xFF0C;&#x9632;&#x706B;&#x5899;&#x7ECF;&#x8FC7;&#x6F14;&#x53D8;&#xFF0C;&#x5DF2;&#x4E0D;&#x518D;&#x5355;&#x7EAF;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x5305;&#x8FC7;&#x6EE4;&#x548C;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x529F;&#x80FD;&#x3002; &#x5927;&#x591A;&#x6570;&#x516C;&#x53F8;&#x90FD;&#x5728;&#x90E8;&#x7F72;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x4EE5;&#x6C42;&#x963B;&#x6B62;&#x9AD8;&#x7EA7;&#x6076;&#x610F;&#x8F6F;&#x4EF6;&#x653B;&#x51FB;&#x548C;&#x5E94;&#x7528;&#x5C42;&#x653B;&#x51FB;&#x7B49;&#x73B0;&#x4EE3;&#x5A01;&#x80C1;&#x3002;</p>
+<p>&#x6839;&#x636E; <strong>Gartner</strong> &#x516C;&#x53F8;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;&#x5FC5;&#x987B;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x8981;&#x7D20;&#xFF1A;</p>
+<ul>
+<li>&#x6807;&#x51C6;&#x9632;&#x706B;&#x5899;&#x529F;&#x80FD;&#xFF08;&#x5982;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#xFF09;</li>
+<li>&#x96C6;&#x6210;&#x5165;&#x4FB5;&#x9632;&#x5FA1;&#x529F;&#x80FD;</li>
+<li>&#x5E94;&#x7528;&#x611F;&#x77E5;&#x548C;&#x63A7;&#x5236;&#x529F;&#x80FD;&#xFF08;&#x53EF;&#x67E5;&#x770B;&#x548C;&#x963B;&#x6B62;&#x5B58;&#x5728;&#x98CE;&#x9669;&#x7684;&#x5E94;&#x7528;&#xFF09;</li>
+<li>&#x80FD;&#x591F;&#x5438;&#x7EB3;&#x672A;&#x6765;&#x51FA;&#x73B0;&#x7684;&#x4FE1;&#x606F;&#x6E90;&#x7684;&#x5347;&#x7EA7;&#x9014;&#x5F84;</li>
+<li>&#x80FD;&#x591F;&#x5E94;&#x5BF9;&#x4E0D;&#x65AD;&#x6F14;&#x53D8;&#x7684;&#x5B89;&#x5168;&#x5A01;&#x80C1;&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x5DF2;&#x9010;&#x6E10;&#x88AB;&#x5927;&#x591A;&#x6570;&#x516C;&#x53F8;&#x5949;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;&#x8FD8;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="&#x4E13;&#x6CE8;&#x4E8E;&#x5A01;&#x80C1;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;"><a name="&#x4E13;&#x6CE8;&#x4E8E;&#x5A01;&#x80C1;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;" class="plugin-anchor" href="#&#x4E13;&#x6CE8;&#x4E8E;&#x5A01;&#x80C1;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E13;&#x6CE8;&#x4E8E;&#x5A01;&#x80C1;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;</h3>
+<p>&#x8FD9;&#x7C7B;&#x9632;&#x706B;&#x5899;&#x4E0D;&#x4EC5;&#x5305;&#x542B;&#x5E38;&#x89C4;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x5177;&#x5907;&#x9AD8;&#x7EA7;&#x5A01;&#x80C1;&#x68C0;&#x6D4B;&#x548C;&#x8865;&#x6551;&#x80FD;&#x529B;&#x3002; &#x5229;&#x7528;&#x4E13;&#x6CE8;&#x4E8E;&#x5A01;&#x80C1;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#xFF1A;</p>
+<ul>
+<li>&#x501F;&#x52A9;&#x5168;&#x9762;&#x7684;&#x60C5;&#x666F;&#x611F;&#x77E5;&#x80FD;&#x529B;&#xFF0C;&#x4E86;&#x89E3;&#x54EA;&#x4E9B;&#x8D44;&#x4EA7;&#x9762;&#x4E34;&#x6700;&#x9AD8;&#x7684;&#x98CE;&#x9669;</li>
+<li>&#x501F;&#x52A9;&#x80FD;&#x591F;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7B56;&#x7565;&#x5E76;&#x52A0;&#x5F3A;&#x9632;&#x5FA1;&#x7684;&#x667A;&#x80FD;&#x5B89;&#x5168;&#x81EA;&#x52A8;&#x5316;&#x529F;&#x80FD;&#xFF0C;&#x5FEB;&#x901F;&#x5E94;&#x5BF9;&#x5404;&#x79CD;&#x653B;&#x51FB;</li>
+<li>&#x901A;&#x8FC7;&#x5173;&#x8054;&#x7F51;&#x7EDC;&#x65F6;&#x95F4;&#x548C;&#x7EC8;&#x7AEF;&#x4E8B;&#x4EF6;&#xFF0C;&#x66F4;&#x597D;&#x5730;&#x53D1;&#x73B0;&#x9003;&#x907F;&#x68C0;&#x6D4B;&#x7684;&#x6D3B;&#x52A8;&#x6216;&#x53EF;&#x7591;&#x6D3B;&#x52A8;</li>
+<li>&#x501F;&#x52A9;&#x5728;&#x521D;&#x59CB;&#x68C0;&#x6D4B;&#x540E;&#x4ECD;&#x6301;&#x7EED;&#x76D1;&#x63A7;&#x53EF;&#x7591;&#x6D3B;&#x52A8;&#x548C;&#x53EF;&#x7591;&#x884C;&#x4E3A;&#x7684;&#x8FFD;&#x6EAF;&#x6027;&#x5B89;&#x5168;&#x529F;&#x80FD;&#xFF0C;&#x6781;&#x5927;&#x5730;&#x7F29;&#x77ED;&#x4ECE;&#x53D1;&#x73B0;&#x5A01;&#x80C1;&#x5230;&#x6E05;&#x9664;&#x5A01;&#x80C1;&#x7684;&#x65F6;&#x95F4;</li>
+<li>&#x501F;&#x52A9;&#x6DB5;&#x76D6;&#x6574;&#x4E2A;&#x653B;&#x51FB;&#x8FC7;&#x7A0B;&#x7684;&#x7EDF;&#x4E00;&#x7B56;&#x7565;&#xFF0C;&#x5B9E;&#x73B0;&#x8F7B;&#x677E;&#x7BA1;&#x7406;&#x5E76;&#x964D;&#x4F4E;&#x590D;&#x6742;&#x6027;</li>
+</ul>
+<h2 id="&#x89E3;&#x91CA;"><a name="&#x89E3;&#x91CA;" class="plugin-anchor" href="#&#x89E3;&#x91CA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x91CA;</h2>
+<ul>
+<li><a id="access_control">&#x8BBF;&#x95EE;&#x63A7;&#x5236;</a> &#xFF1A; &#x5728;&#x4FE1;&#x606F;&#x5B89;&#x5168;&#x9886;&#x57DF;&#x4E2D;&#xFF0C;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5305;&#x542B;&#x4E86;&#x8BA4;&#x8BC1;&#x3001;&#x6388;&#x6743;&#x4EE5;&#x53CA;&#x5BA1;&#x6838;&#x3002;</li>
+</ul>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E5%A2%99" target="_blank">&#x7EF4;&#x57FA;&#x767E;&#x79D1;-&#x9632;&#x706B;&#x5899;</a></li>
+<li><a href="https://www.cisco.com/c/zh_cn/products/security/firewalls/what-is-a-firewall.html" target="_blank">Cisco-&#x9632;&#x706B;&#x5899;&#x662F;&#x4EC0;&#x4E48;</a></li>
+<li><a href="http://my-doc.readthedocs.io/en/latest/cfg/qos/firewall_configuration.html" target="_blank">ConnnetOS-Firewall&#x914D;&#x7F6E;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../icg/" class="navigation navigation-prev " aria-label="Previous page: ICG">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="principle.html" class="navigation navigation-next " aria-label="Next page: 工作原理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Firewall","level":"2.5.3","depth":2,"next":{"title":"工作原理","level":"2.5.3.1","depth":3,"path":"secure/fw/principle.md","ref":"secure/fw/principle.md","articles":[]},"previous":{"title":"ICG","level":"2.5.2","depth":2,"path":"secure/icg/README.md","ref":"secure/icg/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"secure/fw/README.md","mtime":"2019-08-15T08:28:03.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

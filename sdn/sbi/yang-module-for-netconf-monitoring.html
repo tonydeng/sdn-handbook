@@ -1,0 +1,2619 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>YANG Module for NETCONF Monitoring · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="netconf-tags.html" />
+    
+    
+    <link rel="prev" href="netconf-call-home.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../basic/">
+            
+                <a href="../../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../basic/tcpip.html">
+            
+                <a href="../../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../basic/arp.html">
+            
+                <a href="../../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../basic/icmp.html">
+            
+                <a href="../../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../basic/route.html">
+            
+                <a href="../../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../basic/switch.html">
+            
+                <a href="../../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../basic/udp.html">
+            
+                <a href="../../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../basic/dhcp.html">
+            
+                <a href="../../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../basic/tcp.html">
+            
+                <a href="../../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../basic/vlan.html">
+            
+                <a href="../../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../basic/overlay.html">
+            
+                <a href="../../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../basic/snmp.html">
+            
+                <a href="../../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../basic/lldp.html">
+            
+                <a href="../../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../linux/">
+            
+                <a href="../../linux/">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../linux/config.html">
+            
+                <a href="../../linux/config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../../linux/virtual-device.html">
+            
+                <a href="../../linux/virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../linux/iptables.html">
+            
+                <a href="../../linux/iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../linux/loadbalance.html">
+            
+                <a href="../../linux/loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../linux/tc.html">
+            
+                <a href="../../linux/tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../linux/sr-iov.html">
+            
+                <a href="../../linux/sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../linux/vrf.html">
+            
+                <a href="../../linux/vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../linux/bpf/">
+            
+                <a href="../../linux/bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../../linux/bpf/bcc.html">
+            
+                <a href="../../linux/bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../../linux/bpf/troubleshooting.html">
+            
+                <a href="../../linux/bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../linux/XDP/">
+            
+                <a href="../../linux/XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="../../linux/XDP/design.html">
+            
+                <a href="../../linux/XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="../../linux/XDP/use-cases.html">
+            
+                <a href="../../linux/XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../linux/tools.html">
+            
+                <a href="../../linux/tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../../linux/tcpdump.html">
+            
+                <a href="../../linux/tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../../linux/scapy.html">
+            
+                <a href="../../linux/scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../linux/kernel-network-params.html">
+            
+                <a href="../../linux/kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../ovs/build.html">
+            
+                <a href="../../ovs/build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../ovs/internal.html">
+            
+                <a href="../../ovs/internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../../ovs/ovn.html">
+            
+                <a href="../../ovs/ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="../../ovs/ovn-ubuntu.html">
+            
+                <a href="../../ovs/ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="../../ovs/ovn-internal.html">
+            
+                <a href="../../ovs/ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="../../ovs/ovn-ha.html">
+            
+                <a href="../../ovs/ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="../../ovs/ovn-kubernetes.html">
+            
+                <a href="../../ovs/ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="../../ovs/ovn-docker.html">
+            
+                <a href="../../ovs/ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.6" data-path="../../ovs/ovn-openstack.html">
+            
+                <a href="../../ovs/ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../dpdk/">
+            
+                <a href="../../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../dpdk/introduction.html">
+            
+                <a href="../../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../dpdk/install.html">
+            
+                <a href="../../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../dpdk/forwarding.html">
+            
+                <a href="../../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../dpdk/numa.html">
+            
+                <a href="../../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../dpdk/ivshmem.html">
+            
+                <a href="../../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../dpdk/PCIe.html">
+            
+                <a href="../../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../dpdk/hardware.html">
+            
+                <a href="../../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../dpdk/queue.html">
+            
+                <a href="../../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../dpdk/offload.html">
+            
+                <a href="../../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../dpdk/io-virtualization.html">
+            
+                <a href="../../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../dpdk/ovs-dpdk.html">
+            
+                <a href="../../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../dpdk/spdk.html">
+            
+                <a href="../../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../secure/">
+            
+                <a href="../../secure/">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../secure/vpn/">
+            
+                <a href="../../secure/vpn/">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../../secure/vpn/ipsecvpn.html">
+            
+                <a href="../../secure/vpn/ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../../secure/vpn/sslvpn.html">
+            
+                <a href="../../secure/vpn/sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../secure/icg/">
+            
+                <a href="../../secure/icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../secure/fw/">
+            
+                <a href="../../secure/fw/">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="../../secure/fw/principle.html">
+            
+                <a href="../../secure/fw/principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../../secure/fw/classify.html">
+            
+                <a href="../../secure/fw/classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="../../secure/fw/evolution.html">
+            
+                <a href="../../secure/fw/evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../yang-language.html">
+            
+                <a href="../yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../controller/">
+            
+                <a href="../controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../controller/odl/">
+            
+                <a href="../controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../controller/odl/projects.html">
+            
+                <a href="../controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../controller/odl/datastore.html">
+            
+                <a href="../controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../controller/onos.html">
+            
+                <a href="../controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../controller/floodlight.html">
+            
+                <a href="../controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../controller/ryu.html">
+            
+                <a href="../controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../controller/pox.html">
+            
+                <a href="../controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="openflow.html">
+            
+                <a href="openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="of-config.html">
+            
+                <a href="of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="netconf.html">
+            
+                <a href="netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.3.1" data-path="netconf-call-home.html">
+            
+                <a href="netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.3.3.2" data-path="yang-module-for-netconf-monitoring.html">
+            
+                <a href="yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="netconf-tags.html">
+            
+                <a href="netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="p4.html">
+            
+                <a href="p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../aaa/radius.html">
+            
+                <a href="../aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../dataplane.html">
+            
+                <a href="../dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../nfv/">
+            
+                <a href="../../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../sdwan/">
+            
+                <a href="../../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../mininet/">
+            
+                <a href="../../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../neutron/">
+            
+                <a href="../../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../practice/google.html">
+            
+                <a href="../../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../sample/">
+            
+                <a href="../../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../sample/application-scenarios.html">
+            
+                <a href="../../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../sample/scp.html">
+            
+                <a href="../../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../reference.html">
+            
+                <a href="../../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >YANG Module for NETCONF Monitoring</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="yang-module-for-netconf-monitoring"><a name="yang-module-for-netconf-monitoring" class="plugin-anchor" href="#yang-module-for-netconf-monitoring"><i class="fa fa-link" aria-hidden="true"></i></a>YANG Module for NETCONF Monitoring</h1>
+<p><img src="../images/rfc6022-datatracker-status.jpg" alt="rfc6022 datatracker status">
+&#x672C;&#x6587;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x90FD;&#x6765;&#x81EA;&#x4E8E;2010&#x5E74;10&#x6708;&#x53D1;&#x5E03;&#x7684;<a href="https://tools.ietf.org/html/rfc6022" target="_blank">RFC6022 -YANG Module for NETCONF Monitoring</a>&#xFF0C;&#x8BE5;RFC&#x4ECE;2007&#x5E74;11&#x6708;&#x63D0;&#x51FA;&#x5230;&#x6700;&#x7EC8;&#x53D1;&#x5E03;&#x4E00;&#x5171;&#x4FEE;&#x6539;&#x4E86;15&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5176;&#x95F4;&#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;<a href="https://datatracker.ietf.org/doc/rfc6022/" target="_blank">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</a>&#x3002;</p>
+<h2 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x7ECD;</h2>
+<p>&#x672C;&#x6587;&#x6863;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x76D1;&#x89C6;<code>NETCONF</code>&#x534F;&#x8BAE;&#x7684;<code>YANG</code> <a href="https://tools.ietf.org/html/rfc6020" target="_blank">RFC6020</a>&#x6A21;&#x578B;&#x3002; &#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x6709;&#x5173;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x548C;&#x652F;&#x6301;&#x67B6;&#x6784;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5982;<a href="https://tools.ietf.org/html/rfc4741" target="_blank">RFC4741</a>&#x4E2D;&#x6240;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x8BF8;&#x5982;&#x4E0D;&#x540C;&#x7684;&#x67B6;&#x6784;&#x683C;&#x5F0F;&#xFF0C;&#x529F;&#x80FD;&#x53EF;&#x9009;&#x6027;&#x548C;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x7B49;&#x8003;&#x8651;&#x56E0;&#x7D20;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x5728;&#x4F1A;&#x8BDD;&#x8BBE;&#x7F6E;&#x671F;&#x95F4;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x7684;&#x9002;&#x7528;&#x6027;&#x548C;&#x7EA7;&#x522B;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x6863;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x624B;&#x6BB5;&#x6765;&#x4ECE;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x67E5;&#x8BE2;&#x548C;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x548C;<code>NETCONF</code>&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002; &#x63D0;&#x4F9B;&#x8FD9;&#x4E9B;&#x662F;&#x4E3A;&#x4E86;&#x8865;&#x5145;&#x73B0;&#x6709;&#x7684;<code>NETCONF</code>&#x529F;&#x80FD;&#x548C;&#x64CD;&#x4F5C;&#xFF0C;&#x7EDD;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x73B0;&#x6709;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x8FD8;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>&lt;get-schema&gt;</code>&#x64CD;&#x4F5C;&#x6765;&#x652F;&#x6301;&#x901A;&#x8FC7;<code>NETCONF</code>&#x663E;&#x5F0F;&#x7684;&#x6A21;&#x5F0F;&#x68C0;&#x7D22;&#x3002;</p>
+<h2 id="netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;" class="plugin-anchor" href="#netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>NETCONF&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<p>&#x672C;&#x6587;&#x5B9A;&#x4E49;&#x7684;NETCONF&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;&#x63D0;&#x4F9B;&#x4E86;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;&#x64CD;&#x4F5C;&#x4FE1;&#x606F;&#x3002; &#x8FD9;&#x5305;&#x62EC;&#x7279;&#x5B9A;&#x4E8E;<code>NETCONF</code>&#x534F;&#x8BAE;&#x7684;&#x7EC6;&#x8282;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x7279;&#x5B9A;&#x4E8E;&#x534F;&#x8BAE;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x8BF8;&#x5982;&#x201C;<code>in-sessions</code>&#x201D;&#xFF09;&#x4EE5;&#x53CA;&#x4E0E;&#x6A21;&#x5F0F;&#x68C0;&#x7D22;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;<code>schema list</code>&#xFF09;&#x6709;&#x5173;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#x672C;&#x6587;&#x6863;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF08;&#x201C;<code>urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring</code>&#x201D;&#xFF09;&#x52A1;&#x5FC5;&#x6309;&#x7167;<a href="https://tools.ietf.org/html/rfc6020" target="_blank">RFC6020</a>&#x4E2D;&#x7684;&#x63CF;&#x8FF0;&#x544A;&#x77E5;<code>capability URI</code>&#x3002;</p>
+<p>&#x672C;&#x8282;&#x6982;&#x8FF0;&#x4E86;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;&#x3002; &#x6709;&#x5173;&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x63D0;&#x4F9B;&#x7684;&#x89C4;&#x8303;&#x7684;<a href="https://tools.ietf.org/html/rfc6022#section-5" target="_blank">YANG&#x6A21;&#x5757;&#xFF08;&#x8BF7;&#x53C2;&#x9605;&#x7B2C;5&#x8282;&#xFF09;</a>&#x3002;</p>
+<h3 id="netconf-state&#x5B50;&#x6811;"><a name="netconf-state&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-state&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state</code>&#x5B50;&#x6811;</h3>
+<p><code>netconf-state</code>&#x5BB9;&#x5668;&#x662F;&#x76D1;&#x89C6;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x6839;&#x3002;</p>
+<pre><code>netconf-state
+    /capabilities
+    /datastores
+    /schemas
+    /sessions
+    /statistics
+</code></pre><ul>
+<li>&#x529F;&#x80FD;(<code>capabilities</code>)<pre><code> &#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;`NETCONF`&#x529F;&#x80FD;&#x5217;&#x8868;&#x3002;
+</code></pre></li>
+<li>&#x6570;&#x636E;&#x5B58;&#x50A8;(<code>datastores</code>)<pre><code> &#x6B64;&#x8BBE;&#x5907;&#x4E0A;&#x652F;&#x6301;&#x7684;`NETCONF`&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5217;&#x8868;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x8FD0;&#x884C;&#xFF0C;&#x542F;&#x52A8;&#xFF0C;&#x5019;&#x9009;&#xFF09;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x3002;
+</code></pre></li>
+<li>&#x6A21;&#x5F0F;(<code>schemas</code>)<pre><code> &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x652F;&#x6301;&#x7684;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x3002; &#x5305;&#x62EC;&#x8BC6;&#x522B;&#x6A21;&#x5F0F;&#x548C;&#x652F;&#x6301;&#x5176;&#x68C0;&#x7D22;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x3002;
+</code></pre></li>
+<li>&#x4F1A;&#x8BDD;(<code>sessions</code>)<pre><code> &#x8BBE;&#x5907;&#x4E0A;&#x6240;&#x6709;&#x6D3B;&#x52A8;&#x7684;NETCONF&#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x3002; &#x5305;&#x62EC;&#x6240;&#x6709;`NETCONF`&#x4F1A;&#x8BDD;&#x7684;&#x6BCF;&#x4E2A;&#x4F1A;&#x8BDD;&#x8BA1;&#x6570;&#x5668;&#x3002;
+</code></pre></li>
+<li>&#x7EDF;&#x8BA1;(<code>statistics</code>)<pre><code> &#x5305;&#x62EC;`NETCONF`&#x670D;&#x52A1;&#x5668;&#x7684;&#x5168;&#x5C40;&#x8BA1;&#x6570;&#x5668;&#x3002;
+</code></pre></li>
+</ul>
+<h4 id="netconf-statecapabilities&#x5B50;&#x6811;"><a name="netconf-statecapabilities&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-statecapabilities&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state/capabilities</code>&#x5B50;&#x6811;</h4>
+<p><code>/netconf-state/capabilities</code>&#x5B50;&#x6811;&#x5305;&#x542B;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x8BE5;&#x5217;&#x8868;&#x5FC5;&#x987B;&#x5305;&#x62EC;&#x5728;&#x4F1A;&#x8BDD;&#x5EFA;&#x7ACB;&#x671F;&#x95F4;&#x4EA4;&#x6362;&#x7684;&#x6240;&#x6709;&#x80FD;&#x529B;&#xFF0C;&#x5728;&#x8BF7;&#x6C42;&#x65F6;&#x4ECD;&#x7136;&#x9002;&#x7528;&#x3002;</p>
+<h4 id="netconf-statedatastores&#x5B50;&#x6811;"><a name="netconf-statedatastores&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-statedatastores&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state/datastores</code>&#x5B50;&#x6811;</h4>
+<p><code>/netconf-state/datastores</code>&#x5B50;&#x6811;&#x5305;&#x542B;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;&#x53EF;&#x7528;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x5305;&#x542B;&#x6709;&#x5173;&#x5176;&#x9501;&#x5B9A;&#x72B6;&#x6001;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>datastore
+    /name
+    /locks
+</code></pre><ul>
+<li><p>&#x540D;&#x79F0;(<code>name</code>)&#xFF08;<code>leaf</code>&#xFF0C;<code>netconf-datastore-type</code>&#xFF09;</p>
+<pre><code> &#x652F;&#x6301;&#x679A;&#x4E3E;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;; `candidate`, `running`, `startup&#x3002;`
+</code></pre></li>
+<li><p>&#x9501;(<code>locks</code>)(<code>grouping</code>, <code>lock-info</code>)</p>
+<pre><code>  &#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x9501;&#x5217;&#x8868;&#x3002; &#x4FE1;&#x606F;&#x63D0;&#x4F9B;&#x5168;&#x5C40;&#x548C;&#x90E8;&#x5206;&#x9501;&#x5B9A;[RFC5717](https://tools.ietf.org/html/rfc5717)&#x3002;
+  &#x5BF9;&#x4E8E;&#x90E8;&#x5206;&#x9501;&#x5B9A;&#xFF0C;&#x5C06;&#x8FD4;&#x56DE;&#x9501;&#x5B9A;&#x8282;&#x70B9;&#x5217;&#x8868;&#x548C;&#x6700;&#x521D;&#x7528;&#x4E8E;&#x8BF7;&#x6C42;&#x9501;&#x5B9A;&#x7684;&#x9009;&#x62E9;&#x8868;&#x8FBE;&#x5F0F;&#x3002;
+</code></pre></li>
+</ul>
+<h4 id="netconf-stateschemas&#x5B50;&#x6811;"><a name="netconf-stateschemas&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-stateschemas&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state/schemas</code>&#x5B50;&#x6811;</h4>
+<p><code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x652F;&#x6301;&#x7684;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x3002;</p>
+<pre><code>schema
+       /identifier   (key)
+       /version      (key)
+       /format       (key)
+       /namespace
+       /location
+</code></pre><p>network elements&#x7684;<code>identifier</code>&#xFF0C;<code>version</code>&#x548C;<code>format</code>&#x5728;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x4E2D;&#x7528;&#x4F5C;&#x5173;&#x952E;&#x5B57;&#x3002; &#x8FD9;&#x4E9B;&#x7528;&#x5728;<code>&lt;get-schema&gt;</code>&#x64CD;&#x4F5C;&#x4E2D;&#x3002;</p>
+<ul>
+<li><code>identifier (string)</code>
+  &#x6A21;&#x5F0F;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x8BE5;&#x6807;&#x8BC6;&#x7B26;&#x5728;<code>&lt;get-schema&gt;</code>&#x64CD;&#x4F5C;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x6587;&#x4EF6;&#x68C0;&#x7D22;&#x3002;</li>
+<li><p><code>version (string)</code>
+  &#x652F;&#x6301;&#x7684;&#x6A21;&#x5F0F;&#x7684;&#x7248;&#x672C;&#x3002; &#x4E00;&#x4E2A;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x3002; &#x6BCF;&#x4E2A;&#x7248;&#x672C;&#x5FC5;&#x987B;&#x5728;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x4E2D;&#x5355;&#x72EC;&#x62A5;&#x544A;&#xFF0C;&#x5373;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<p>  &#x5BF9;&#x4E8E;<code>YANG</code>&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x7248;&#x672C;&#x662F;&#x6A21;&#x5757;&#x6216;&#x5B50;&#x6A21;&#x5757;&#x4E2D;&#x6700;&#x65B0;&#x7684;<code>YANG</code>&apos;<code>revision</code>&apos;&#x8BED;&#x53E5;&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&apos;<code>revision</code>&apos;&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><code>format (identifyref, schema-format)</code>
+  &#x6807;&#x8BC6;&#x662F;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5EFA;&#x6A21;&#x8BED;&#x8A00;&#x6A21;&#x5F0F;&#x6765;&#x63CF;&#x8FF0;&#x8BE5;<code>schema</code>&#x3002; &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x201C;<code>xsd</code>&#x201D;&#xFF0C;&#x201C;<code>yang</code>&#x201D;&#xFF0C;&#x201C;<code>yin</code>&#x201D;&#xFF0C;&#x201C;<code>rng</code>&#x201D;&#x548C;&#x201C;<code>rnc</code>&#x201D;&#x8FD9;&#x4E9B;&#x683C;&#x5F0F;&#x6765;&#x63CF;&#x8FF0;&#xFF08;&#x89C1;<a href="https://tools.ietf.org/html/rfc6022#section-5" target="_blank">&#x7B2C;5&#x8282;</a>&#xFF09;&#x3002;</li>
+<li><code>namespace (inet:uri)</code>
+  &#x7531;&#x6A21;&#x5F0F;&#x5B9A;&#x4E49;&#x7684;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;<code>XML</code>&#xFF09;&#x540D;&#x79F0;&#x7A7A;&#x95F4;<a href="https://tools.ietf.org/html/rfc6022#ref-XML-NAMES" target="_blank">XML-NAMES</a>&#x3002;</li>
+<li><code>location (union: enum, inet:uri)</code>
+  &#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x53EF;&#x4ECE;&#x4E2D;&#x68C0;&#x7D22;&#x7279;&#x5B9A;&#x6A21;&#x5F0F;&#x7684;&#x4F4D;&#x7F6E;&#x3002; &#x8BE5;&#x5217;&#x8868;&#x5E94;&#x8BE5;&#x6BCF;&#x4E2A;&#x6A21;&#x5F0F;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6761;&#x76EE;&#x3002;</li>
+</ul>
+<h4 id="netconf-statesessions&#x5B50;&#x6811;"><a name="netconf-statesessions&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-statesessions&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state/sessions</code>&#x5B50;&#x6811;</h4>
+<p>&#x5305;&#x62EC;<code>NETCONF</code>&#x7BA1;&#x7406;&#x4F1A;&#x8BDD;&#x7684;&#x4F1A;&#x8BDD;&#x7279;&#x5B9A;&#x6570;&#x636E;&#x3002; &#x4F1A;&#x8BDD;&#x5217;&#x8868;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x6240;&#x6709;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x7684;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x3002;</p>
+<pre><code>session
+       /session-id (key)
+       /transport
+       /username
+       /source-host
+       /login-time
+       /in-rpcs
+       /in-bad-rpcs
+       /out-rpc-errors
+       /out-notifications
+</code></pre><ul>
+<li><code>session-id (uint32, 1..max)</code>
+  &#x4F1A;&#x8BDD;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x8BE5;&#x503C;&#x662F;<a href="https://tools.ietf.org/html/rfc4741" target="_blank">RFC4741</a>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x6807;&#x8BC6;&#x7B26;&#x3002;</li>
+<li><code>transport (identityref, transport)</code>
+  &#x6807;&#x8BC6;&#x6BCF;&#x4E2A;&#x4F1A;&#x8BDD;&#x7684;&#x4F20;&#x8F93;&#x3002; &#x672C;&#x6587;&#x6863;&#x5B9A;&#x4E49;&#x4E86;&#x201C;<code>netconf-ssh</code>&#x201D;&#xFF0C;&#x201C;<code>netconf-soap-over-beep</code>&#x201D;&#xFF0C;&#x201C;<code>netconf-soap-over-https</code>&#x201D;&#xFF0C;&#x201C;<code>netconf-beep</code>&#x201D;&#x548C;&#x201C;<code>netconf-tls</code>&#x201D;&#xFF08;&#x89C1;<a href="https://tools.ietf.org/html/rfc6022#section-5" target="_blank">&#x7B2C;5&#x8282;</a>&#xFF09;&#x3002;</li>
+<li><code>username (string)</code>
+  <code>username</code>&#x662F;&#x7531;<code>NETCONF</code>&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x9A8C;&#x8BC1;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8EAB;&#x4EFD;&#x3002; &#x7528;&#x4E8E;&#x5BFC;&#x51FA;&#x7528;&#x6237;&#x540D;&#x7684;&#x7B97;&#x6CD5;&#x662F;<code>NETCONF</code>&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x7279;&#x5B9A;&#x7684;&#xFF0C;&#x53E6;&#x5916;&#x8FD8;&#x7279;&#x5B9A;&#x4E8E;<code>NETCONF</code>&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x4F7F;&#x7528;&#x7684;&#x9A8C;&#x8BC1;&#x673A;&#x5236;&#x3002;</li>
+<li><code>source-host (inet:host)</code>
+  &#x4E3B;&#x673A;&#x6807;&#x8BC6;&#x7B26;&#xFF08;<code>IP</code>&#x5730;&#x5740;&#x6216;&#x540D;&#x79F0;&#xFF09;&#x7684;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x3002;</li>
+<li><code>login-time (yang:date-and-time)</code>
+  &#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5EFA;&#x7ACB;&#x4F1A;&#x8BDD;&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+<li><code>in-rpcs (yang:zero-based-counter32)</code>
+  &#x63A5;&#x6536;&#x5230;&#x6B63;&#x786E;&#x7684;<code>&lt;rpc&gt;</code>&#x6D88;&#x606F;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>in-bad-rpcs (yang:zero-based-counter32)</code>
+  &#x9884;&#x671F;&#x53D1;&#x9001;<code>&lt;rpc&gt;</code>&#x6D88;&#x606F;&#x65F6;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x6570;&#x91CF;&#xFF0C;&#x4E0D;&#x6B63;&#x786E;&#x7684;<code>&lt;rpc&gt;</code>&#x6D88;&#x606F;&#x3002; &#x8FD9;&#x5305;&#x62EC;<code>rpc</code>&#x5C42;&#x4E0A;&#x7684;<code>XML</code>&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x548C;&#x9519;&#x8BEF;&#x3002;</li>
+<li><code>out-rpc-errors (yang:zero-based-counter32)</code>
+  &#x5728;<code>&lt;rpc-reply&gt;</code>&#x4E2D;&#x5305;&#x542B;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x7684;&#x6D88;&#x606F;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>out-notifications (yang:zero-based-counter32)</code>
+  &#x53D1;&#x9001;&#x7684;<code>&lt;notification&gt;</code>&#x6D88;&#x606F;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+<h4 id="netconf-statestatistics&#x5B50;&#x6811;"><a name="netconf-statestatistics&#x5B50;&#x6811;" class="plugin-anchor" href="#netconf-statestatistics&#x5B50;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a><code>/netconf-state/statistics</code>&#x5B50;&#x6811;</h4>
+<p>&#x6709;&#x5173;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3002;</p>
+<pre><code>statistics
+      /netconf-start-time
+      /in-bad-hellos
+      /in-sessions
+      /dropped-sessions
+      /in-rpcs
+      /in-bad-rpcs
+      /out-rpc-errors
+      /out-notifications
+</code></pre><p>statistics:</p>
+<pre><code>&#x5305;&#x542B;`NETCONF`&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E0E;&#x7BA1;&#x7406;&#x4F1A;&#x8BDD;&#x76F8;&#x5173;&#x7684;&#x6027;&#x80FD;&#x6570;&#x636E;&#x3002;
+</code></pre><ul>
+<li><code>netconf-start-time (yang:date-and-time)</code>
+  &#x7BA1;&#x7406;&#x5B50;&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x7684;&#x65E5;&#x671F;&#x548C;&#x65F6;&#x95F4;&#x3002;</li>
+<li><code>in-bad-hellos (yang:zero-based-counter32)</code>
+  &#x6536;&#x5230;&#x65E0;&#x6548;&#x7684;<hello>&#x6D88;&#x606F;&#x7684;&#x6570;&#x91CF;&#x3002;</hello></li>
+<li><code>in-sessions (yang:zero-based-counter32)</code>
+  &#x4F1A;&#x8BDD;&#x5F00;&#x59CB;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>dropped-sessions (yang:zero-based-counter32)</code>
+  &#x5F02;&#x5E38;&#x7EC8;&#x6B62;&#x7684;&#x4F1A;&#x8BDD;&#x6570;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x7531;&#x4E8E;&#x7A7A;&#x95F2;&#x8D85;&#x65F6;&#x6216;&#x4F20;&#x8F93;&#x5173;&#x95ED;&#x3002;</li>
+<li><code>in-rpcs (yang:zero-based-counter32)</code>
+  &#x63A5;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x6570;&#x91CF;&#x3002;</li>
+<li><code>in-bad-rpcs (yang:zero-based-counter32)</code>
+  &#x9884;&#x671F;&#x53D1;&#x9001;<code>&lt;rpc&gt;</code>&#x6D88;&#x606F;&#x65F6;&#x6536;&#x5230;&#x7684;&#x6D88;&#x606F;&#x6570;&#x91CF;&#xFF0C;&#x4E0D;&#x6B63;&#x786E;&#x7684;<code>&lt;rpc&gt;</code>&#x6D88;&#x606F;&#x3002; &#x8FD9;&#x5305;&#x62EC;<code>rpc</code>&#x5C42;&#x4E0A;&#x7684;<code>XML</code>&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x548C;&#x9519;&#x8BEF;&#x3002;</li>
+<li><code>out-notifications (yang:zero-based-counter32)</code>
+  &#x5728;<code>&lt;rpc-reply&gt;</code>&#x4E2D;&#x5305;&#x542B;<code>&lt;rpc-error&gt;</code>&#x5143;&#x7D20;&#x7684;&#x6D88;&#x606F;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+<h2 id="&#x6A21;&#x5F0F;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;"><a name="&#x6A21;&#x5F0F;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#&#x6A21;&#x5F0F;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x5F0F;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x64CD;&#x4F5C;"><a name="&#x64CD;&#x4F5C;" class="plugin-anchor" href="#&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a><get-schema>&#x64CD;&#x4F5C;</get-schema></h3>
+<ul>
+<li><p>&#x63CF;&#x8FF0;&#xFF1A;</p>
+<p>  &#x6B64;&#x64CD;&#x4F5C;&#x7528;&#x4E8E;&#x4ECE;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x3002;</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li><code>identifier (string)</code>&#xFF1A;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x6761;&#x76EE;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x5F3A;&#x5236;&#x6027;&#x53C2;&#x6570;&#x3002;</li>
+<li><code>version (string)</code>&#xFF1A;&#x8BF7;&#x6C42;&#x7684;&#x6A21;&#x5F0F;&#x7684;&#x7248;&#x672C;&#x3002; &#x53EF;&#x9009;&#x53C2;&#x6570;&#x3002;</li>
+<li><code>format (identityref, schema-format)</code>&#xFF1A;&#x6A21;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5EFA;&#x6A21;&#x8BED;&#x8A00;&#x3002; &#x672A;&#x6307;&#x5B9A;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x201C;<code>yang</code>&#x201D;&#x3002; &#x53EF;&#x9009;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x6B63;&#x9762;&#x56DE;&#x5E94;&#xFF1A;</p>
+<p>  <code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x8BF7;&#x6C42;&#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
+</li>
+<li><p>&#x8D1F;&#x9762;&#x7684;&#x56DE;&#x5E94;&#xFF1A;</p>
+<p>  &#x5982;&#x679C;&#x8BF7;&#x6C42;&#x7684;&#x6A21;&#x5F0F;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;<code>&lt;error-tag&gt;</code>&#x662F;&#x201C;&#x65E0;&#x6548;&#x503C;&#x201D;&#x3002;
+  &#x5982;&#x679C;&#x591A;&#x4E2A;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x8BF7;&#x6C42;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;<code>&lt;error-tag&gt;</code>&#x662F;&apos;<code>operation-failed</code>&apos;&#xFF0C;&#x800C;<code>&lt;error-app-tag&gt;</code>&#x662F;&apos;<code>data-not-unique</code>&apos;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x4F8B;&#x5B50;"><a name="&#x4F8B;&#x5B50;" class="plugin-anchor" href="#&#x4F8B;&#x5B50;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F8B;&#x5B50;</h2>
+<h3 id="&#x901A;&#x8FC7;get&#x64CD;&#x4F5C;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5217;&#x8868;"><a name="&#x901A;&#x8FC7;get&#x64CD;&#x4F5C;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5217;&#x8868;" class="plugin-anchor" href="#&#x901A;&#x8FC7;get&#x64CD;&#x4F5C;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x901A;&#x8FC7;<code>&lt;get&gt;</code>&#x64CD;&#x4F5C;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5217;&#x8868;</h3>
+<p><code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;<code>&lt;get&gt;</code>&#x64CD;&#x4F5C;&#x68C0;&#x7D22;<code>/netconf-state/schemas</code>&#x5B50;&#x6811;&#xFF0C;&#x4ECE;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x68C0;&#x7D22;&#x652F;&#x6301;&#x7684;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x8BF7;&#x6C42;&#x4F1A;&#x8BDD;&#x7684;&#x53EF;&#x7528;&#x6A21;&#x5F0F;&#x5C06;&#x5728;&#x5305;&#x542B;<code>&lt;identifier&gt;</code>&#xFF0C;<code>&lt;version&gt;</code>&#xFF0C;<code>&lt;format&gt;</code>&#x548C;<code>&lt;location&gt;</code>&#x5143;&#x7D20;&#x7684;&#x7B54;&#x590D;&#x4E2D;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x54CD;&#x5E94;&#x6570;&#x636E;&#x53EF;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x53EF;&#x7528;&#x6A21;&#x5F0F;&#x53CA;&#x5176;&#x7248;&#x672C;&#x3002; &#x6A21;&#x5F0F;&#x672C;&#x8EAB;&#xFF08;&#x5373;&#x6A21;&#x5F0F;&#x5185;&#x5BB9;&#xFF09;&#x4E0D;&#x4F1A;&#x5728;&#x54CD;&#x5E94;&#x4E2D;&#x8FD4;&#x56DE;&#x3002; &#x53EF;&#x9009;&#x7684;<code>&lt;location&gt;</code>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>URI</code>&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x534F;&#x8BAE;&#xFF08;&#x5982;<code>ftp</code> <a href="https://tools.ietf.org/html/rfc0959" target="_blank">RFC0959</a>&#x6216;<code>http(s)</code><a href="https://tools.ietf.org/html/rfc2616" target="_blank">RFC2616</a> <a href="https://tools.ietf.org/html/rfc2818" target="_blank">RFC2818</a>&#xFF09;&#x6216;&#x7279;&#x6B8A;&#x503C;&#x201C;<code>NETCONF</code>&#x201D;&#x6765;&#x68C0;&#x7D22;&#x67B6;&#x6784;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740; &#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>&lt;get-schema&gt;</code>&#x64CD;&#x4F5C;&#x4ECE;&#x8BBE;&#x5907;&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-XML"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+     <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">get</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">filter</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;subtree&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">netconf-state</span> <span class="hljs-attr">xmlns</span>=
+      &quot;<span class="hljs-attr">urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring</span>&quot;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">schemas</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">netconf-state</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">filter</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">get</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+</code></pre>
+<p><code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x53EF;&#x7528;&#x4E8E;&#x68C0;&#x7D22;&#x7684;&#x6A21;&#x5F0F;&#x5217;&#x8868;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+           <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">data</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">netconf-state</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">schemas</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>xsd<span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">namespace</span>&gt;</span>http://example.com/foo<span class="hljs-tag">&lt;/<span class="hljs-name">namespace</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>ftp://ftp.example.com/schemas/foo_1.0.xsd<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>http://www.example.com/schema/foo_1.0.xsd<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>NETCONF<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>xsd<span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">namespace</span>&gt;</span>http://example.com/foo<span class="hljs-tag">&lt;/<span class="hljs-name">namespace</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>ftp://ftp.example.com/schemas/foo_1.1.xsd<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>http://www.example.com/schema/foo_1.1.xsd<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>NETCONF<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span>&gt;</span>bar<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2008-06-01<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>yang<span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">namespace</span>&gt;</span>http://example.com/bar<span class="hljs-tag">&lt;/<span class="hljs-name">namespace</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>
+            http://example.com/schema/bar@2008-06-01.yang
+          <span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>NETCONF<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">schema</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span>&gt;</span>bar-types<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2008-06-01<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>yang<span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">namespace</span>&gt;</span>http://example.com/bar<span class="hljs-tag">&lt;/<span class="hljs-name">namespace</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>
+            http://example.com/schema/bar-types@2008-06-01.yang
+          <span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">location</span>&gt;</span>NETCONF<span class="hljs-tag">&lt;/<span class="hljs-name">location</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">schema</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">schemas</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">netconf-state</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<h3 id="&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5B9E;&#x4F8B;"><a name="&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5B9E;&#x4F8B;" class="plugin-anchor" href="#&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5B9E;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x7D22;&#x6A21;&#x5F0F;&#x5B9E;&#x4F8B;</h3>
+<p>&#x9274;&#x4E8E;&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#x7684;&#x7B54;&#x590D;&#xFF0C;&#x4EE5;&#x4E0B;&#x793A;&#x4F8B;&#x8BF4;&#x660E;&#x5728;&#x591A;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x548C;&#x591A;&#x4E2A;&#x4F4D;&#x7F6E;&#x68C0;&#x7D22;&#x201C;<code>foo</code>&#x201D;&#xFF0C;&#x201C;<code>bar</code>&#x201D;&#x548C;&#x201C;<code>bar-types</code>&#x201D;&#x6A21;&#x5F0F;&#x3002;</p>
+<ol>
+<li><p><code>foo</code>&#xFF0C;<code>xsd</code>&#x683C;&#x5F0F;&#x7684;<code>version 1.0</code>&#xFF1A;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;FTP&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;</p>
+<pre><code>  ftp://ftp.example.com/schemas/foo_1.0.xsd
+</code></pre></li>
+<li><p>&#x901A;&#x8FC7;HTTP&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;</p>
+<pre><code>  http://www.example.com/schema/foo_1.0.xsd
+</code></pre></li>
+<li><p>&#x901A;&#x8FC7;<code>&lt;get-schema&gt;</code>&#x4F7F;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x7248;&#x672C;&#x548C;&#x683C;&#x5F0F;&#x53C2;&#x6570;&#x3002;</p>
+</li>
+</ol>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">get-schema</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">identifier</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-name">identifier</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">format</span>&gt;</span>xsd<span class="hljs-tag">&lt;/<span class="hljs-name">format</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">get-schema</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;101&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">data</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">xs:schema</span> <span class="hljs-attr">xmlns:xs</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema&quot;</span>&gt;</span>
+         <span class="hljs-comment">&lt;!-- foo 1.0 xsd schema contents here --&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">xs:schema</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<ol>
+<li><p><code>bar</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;<code>YANG</code>&#x683C;&#x5F0F;&#x7684;<code>version 2008-06-01</code>&#xFF1A;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;<code>HTTP</code>&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;</p>
+<p>  <a href="http://example.com/schema/bar@2008-06-01.yang" target="_blank">http://example.com/schema/bar@2008-06-01.yang</a></p>
+</li>
+<li><p>&#x901A;&#x8FC7;<code>&lt;get-schema&gt;</code>&#x4F7F;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#x548C;&#x7248;&#x672C;&#x53C2;&#x6570;&#xFF1A;</p>
+</li>
+</ol>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;102&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">get-schema</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">identifer</span>&gt;</span>bar<span class="hljs-tag">&lt;/<span class="hljs-name">identifer</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2008-06-01<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">get-schema</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;102&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">data</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+     module bar {
+        //default format (yang) returned
+        //bar version 2008-06-01 yang module
+        //contents here ...
+     }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<ol>
+<li><p><code>bar-types</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;<code>YANG</code>&#x683C;&#x5F0F;&#x7684;<code>version 2008-06-01</code>&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;<code>identifier</code>&#x53C2;&#x6570;:</p>
+</li>
+</ol>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">rpc</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;103&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">get-schema</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">identifer</span>&gt;</span>bar-types<span class="hljs-tag">&lt;/<span class="hljs-name">identifer</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">get-schema</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">rpc-reply</span> <span class="hljs-attr">message-id</span>=<span class="hljs-string">&quot;103&quot;</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:netconf:base:1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">data</span>
+        <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;</span>&gt;</span>
+        module bar-types {
+             //default format (yang) returned
+             //latest revision returned
+             //is version 2008-06-01 yang module
+             //contents here ...
+        }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">data</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">rpc-reply</span>&gt;</span>
+</code></pre>
+<h2 id="netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;" class="plugin-anchor" href="#netconf&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>NETCONF&#x76D1;&#x63A7;&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<p>&#x672C;&#x5907;&#x5FD8;&#x5F55;&#x4E2D;&#x63CF;&#x8FF0;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x5728;&#x4EE5;&#x4E0B;&#x7684;<code>YANG</code>&#x6A21;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;YANG&#x6A21;&#x5757;&#x4ECE;<a href="">RFC6021</a>&#x548C;<a href="https://tools.ietf.org/html/rfc4741" target="_blank">RFC4741</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc4742" target="_blank">RFC4742</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc4743" target="_blank">RFC4743</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc4744" target="_blank">RFC4744</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc5539" target="_blank">RFC5539</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc6022#ref-xmlschema-1" target="_blank">xmlschema-1</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc6020" target="_blank">RFC6020</a>&#xFF0C;[ISO / IEC19757-2:2008]&#xFF0C; &#x548C;<a href="https://tools.ietf.org/html/rfc5717" target="_blank">RFC5717</a>&#x3002;</p>
+<p><code>&lt;CODE BEGINS&gt;</code> file &quot;<code>ietf-netconf-monitoring@2010-10-04.yang</code>&quot;</p>
+<pre><code class="lang-yang">module ietf-netconf-monitoring {
+
+    namespace &quot;urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring&quot;;
+    prefix &quot;ncm&quot;;
+
+    import ietf-yang-types { prefix yang; }
+    import ietf-inet-types { prefix inet; }
+
+    organization
+        &quot;IETF NETCONF (Network Configuration) Working Group&quot;;
+
+    contact
+        &quot;WG Web:   &lt;http://tools.ietf.org/wg/netconf/&gt;
+        WG List:  &lt;mailto:netconf@ietf.org&gt;
+
+        WG Chair: Mehmet Ersue
+               &lt;mailto:mehmet.ersue@nsn.com&gt;
+
+        WG Chair: Bert Wijnen
+               &lt;mailto:bertietf@bwijnen.net&gt;
+
+        Editor:   Mark Scott
+               &lt;mailto:mark.scott@ericsson.com&gt;
+
+        Editor:   Martin Bjorklund
+               &lt;mailto:mbj@tail-f.com&gt;&quot;;
+
+    description
+        &quot;NETCONF Monitoring Module.
+        All elements in this module are read-only.
+
+        Copyright (c) 2010 IETF Trust and the persons identified as
+        authors of the code. All rights reserved.
+
+        Redistribution and use in source and binary forms, with or
+        without modification, is permitted pursuant to, and subject
+        to the license terms contained in, the Simplified BSD
+        License set forth in Section 4.c of the IETF Trust&apos;s
+        Legal Provisions Relating to IETF Documents
+        (http://trustee.ietf.org/license-info).
+
+        This version of this YANG module is part of RFC 6022; see
+        the RFC itself for full legal notices.&quot;;
+
+    revision 2010-10-04 {
+        description
+          &quot;Initial revision.&quot;;
+        reference
+          &quot;RFC 6022: YANG Module for NETCONF Monitoring&quot;;
+    }
+
+    typedef netconf-datastore-type {
+        type enumeration {
+            enum running;
+            enum candidate;
+            enum startup;
+        }
+        description
+            &quot;Enumeration of possible NETCONF datastore types.&quot;;
+        reference
+        &quot;RFC 4741: NETCONF Configuration Protocol&quot;;
+    }
+
+    identity transport {
+        description
+            &quot;Base identity for NETCONF transport types.&quot;;
+        }
+
+        identity netconf-ssh {
+            base transport;
+            description
+                &quot;NETCONF over Secure Shell (SSH).&quot;;
+            reference
+                &quot;RFC 4742: Using the NETCONF Configuration Protocol
+                         over Secure SHell (SSH)&quot;;
+        }
+
+        identity netconf-soap-over-beep {
+            base transport;
+            description
+              &quot;NETCONF over Simple Object Access Protocol (SOAP) over
+               Blocks Extensible Exchange Protocol (BEEP).&quot;;
+            reference
+              &quot;RFC 4743: Using NETCONF over the Simple Object
+                         Access Protocol (SOAP)&quot;;
+        }
+
+        identity netconf-soap-over-https {
+            base transport;
+            description
+              &quot;NETCONF over Simple Object Access Protocol (SOAP)
+              over Hypertext Transfer Protocol Secure (HTTPS).&quot;;
+            reference
+              &quot;RFC 4743: Using NETCONF over the Simple Object
+                         Access Protocol (SOAP)&quot;;
+        }
+
+        identity netconf-beep {
+            base transport;
+            description
+                &quot;NETCONF over Blocks Extensible Exchange Protocol (BEEP).&quot;;
+            reference
+              &quot;RFC 4744: Using the NETCONF Protocol over the
+                        Blocks Extensible Exchange Protocol (BEEP)&quot;;
+        }
+
+        identity netconf-tls {
+            base transport;
+            description
+                &quot;NETCONF over Transport Layer Security (TLS).&quot;;
+            reference
+                &quot;RFC 5539: NETCONF over Transport Layer Security (TLS)&quot;;
+        }
+
+        identity schema-format {
+            description
+                &quot;Base identity for data model schema languages.&quot;;
+        }
+
+        identity xsd {
+            base schema-format;
+            description
+                &quot;W3C XML Schema Definition.&quot;;
+            reference
+                &quot;W3C REC REC-xmlschema-1-20041028:
+                    XML Schema Part 1: Structures&quot;;
+        }
+
+        identity yang {
+            base schema-format;
+            description
+                &quot;The YANG data modeling language for NETCONF.&quot;;
+            reference
+                &quot;RFC 6020:  YANG - A Data Modeling Language for the
+                     Network Configuration Protocol (NETCONF)&quot;;
+        }
+
+        identity yin {
+            base schema-format;
+            description
+                &quot;The YIN syntax for YANG.&quot;;
+            reference
+                &quot;RFC 6020:  YANG - A Data Modeling Language for the
+                     Network Configuration Protocol (NETCONF)&quot;;
+        }
+
+        identity rng {
+            base schema-format;
+            description
+                &quot;Regular Language for XML Next Generation (RELAX NG).&quot;;
+            reference
+                &quot;ISO/IEC 19757-2:2008: RELAX NG&quot;;
+        }
+
+        identity rnc {
+            base schema-format;
+            description
+                &quot;Relax NG Compact Syntax&quot;;
+            reference
+                &quot;ISO/IEC 19757-2:2008: RELAX NG&quot;;
+        }
+
+        grouping common-counters {
+           description
+             &quot;Counters that exist both per session, and also globally,
+              accumulated from all sessions.&quot;;
+
+           leaf in-rpcs {
+             type yang:zero-based-counter32;
+             description
+               &quot;Number of correct &lt;rpc&gt; messages received.&quot;;
+           }
+           leaf in-bad-rpcs {
+             type yang:zero-based-counter32;
+             description
+                &quot;Number of messages received when an &lt;rpc&gt; message was expected,
+                 that were not correct &lt;rpc&gt; messages.  This includes XML parse
+                 errors and errors on the rpc layer.&quot;;
+            }
+            leaf out-rpc-errors {
+              type yang:zero-based-counter32;
+              description
+                &quot;Number of &lt;rpc-reply&gt; messages sent that contained an
+                 &lt;rpc-error&gt; element.&quot;;
+            }
+            leaf out-notifications {
+              type yang:zero-based-counter32;
+              description
+                &quot;Number of &lt;notification&gt; messages sent.&quot;;
+            }
+        }
+
+        container netconf-state {
+            config false;
+            description
+              &quot;The netconf-state container is the root of the monitoring
+               data model.&quot;;
+
+            container capabilities {
+                description
+                    &quot;Contains the list of NETCONF capabilities supported by the
+                        server.&quot;;
+
+                leaf-list capability {
+                    type inet:uri;
+                    description
+                        &quot;List of NETCONF capabilities supported by the server.&quot;;
+                }
+            }
+
+        container datastores {
+            description
+                &quot;Contains the list of NETCONF configuration datastores.&quot;;
+
+        list datastore {
+            key name;
+            description
+                &quot;List of NETCONF configuration datastores supported by
+                    the NETCONF server and related information.&quot;;
+
+            leaf name {
+              type netconf-datastore-type;
+              description
+                &quot;Name of the datastore associated with this list entry.&quot;;
+            }
+            container locks {
+                presence
+                    &quot;This container is present only if the datastore
+                     is locked.&quot;;
+                description
+                    &quot;The NETCONF &lt;lock&gt; and &lt;partial-lock&gt; operations allow
+                     a client to lock specific resources in a datastore.  The
+                     NETCONF server will prevent changes to the locked
+                     resources by all sessions except the one that acquired
+                     the lock(s).
+
+                     Monitoring information is provided for each datastore
+                     entry including details such as the session that acquired
+                     the lock, the type of lock (global or partial) and the
+                     list of locked resources.  Multiple locks per datastore
+                     are supported.&quot;;
+
+                grouping lock-info {
+                    description
+                      &quot;Lock related parameters, common to both global and
+                       partial locks.&quot;;
+
+                    leaf locked-by-session {
+                        type uint32;
+                        mandatory true;
+                        description
+                            &quot;The session ID of the session that has locked
+                             this resource.  Both a global lock and a partial
+                             lock MUST contain the NETCONF session-id.
+
+                             If the lock is held by a session that is not managed
+                             by the NETCONF server (e.g., a CLI session), a session
+                             id of 0 (zero) is reported.&quot;;
+                        reference
+                            &quot;RFC 4741: NETCONF Configuration Protocol&quot;;
+                    }
+                    leaf locked-time {
+                        type yang:date-and-time;
+                        mandatory true;
+                        description
+                            &quot;The date and time of when the resource was
+                             locked.&quot;;
+                    }
+                }
+
+                choice lock-type {
+                    description
+                      &quot;Indicates if a global lock or a set of partial locks
+                       are set.&quot;;
+
+                    container global-lock {
+                        description
+                            &quot;Present if the global lock is set.&quot;;
+                        uses lock-info;
+                    }
+
+                    list partial-lock {
+                        key lock-id;
+                        description
+                            &quot;List of partial locks.&quot;;
+                        reference
+                            &quot;RFC 5717: Partial Lock Remote Procedure Call (RPC) for
+                                    NETCONF&quot;;
+
+                    leaf lock-id {
+                        type uint32;
+                        description
+                            &quot;This is the lock id returned in the &lt;partial-lock&gt;
+                            response.&quot;;
+                    }
+                    uses lock-info;
+                    leaf-list select {
+                        type yang:xpath1.0;
+                        min-elements 1;
+                        description
+                          &quot;The xpath expression that was used to request
+                           the lock.  The select expression indicates the
+                           original intended scope of the lock.&quot;;
+                    }
+                    leaf-list locked-node {
+                        type instance-identifier;
+                        description
+                          &quot;The list of instance-identifiers (i.e., the
+                           locked nodes).
+
+                           The scope of the partial lock is defined by the list
+                           of locked nodes.&quot;;
+                    }
+                }
+            }
+        }
+    }
+}
+container schemas {
+      description
+        &quot;Contains the list of data model schemas supported by the
+         server.&quot;;
+
+      list schema {
+        key &quot;identifier version format&quot;;
+
+        description
+          &quot;List of data model schemas supported by the server.&quot;;
+
+        leaf identifier {
+          type string;
+          description
+            &quot;Identifier to uniquely reference the schema.  The
+             identifier is used in the &lt;get-schema&gt; operation and may
+             be used for other purposes such as file retrieval.
+
+             For modeling languages that support or require a data
+             model name (e.g., YANG module name) the identifier MUST
+             match that name.  For YANG data models, the identifier is
+             the name of the module or submodule.  In other cases, an
+             identifier such as a filename MAY be used instead.&quot;;
+        }
+        leaf version {
+          type string;
+          description
+            &quot;Version of the schema supported.  Multiple versions MAY be
+             supported simultaneously by a NETCONF server.  Each
+             version MUST be reported individually in the schema list,
+             i.e., with same identifier, possibly different location,
+             but different version.
+
+             For YANG data models, version is the value of the most
+             recent YANG &apos;revision&apos; statement in the module or
+             submodule, or the empty string if no &apos;revision&apos; statement
+             is present.&quot;;
+        }
+        leaf format {
+          type identityref {
+            base schema-format;
+          }
+          description
+            &quot;The data modeling language the schema is written
+             in (currently xsd, yang, yin, rng, or rnc).
+             For YANG data models, &apos;yang&apos; format MUST be supported and
+             &apos;yin&apos; format MAY also be provided.&quot;;
+        }
+        leaf namespace {
+          type inet:uri;
+          mandatory true;
+          description
+            &quot;The XML namespace defined by the data model.
+
+             For YANG data models, this is the module&apos;s namespace.
+             If the list entry describes a submodule, this field
+             contains the namespace of the module to which the
+             submodule belongs.&quot;;
+        }
+        leaf-list location {
+          type union {
+            type enumeration {
+              enum &quot;NETCONF&quot;;
+            }
+            type inet:uri;
+          }
+          description
+            &quot;One or more locations from which the schema can be
+             retrieved.  This list SHOULD contain at least one
+             entry per schema.
+
+             A schema entry may be located on a remote file system
+             (e.g., reference to file system for ftp retrieval) or
+             retrieved directly from a server supporting the
+             &lt;get-schema&gt; operation (denoted by the value &apos;NETCONF&apos;).&quot;;
+        }
+      }
+    }
+    container sessions {
+      description
+        &quot;The sessions container includes session-specific data for
+         NETCONF management sessions.  The session list MUST include
+         all currently active NETCONF sessions.&quot;;
+
+      list session {
+        key session-id;
+        description
+          &quot;All NETCONF sessions managed by the NETCONF server
+           MUST be reported in this list.&quot;;
+
+        leaf session-id {
+          type uint32 {
+            range &quot;1..max&quot;;
+          }
+          description
+            &quot;Unique identifier for the session.  This value is the
+             NETCONF session identifier, as defined in RFC 4741.&quot;;
+          reference
+            &quot;RFC 4741: NETCONF Configuration Protocol&quot;;
+        }
+        leaf transport {
+          type identityref {
+            base transport;
+          }
+          mandatory true;
+          description
+            &quot;Identifies the transport for each session, e.g.,
+            &apos;netconf-ssh&apos;, &apos;netconf-soap&apos;, etc.&quot;;
+        }
+        leaf username  {
+          type string;
+          mandatory true;
+          description
+            &quot;The username is the client identity that was authenticated
+            by the NETCONF transport protocol.  The algorithm used to
+            derive the username is NETCONF transport protocol specific
+            and in addition specific to the authentication mechanism
+            used by the NETCONF transport protocol.&quot;;
+        }
+        leaf source-host {
+          type inet:host;
+          description
+            &quot;Host identifier of the NETCONF client.  The value
+             returned is implementation specific (e.g., hostname,
+             IPv4 address, IPv6 address)&quot;;
+        }
+        leaf login-time {
+          type yang:date-and-time;
+          mandatory true;
+          description
+            &quot;Time at the server at which the session was established.&quot;;
+        }
+        uses common-counters {
+          description
+            &quot;Per-session counters.  Zero based with following reset
+             behaviour:
+               - at start of a session
+               - when max value is reached&quot;;
+        }
+      }
+    }
+
+    container statistics {
+      description
+        &quot;Statistical data pertaining to the NETCONF server.&quot;;
+
+      leaf netconf-start-time {
+        type yang:date-and-time;
+        description
+          &quot;Date and time at which the management subsystem was
+           started.&quot;;
+      }
+      leaf in-bad-hellos {
+        type yang:zero-based-counter32;
+        description
+          &quot;Number of sessions silently dropped because an
+          invalid &lt;hello&gt; message was received.  This includes &lt;hello&gt;
+          messages with a &apos;session-id&apos; attribute, bad namespace, and
+          bad capability declarations.&quot;;
+      }
+      leaf in-sessions {
+        type yang:zero-based-counter32;
+        description
+          &quot;Number of sessions started.  This counter is incremented
+           when a &lt;hello&gt; message with a &lt;session-id&gt; is sent.
+
+          &apos;in-sessions&apos; - &apos;in-bad-hellos&apos; =
+              &apos;number of correctly started netconf sessions&apos;&quot;;
+      }
+      leaf dropped-sessions {
+        type yang:zero-based-counter32;
+        description
+          &quot;Number of sessions that were abnormally terminated, e.g.,
+           due to idle timeout or transport close.  This counter is not
+           incremented when a session is properly closed by a
+           &lt;close-session&gt; operation, or killed by a &lt;kill-session&gt;
+           operation.&quot;;
+      }
+      uses common-counters {
+        description
+          &quot;Global counters, accumulated from all sessions.
+           Zero based with following reset behaviour:
+             - re-initialization of NETCONF server
+             - when max value is reached&quot;;
+      }
+    }
+  }
+
+  rpc get-schema {
+    description
+      &quot;This operation is used to retrieve a schema from the
+       NETCONF server.
+
+       Positive Response:
+         The NETCONF server returns the requested schema.
+
+       Negative Response:
+         If requested schema does not exist, the &lt;error-tag&gt; is
+         &apos;invalid-value&apos;.
+
+         If more than one schema matches the requested parameters, the
+         &lt;error-tag&gt; is &apos;operation-failed&apos;, and &lt;error-app-tag&gt; is
+         &apos;data-not-unique&apos;.&quot;;
+
+    input {
+      leaf identifier {
+        type string;
+        mandatory true;
+        description
+          &quot;Identifier for the schema list entry.&quot;;
+      }
+      leaf version {
+        type string;
+        description
+          &quot;Version of the schema requested.  If this parameter is not
+           present, and more than one version of the schema exists on
+           the server, a &apos;data-not-unique&apos; error is returned, as
+           described above.&quot;;
+      }
+      leaf format {
+        type identityref {
+          base schema-format;
+        }
+        description
+           &quot;The data modeling language of the schema.  If this
+            parameter is not present, and more than one formats of
+            the schema exists on the server, a &apos;data-not-unique&apos; error
+            is returned, as described above.&quot;;
+      }
+    }
+    output {
+        anyxml data {
+          description
+            &quot;Contains the schema content.&quot;;
+      }
+    }
+  }
+}
+</code></pre>
+<p><code>&lt;CODE ENDS&gt;</code></p>
+<h2 id="&#x5B89;&#x5168;&#x8003;&#x8651;&#x5B89;&#x5168;&#x8003;&#x8651;"><a name="&#x5B89;&#x5168;&#x8003;&#x8651;&#x5B89;&#x5168;&#x8003;&#x8651;" class="plugin-anchor" href="#&#x5B89;&#x5168;&#x8003;&#x8651;&#x5B89;&#x5168;&#x8003;&#x8651;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x8003;&#x8651;&#x5B89;&#x5168;&#x8003;&#x8651;</h2>
+<p>&#x672C;&#x5907;&#x5FD8;&#x5F55;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;<code>YANG</code>&#x6A21;&#x5757;&#x8BBE;&#x8BA1;&#x4E3A;&#x901A;&#x8FC7;<code>NETCONF</code>&#x534F;&#x8BAE;<a href="https://tools.ietf.org/html/rfc4741" target="_blank">RFC4741</a>&#x8BBF;&#x95EE;&#x3002; &#x6700;&#x4F4E;&#x7684;<code>NETCONF</code>&#x5C42;&#x662F;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x5C42;&#xFF0C;&#x5B9E;&#x73B0;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x7684;&#x5F3A;&#x5236;&#x662F;<code>SSH</code><a href="https://tools.ietf.org/html/rfc4742" target="_blank">RFC4742</a>&#x3002;</p>
+<p>&#x67D0;&#x4E9B;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;YANG&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x53EF;&#x8BFB;&#x6570;&#x636E;&#x8282;&#x70B9;&#x53EF;&#x80FD;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x654F;&#x611F;&#x7684;&#x6216;&#x6613;&#x53D7;&#x653B;&#x51FB;&#x7684;&#x3002; &#x56E0;&#x6B64;&#xFF0C;&#x63A7;&#x5236;&#x5BF9;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x8282;&#x70B9;&#x7684;&#x8BFB;&#x8BBF;&#x95EE;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x901A;&#x8FC7;get&#xFF0C;get-config&#x6216;&#x901A;&#x77E5;&#xFF09;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#xFF0C;&#x5217;&#x8868;&#x8282;&#x70B9;&#x548C;&#x6570;&#x636E;&#x8282;&#x70B9;&#x5177;&#x6709;&#x5176;&#x7279;&#x5B9A;&#x7684;&#x654F;&#x611F;&#x6027;/&#x6F0F;&#x6D1E;&#xFF1A;</p>
+<p><code>/netconf-state/sessions/session/username</code> : &#x5305;&#x542B;&#x53EF;&#x7528;&#x4E8E;&#x5C1D;&#x8BD5;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;&#x8EAB;&#x4EFD;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x6B64;&#x7528;&#x6237;&#x540D;&#x4EC5;&#x7528;&#x4E8E;&#x76D1;&#x63A7;&#xFF0C;&#x4E0D;&#x5E94;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x7528;&#x9014;&#xFF0C;&#x5982;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF0C;&#x800C;&#x4E0D;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x6B64;&#x7528;&#x6237;&#x540D;&#x7684;&#x9650;&#x5236;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x670D;&#x52A1;&#x5668;A&#x548C;&#x670D;&#x52A1;&#x5668;B&#x53EF;&#x80FD;&#x4F1A;&#x62A5;&#x544A;&#x76F8;&#x540C;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x4F46;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x9488;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x4EBA;&#x3002;</p>
+<h2 id="iana&#x8003;&#x8651;&#x4E8B;&#x9879;"><a name="iana&#x8003;&#x8651;&#x4E8B;&#x9879;" class="plugin-anchor" href="#iana&#x8003;&#x8651;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>IANA&#x8003;&#x8651;&#x4E8B;&#x9879;</h2>
+<p>&#x672C;&#x6587;&#x6863;&#x5728;&#x201C;<code>IETF XML</code>&#x6CE8;&#x518C;&#x8868;&#x201D;&#x4E2D;&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x4E2A;URI&#x3002; &#x9075;&#x5FAA;<a href="">RFC3688</a>&#x4E2D;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>URI: urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring
+Registrant Contact: The IESG.
+XML: N/A, the requested URI is an XML namespace.
+</code></pre><p>&#x672C;&#x6587;&#x6863;&#x5728;&#x201C;<code>YANG</code>&#x6A21;&#x5757;&#x540D;&#x79F0;&#x201D;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x3002; &#x9075;&#x5FAA;<a href="https://tools.ietf.org/html/rfc6020" target="_blank">RFC6020</a>&#x4E2D;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>name: ietf-netconf-monitoring
+namespace: urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring
+prefix: ncm
+reference: [RFC 6022](https://tools.ietf.org/html/rfc6022)
+</code></pre><h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
+<h3 id="&#x89C4;&#x8303;&#x6027;&#x53C2;&#x8003;&#x6587;&#x732E;"><a name="&#x89C4;&#x8303;&#x6027;&#x53C2;&#x8003;&#x6587;&#x732E;" class="plugin-anchor" href="#&#x89C4;&#x8303;&#x6027;&#x53C2;&#x8003;&#x6587;&#x732E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89C4;&#x8303;&#x6027;&#x53C2;&#x8003;&#x6587;&#x732E;</h3>
+<ul>
+<li><p><a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=37605" target="_blank">ISO/IEC19757-2:2008</a> ISO/IEC, &quot;Document Schema Definition Language (DSDL) --Part 2: Regular-grammar-based validation -- RELAX NG&quot;,December 2008, <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=37605" target="_blank">http://www.iso.org/iso/catalogue_detail.htm?csnumber=37605</a>.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc2119" target="_blank">RFC2119</a>  Bradner, S., &quot;Key words for use in RFCs to Indicate Requirement Levels&quot;, <a href="https://tools.ietf.org/html/bcp14" target="_blank">BCP 14</a>, RFC 2119, March 1997.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc4741" target="_blank">RFC4741</a>  Enns, R., &quot;NETCONF Configuration Protocol&quot;, RFC 4741,December 2006.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc4742" target="_blank">RFC4742</a>  Wasserman, M. and T. Goddard, &quot;Using the NETCONF Configuration Protocol over Secure SHell (SSH)&quot;, RFC 4742, December 2006.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc4743" target="_blank">RFC4743</a>  Goddard, T., &quot;Using NETCONF over the Simple Object Access Protocol (SOAP)&quot;, RFC 4743, December 2006.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc4744" target="_blank">RFC4744</a>  Lear, E. and K. Crozier, &quot;Using the NETCONF Protocol over the Blocks Extensible Exchange Protocol (BEEP)&quot;, RFC 4744, December 2006.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc5539" target="_blank">RFC5539</a>  Badra, M., &quot;NETCONF over Transport Layer Security (TLS)&quot;, RFC 5539, May 2009.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc5717" target="_blank">RFC5717</a>  Lengyel, B. and M. Bjorklund, &quot;Partial Lock Remote Procedure Call (RPC) for NETCONF&quot;, RFC 5717, December 2009.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc6020" target="_blank">RFC6020</a>  Bjorklund, M., Ed., &quot;YANG - A Data Modeling Language for the Network Configuration Protocol (NETCONF)&quot;, October 2010.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc6021" target="_blank">RFC6021</a>  Schoenwaelder, J., Ed., &quot;Common YANG Data Types&quot;, October 2010.</p>
+</li>
+<li><p><a href="http://www.w3.org/TR/2009/REC-xml-names-20091208" target="_blank">XML-NAMES</a> Hollander, D., Tobin, R., Thompson, H., Bray, T., and A. Layman, &quot;Namespaces in XML 1.0 (Third Edition)&quot;, World Wide Web Consortium Recommendation REC-xml-names-20091208, December 2009, <a href="http://www.w3.org/TR/2009/REC-xml-names-20091208" target="_blank">http://www.w3.org/TR/2009/REC-xml-names-20091208</a>.</p>
+</li>
+<li><p><a href="http://www.w3.org/TR/xmlschema-1" target="_blank">xmlschema-1</a> Biron, Paul V. and Ashok. Malhotra, &quot;XML Schema Part 1: Structures Second Edition W3C Recommendation 28 October 2004&quot;, October 2004, <a href="http://www.w3.org/TR/xmlschema-1" target="_blank">http://www.w3.org/TR/xmlschema-1</a>.</p>
+</li>
+</ul>
+<h3 id="&#x4FE1;&#x606F;&#x53C2;&#x8003;"><a name="&#x4FE1;&#x606F;&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x4FE1;&#x606F;&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FE1;&#x606F;&#x53C2;&#x8003;</h3>
+<ul>
+<li><p><a href="https://tools.ietf.org/html/rfc0959" target="_blank">RFC0959</a>  Postel, J. and J. Reynolds, &quot;File Transfer Protocol&quot;, STD 9, RFC 959, October 1985.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc2616" target="_blank">RFC2616</a>  Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &quot;Hypertext Transfer Protocol -- HTTP/1.1&quot;, RFC 2616, June 1999.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc2818" target="_blank">RFC2818</a>  Rescorla, E., &quot;HTTP Over TLS&quot;, RFC 2818, May 2000.</p>
+</li>
+<li><p><a href="https://tools.ietf.org/html/rfc3688" target="_blank">RFC3688</a>  Mealling, M., &quot;The IETF XML Registry&quot;, <a href="https://tools.ietf.org/html/bcp81" target="_blank">BCP 81</a>, RFC 3688, January 2004.</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="netconf-call-home.html" class="navigation navigation-prev " aria-label="Previous page: NETCONF Call Home">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="netconf-tags.html" class="navigation navigation-next " aria-label="Next page: NETCONF请求和响应中的标签">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"YANG Module for NETCONF Monitoring","level":"3.1.3.3.2","depth":4,"next":{"title":"NETCONF请求和响应中的标签","level":"3.1.3.3.3","depth":4,"path":"sdn/sbi/netconf-tags.md","ref":"sdn/sbi/netconf-tags.md","articles":[]},"previous":{"title":"NETCONF Call Home","level":"3.1.3.3.1","depth":4,"path":"sdn/sbi/netconf-call-home.md","ref":"sdn/sbi/netconf-call-home.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sdn/sbi/yang-module-for-netconf-monitoring.md","mtime":"2019-08-15T08:28:03.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

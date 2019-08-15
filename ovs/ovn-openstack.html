@@ -1,0 +1,1729 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OVN OpenStack · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dpdk/" />
+    
+    
+    <link rel="prev" href="ovn-docker.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../basic/">
+            
+                <a href="../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../basic/tcpip.html">
+            
+                <a href="../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../basic/arp.html">
+            
+                <a href="../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../basic/icmp.html">
+            
+                <a href="../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../basic/route.html">
+            
+                <a href="../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../basic/switch.html">
+            
+                <a href="../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../basic/udp.html">
+            
+                <a href="../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../basic/dhcp.html">
+            
+                <a href="../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../basic/tcp.html">
+            
+                <a href="../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../basic/vlan.html">
+            
+                <a href="../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../basic/overlay.html">
+            
+                <a href="../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../basic/snmp.html">
+            
+                <a href="../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../basic/lldp.html">
+            
+                <a href="../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../linux/config.html">
+            
+                <a href="../linux/config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../linux/virtual-device.html">
+            
+                <a href="../linux/virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../linux/iptables.html">
+            
+                <a href="../linux/iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../linux/loadbalance.html">
+            
+                <a href="../linux/loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../linux/tc.html">
+            
+                <a href="../linux/tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../linux/sr-iov.html">
+            
+                <a href="../linux/sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../linux/vrf.html">
+            
+                <a href="../linux/vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../linux/bpf/">
+            
+                <a href="../linux/bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../linux/bpf/bcc.html">
+            
+                <a href="../linux/bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../linux/bpf/troubleshooting.html">
+            
+                <a href="../linux/bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../linux/XDP/">
+            
+                <a href="../linux/XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="../linux/XDP/design.html">
+            
+                <a href="../linux/XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="../linux/XDP/use-cases.html">
+            
+                <a href="../linux/XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../linux/tools.html">
+            
+                <a href="../linux/tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../linux/tcpdump.html">
+            
+                <a href="../linux/tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../linux/scapy.html">
+            
+                <a href="../linux/scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../linux/kernel-network-params.html">
+            
+                <a href="../linux/kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="build.html">
+            
+                <a href="build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="internal.html">
+            
+                <a href="internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="ovn.html">
+            
+                <a href="ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="ovn-ubuntu.html">
+            
+                <a href="ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="ovn-internal.html">
+            
+                <a href="ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="ovn-ha.html">
+            
+                <a href="ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="ovn-kubernetes.html">
+            
+                <a href="ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="ovn-docker.html">
+            
+                <a href="ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.4.6" data-path="ovn-openstack.html">
+            
+                <a href="ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../dpdk/">
+            
+                <a href="../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../dpdk/introduction.html">
+            
+                <a href="../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../dpdk/install.html">
+            
+                <a href="../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../dpdk/forwarding.html">
+            
+                <a href="../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../dpdk/numa.html">
+            
+                <a href="../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../dpdk/ivshmem.html">
+            
+                <a href="../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../dpdk/PCIe.html">
+            
+                <a href="../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../dpdk/hardware.html">
+            
+                <a href="../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../dpdk/queue.html">
+            
+                <a href="../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../dpdk/offload.html">
+            
+                <a href="../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../dpdk/io-virtualization.html">
+            
+                <a href="../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../dpdk/ovs-dpdk.html">
+            
+                <a href="../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../dpdk/spdk.html">
+            
+                <a href="../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../secure/">
+            
+                <a href="../secure/">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../secure/vpn/">
+            
+                <a href="../secure/vpn/">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../secure/vpn/ipsecvpn.html">
+            
+                <a href="../secure/vpn/ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../secure/vpn/sslvpn.html">
+            
+                <a href="../secure/vpn/sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../secure/icg/">
+            
+                <a href="../secure/icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../secure/fw/">
+            
+                <a href="../secure/fw/">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="../secure/fw/principle.html">
+            
+                <a href="../secure/fw/principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../secure/fw/classify.html">
+            
+                <a href="../secure/fw/classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="../secure/fw/evolution.html">
+            
+                <a href="../secure/fw/evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../sdn/">
+            
+                <a href="../sdn/">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../sdn/yang-language.html">
+            
+                <a href="../sdn/yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../sdn/controller/">
+            
+                <a href="../sdn/controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../sdn/controller/odl/">
+            
+                <a href="../sdn/controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../sdn/controller/odl/projects.html">
+            
+                <a href="../sdn/controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../sdn/controller/odl/datastore.html">
+            
+                <a href="../sdn/controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../sdn/controller/onos.html">
+            
+                <a href="../sdn/controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../sdn/controller/floodlight.html">
+            
+                <a href="../sdn/controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../sdn/controller/ryu.html">
+            
+                <a href="../sdn/controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../sdn/controller/pox.html">
+            
+                <a href="../sdn/controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../sdn/sbi/README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../sdn/sbi/openflow.html">
+            
+                <a href="../sdn/sbi/openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../sdn/sbi/of-config.html">
+            
+                <a href="../sdn/sbi/of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../sdn/sbi/netconf.html">
+            
+                <a href="../sdn/sbi/netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.3.1" data-path="../sdn/sbi/netconf-call-home.html">
+            
+                <a href="../sdn/sbi/netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.2" data-path="../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                <a href="../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="../sdn/sbi/netconf-tags.html">
+            
+                <a href="../sdn/sbi/netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../sdn/sbi/p4.html">
+            
+                <a href="../sdn/sbi/p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../sdn/aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../sdn/aaa/radius.html">
+            
+                <a href="../sdn/aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../sdn/dataplane.html">
+            
+                <a href="../sdn/dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nfv/">
+            
+                <a href="../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../sdwan/">
+            
+                <a href="../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../mininet/">
+            
+                <a href="../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../neutron/">
+            
+                <a href="../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../practice/google.html">
+            
+                <a href="../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../sample/">
+            
+                <a href="../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../sample/application-scenarios.html">
+            
+                <a href="../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../sample/scp.html">
+            
+                <a href="../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../FAQ.html">
+            
+                <a href="../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >OVN OpenStack</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ovn-openstack"><a name="ovn-openstack" class="plugin-anchor" href="#ovn-openstack"><i class="fa fa-link" aria-hidden="true"></i></a>OVN OpenStack</h1>
+<p>OpenStack <a href="https://github.com/openstack/networking-ovn" target="_blank">networking-ovn</a> &#x9879;&#x76EE;&#x4E3A;Neutron&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;ML2&#x7684;OVN&#x63D2;&#x4EF6;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;OVN&#x7EC4;&#x4EF6;&#x4EE3;&#x66FF;&#x4E86;&#x5404;&#x79CD;Neutron&#x7684;Python agent&#xFF0C;&#x4E5F;&#x4E0D;&#x518D;&#x4F7F;&#x7528; RabbitMQ&#xFF0C;&#x800C;&#x662F;&#x57FA;&#x4E8E;OVN&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF1A;&#x4F7F;&#x7528; OVSDB &#x534F;&#x8BAE;&#x6765;&#x628A;&#x7528;&#x6237;&#x7684;&#x914D;&#x7F6E;&#x5199;&#x5728; Northbound DB &#x91CC;&#x9762;&#xFF0C;ovn-northd &#x76D1;&#x542C;&#x5230; Northbound DB &#x914D;&#x7F6E;&#x53D1;&#x751F;&#x6539;&#x53D8;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x914D;&#x7F6E;&#x7FFB;&#x8BD1;&#x5230; Southbound DB &#x91CC;&#x9762;&#xFF0C;ovn-controller &#x6CE8;&#x610F;&#x5230; Southbound DB &#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x7136;&#x540E;&#x66F4;&#x65B0;&#x672C;&#x5730;&#x7684;&#x6D41;&#x8868;&#x3002;</p>
+<p>OVN &#x91CC;&#x9762;&#x62A5;&#x6587;&#x7684;&#x5904;&#x7406;&#x90FD;&#x662F;&#x901A;&#x8FC7; OVS OpenFlow &#x6D41;&#x8868;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x800C;&#x5728; Neutron &#x91CC;&#x9762;&#x4E8C;&#x5C42;&#x62A5;&#x6587;&#x5904;&#x7406;&#x662F;&#x901A;&#x8FC7; OVS OpenFlow &#x6D41;&#x8868;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4E09;&#x5C42;&#x62A5;&#x6587;&#x5904;&#x7406;&#x662F;&#x901A;&#x8FC7; Linux TCP/IP &#x534F;&#x8BAE;&#x6808;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x67B6;&#x6784;"><a name="&#x67B6;&#x6784;" class="plugin-anchor" href="#&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67B6;&#x6784;</h2>
+<p>&#x7F51;&#x7EDC;&#x8282;&#x70B9;</p>
+<p><img src="images/ovn-network-service.png" alt="OVN network service"></p>
+<p>&#x800C;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x670D;&#x52A1;</p>
+<p><img src="images/ovn-compute-node.png" alt="OVN compute node"></p>
+<blockquote>
+<p>&#x56FE;&#x7247;&#x6765;&#x6E90; <a href="https://docs.openstack.org/networking-ovn/ocata/refarch/refarch.html" target="_blank">Reference architecture - OpenStack</a></p>
+</blockquote>
+<h2 id="&#x5B9E;&#x73B0;&#x539F;&#x7406;"><a name="&#x5B9E;&#x73B0;&#x539F;&#x7406;" class="plugin-anchor" href="#&#x5B9E;&#x73B0;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;&#x539F;&#x7406;</h2>
+<h3 id="&#x5B89;&#x5168;&#x7EC4;"><a name="&#x5B89;&#x5168;&#x7EC4;" class="plugin-anchor" href="#&#x5B89;&#x5168;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x7EC4;</h3>
+<p>OVN &#x7684; security group &#x6BCF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; neutron port&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x628A; tap port &#x8FDE;&#x5230; OVS bridge&#xFF08;&#x9ED8;&#x8BA4;&#x662F; br-int&#xFF09;&#xFF0C;&#x4E0D;&#x7528;&#x50CF;&#x73B0;&#x5728; Neutron &#x90A3;&#x6837;&#x521B;&#x5EFA;&#x90A3;&#x4E48;&#x591A; network device&#xFF0C;&#x5927;&#x5927;&#x51CF;&#x5C11;&#x4E86;&#x8DF3;&#x6570;&#x3002;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;OVN &#x7684; security group &#x662F;&#x7528;&#x5230;&#x4E86; OVS &#x7684; conntrack &#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6839;&#x636E;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5339;&#x914D;&#x62A5;&#x6587;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x63D0;&#x9AD8;&#x4E86;&#x6D41;&#x8868;&#x7684;&#x67E5;&#x627E;&#x6548;&#x7387;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x505A;&#x6709;&#x72B6;&#x6001;&#x7684;&#x9632;&#x706B;&#x5899;&#x548C; NAT&#x3002;
+OVS &#x7684; conntrack &#x662F;&#x7528; Linux kernel &#x7684; netfilter &#x6765;&#x505A;&#x7684;&#xFF0C;&#x4ED6;&#x8C03;&#x7528; netfiler userspace netlink API &#x628A;&#x6765;&#x62A5;&#x6587;&#x9001;&#x7ED9; Linux kernel &#x7684; netfiler connection tracker &#x6A21;&#x5757;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x7ED9;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x8868;&#xFF0C;&#x8BB0;&#x5F55;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;&#x7684;&#x72B6;&#x6001;&#xFF0C;OVS &#x83B7;&#x53D6;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#xFF0C;Openflow flow &#x53EF;&#x4EE5; match &#x8FD9;&#x4E9B;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x3002;</p>
+<h3 id="ovn-l3"><a name="ovn-l3" class="plugin-anchor" href="#ovn-l3"><i class="fa fa-link" aria-hidden="true"></i></a>OVN L3</h3>
+<p>Neutron &#x7684;&#x4E09;&#x5C42;&#x529F;&#x80FD;&#x4E3B;&#x8981;&#x6709;&#x8DEF;&#x7531;&#xFF0C;SNAT &#x548C; Floating IP&#xFF08;&#x4E5F;&#x53EB; DNAT&#xFF09;&#xFF0C;&#x5B83;&#x662F;&#x901A; Linux kernel &#x7684;namespace &#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x8DEF;&#x7531;&#x5668;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; namespace&#xFF0C;&#x5229;&#x7528; Linux TCP/IP &#x534F;&#x8BAE;&#x6808;&#x6765;&#x505A;&#x8DEF;&#x7531;&#x8F6C;&#x53D1;&#x3002;OVN &#x652F;&#x6301;&#x539F;&#x751F;&#x7684;&#x4E09;&#x5C42;&#x529F;&#x80FD;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x501F;&#x52A9; Linux TCP/IP stack&#xFF0C;&#x7528;OpenFlow &#x6D41;&#x8868;&#x6765;&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x67E5;&#x627E;&#xFF0C;ARP &#x67E5;&#x627E;&#xFF0C;TTL &#x548C; MAC &#x5730;&#x5740;&#x7684;&#x66F4;&#x6539;&#x3002;OVN &#x7684;&#x8DEF;&#x7531;&#x4E5F;&#x662F;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#xFF0C;&#x8DEF;&#x7531;&#x5668;&#x5728;&#x6BCF;&#x4E2A;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x4E0A;&#x90FD;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x6709;&#x4E86; OVN &#x4E4B;&#x540E;&#xFF0C;&#x4E0D;&#x9700;&#x8981; Neutron L3 agent &#x4E86; &#x548C;DVR&#x4E86;&#x3002;</p>
+<p><img src="images/ovn-zoom3-l3.png" alt="ovn zoom3 l3"></p>
+<blockquote>
+<p>&#x56FE;&#x7247;&#x6765;&#x6E90;<a href="http://networkop.co.uk/blog/2016/12/10/ovn-part2/" target="_blank">OpenStack SDN With OVN (Part 2) - Network Engineering Analysis</a></p>
+</blockquote>
+<p>&#x6BD4;&#x5982;SNAT&#x548C;DNAT&#x7684;&#x6D41;&#x8868;&#x4E3A;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># SNAT</span>
+table=0 (lr_out_snat), priority=25, match=(ip &amp;&amp; ip4.src == 10.0.0.0/24), action=(ct_snat(169.254.0.54);)
+
+<span class="hljs-comment"># UNSNAT</span>
+table=3 (lr_<span class="hljs-keyword">in</span>_unsnat), priority=100, match=(ip &amp;&amp; ip4.dst == 169.254.0.54), action=(ct_snat; next;)
+
+<span class="hljs-comment"># DNAT</span>
+table=4 (lr_<span class="hljs-keyword">in</span>_dnat), priority=100, match=(ip &amp;&amp; ip4.dst == 169.254.0.52), action=(flags.loopback = 1; ct_dnat(10.0.0.5);)
+</code></pre>
+<h3 id="ovn-l2"><a name="ovn-l2" class="plugin-anchor" href="#ovn-l2"><i class="fa fa-link" aria-hidden="true"></i></a>OVN L2</h3>
+<p>OVN&#x7684;L2&#x529F;&#x80FD;&#x90FD;&#x662F;&#x57FA;&#x4E8E;OpenFlow&#x6D41;&#x8868;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x5305;&#x62EC;Port Security&#x3001;Egress ACL&#x3001;ARP Responder&#x3001;DHCP&#x3001;Destiniation Lookup&#x3001;Ingress ACL&#x7B49;&#x3002;</p>
+<p><img src="images/ovn-zoom3-l2.png" alt="ovn zoom3 l2"></p>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="http://docs.openstack.org/developer/networking-ovn/refarch/refarch.html" target="_blank">networking-ovn reference architecture</a></li>
+<li><a href="https://www.ibm.com/developerworks/cn/cloud/library/1603-ovn-ovs-openvswitch/index.html" target="_blank">&#x5982;&#x4F55;&#x501F;&#x52A9; OVN &#x6765;&#x63D0;&#x9AD8; OVS &#x5728;&#x4E91;&#x8BA1;&#x7B97;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x6027;&#x80FD;</a></li>
+<li><a href="http://networkop.co.uk/blog/2016/12/10/ovn-part2/" target="_blank">OpenStack SDN With OVN</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ovn-docker.html" class="navigation navigation-prev " aria-label="Previous page: OVN Docker插件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dpdk/" class="navigation navigation-next " aria-label="Next page: 5. DPDK">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"OVN OpenStack","level":"2.3.4.6","depth":3,"next":{"title":"5. DPDK","level":"2.4","depth":1,"path":"dpdk/README.md","ref":"dpdk/README.md","articles":[{"title":"DPDK简介","level":"2.4.1","depth":2,"path":"dpdk/introduction.md","ref":"dpdk/introduction.md","articles":[]},{"title":"DPDK安装","level":"2.4.2","depth":2,"path":"dpdk/install.md","ref":"dpdk/install.md","articles":[]},{"title":"报文转发模型","level":"2.4.3","depth":2,"path":"dpdk/forwarding.md","ref":"dpdk/forwarding.md","articles":[]},{"title":"NUMA","level":"2.4.4","depth":2,"path":"dpdk/numa.md","ref":"dpdk/numa.md","articles":[]},{"title":"Ring和共享内存","level":"2.4.5","depth":2,"path":"dpdk/ivshmem.md","ref":"dpdk/ivshmem.md","articles":[]},{"title":"PCIe","level":"2.4.6","depth":2,"path":"dpdk/PCIe.md","ref":"dpdk/PCIe.md","articles":[]},{"title":"网卡性能优化","level":"2.4.7","depth":2,"path":"dpdk/hardware.md","ref":"dpdk/hardware.md","articles":[]},{"title":"多队列","level":"2.4.8","depth":2,"path":"dpdk/queue.md","ref":"dpdk/queue.md","articles":[]},{"title":"硬件offload","level":"2.4.9","depth":2,"path":"dpdk/offload.md","ref":"dpdk/offload.md","articles":[]},{"title":"虚拟化","level":"2.4.10","depth":2,"path":"dpdk/io-virtualization.md","ref":"dpdk/io-virtualization.md","articles":[]},{"title":"OVS DPDK","level":"2.4.11","depth":2,"path":"dpdk/ovs-dpdk.md","ref":"dpdk/ovs-dpdk.md","articles":[]},{"title":"SPDK","level":"2.4.12","depth":2,"path":"dpdk/spdk.md","ref":"dpdk/spdk.md","articles":[]},{"title":"OpenFastPath","level":"2.4.13","depth":2,"path":"dpdk/OpenFastPath.md","ref":"dpdk/OpenFastPath.md","articles":[]}]},"previous":{"title":"OVN Docker插件","level":"2.3.4.5","depth":3,"path":"ovs/ovn-docker.md","ref":"ovs/ovn-docker.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ovs/ovn-openstack.md","mtime":"2019-08-15T08:28:03.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

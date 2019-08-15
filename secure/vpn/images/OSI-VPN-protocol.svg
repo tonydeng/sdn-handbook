@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="878 1586 665.5 468.5" width="665.5pt" height="468.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-20 04:00:03 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 3 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="42" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="300">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Light"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>OSI SSL/TLS Protocol</title>
+    <rect fill="white" width="665.5" height="468.5"/>
+    <g>
+      <title>图层 1</title>
+      <rect x="879" y="1642" width="132.5" height="194" fill="yellow"/>
+      <rect x="879" y="1642" width="132.5" height="194" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(884 1729.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="8.269531" y="15" textLength="105.96094">Application</tspan>
+      </text>
+      <rect x="1017" y="1642" width="128" height="47" fill="yellow"/>
+      <rect x="1017" y="1642" width="128" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1022 1656)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="6.019531" y="15" textLength="105.96094">Application</tspan>
+      </text>
+      <rect x="1017" y="1747" width="128" height="89" fill="#7bb300"/>
+      <rect x="1017" y="1747" width="128" height="89" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1022 1782)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="25.285156" y="15" textLength="67.42969">Session</tspan>
+      </text>
+      <rect x="1017" y="1694.5" width="128" height="47" fill="#dba808"/>
+      <rect x="1017" y="1694.5" width="128" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1022 1708.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="1.203125" y="15" textLength="115.59375">Presentation</tspan>
+      </text>
+      <rect x="879" y="1845" width="266" height="47" fill="lime"/>
+      <rect x="879" y="1845" width="266" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(884 1857.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="34.9375" y="17" textLength="86.69531">Transport</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="121.63281" y="17" textLength="16">（</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="137.63281" y="17" textLength="67.42969">TCP/UDP</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="205.0625" y="17" textLength="16">）</tspan>
+      </text>
+      <rect x="879" y="1899" width="266" height="47" fill="aqua"/>
+      <rect x="879" y="1899" width="266" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(884 1911.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="68.65234" y="17" textLength="67.42969">Network</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="136.08203" y="17" textLength="16">（</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="152.08203" y="17" textLength="19.265625">IP</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="300" x="171.34766" y="17" textLength="16">）</tspan>
+      </text>
+      <rect x="1017" y="1953" width="128" height="47" fill="fuchsia"/>
+      <rect x="1017" y="1953" width="128" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1022 1967)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="15.652344" y="15" textLength="86.69531">Data Link</tspan>
+      </text>
+      <rect x="1017" y="2007" width="128" height="47" fill="red"/>
+      <rect x="1017" y="2007" width="128" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1022 2021)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="20.46875" y="15" textLength="77.0625">Physical</tspan>
+      </text>
+      <rect x="1150.5" y="1642" width="120" height="157" fill="yellow"/>
+      <rect x="1150.5" y="1642" width="120" height="157" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1155.5 1647)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="30.91797" y="15" textLength="48.16406">HTTPS</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.55078" y="40" textLength="28.898438">FTP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="35.734375" y="65" textLength="38.53125">POP3</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="35.734375" y="90" textLength="38.53125">IMAP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="35.734375" y="115" textLength="38.53125">SMTP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="26.101562" y="140" textLength="57.796875">TELNET</tspan>
+      </text>
+      <rect x="1150.5" y="1806" width="120" height="58" fill="yellow"/>
+      <rect x="1150.5" y="1806" width="120" height="58" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1155.5 1825.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="21.285156" y="15" textLength="67.42969">SSL/TLS</tspan>
+      </text>
+      <rect x="1279" y="1642" width="120" height="157" fill="yellow"/>
+      <rect x="1279" y="1642" width="120" height="157" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1284 1686)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="35.734375" y="15" textLength="38.53125">SFTP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.55078" y="40" textLength="28.898438">SCP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.55078" y="65" textLength="28.898438">SSH</tspan>
+      </text>
+      <rect x="1279" y="1806" width="120" height="58" fill="yellow"/>
+      <rect x="1279" y="1806" width="120" height="58" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1284 1815.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="40.55078" y="15" textLength="28.898438">SSH</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="16.46875" y="35" textLength="77.0625">(tunnel)</tspan>
+      </text>
+      <rect x="1407.5" y="1806" width="67.5" height="47" fill="yellow"/>
+      <rect x="1407.5" y="1806" width="67.5" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1412.5 1810)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="4.667969" y="15" textLength="48.16406">Socks</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="9.484375" y="35" textLength="38.53125">(v5)</tspan>
+      </text>
+      <path d="M 1407.5 1642 L 1541.3258 1642 L 1542 1853 L 1482.1094 1853 L 1481.0943 1798 L 1407.5 1798.6058 Z" fill="yellow"/>
+      <path d="M 1407.5 1642 L 1541.3258 1642 L 1542 1853 L 1482.1094 1853 L 1481.0943 1798 L 1407.5 1798.6058 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1412.5 1647)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="42.984375" y="15" textLength="38.53125">MIME</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="47.80078" y="40" textLength="28.898438">PGP</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="47.80078" y="65" textLength="28.898438">SET</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="14.085938" y="90" textLength="96.32812">3-D Secure</tspan>
+      </text>
+      <path d="M 1151 1870.35 L 1407 1871.425 L 1407 1857 L 1543 1857 L 1542 1894 L 1151 1894 Z" fill="lime"/>
+      <path d="M 1151 1870.35 L 1407 1871.425 L 1407 1857 L 1543 1857 L 1542 1894 L 1151 1894 Z" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="1151" y="1899" width="391" height="47" fill="aqua"/>
+      <rect x="1151" y="1899" width="391" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1156 1913)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="166.41797" y="15" textLength="48.16406">IPSec</tspan>
+      </text>
+      <rect x="1151" y="1953" width="391" height="47" fill="fuchsia"/>
+      <rect x="1151" y="1953" width="391" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1156 1967)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="98.98828" y="15" textLength="183.02344">L2TP/PPP - PPTP/PPP</tspan>
+      </text>
+      <rect x="1151" y="2007" width="391" height="47" fill="red"/>
+      <rect x="1151" y="2007" width="391" height="47" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="878.5" y="1953" width="132.5" height="101" fill="red"/>
+      <rect x="878.5" y="1953" width="132.5" height="101" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(883.5 1984)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="27.535156" y="15" textLength="67.42969">Network</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="17.902344" y="35" textLength="86.69531">Interface</tspan>
+      </text>
+      <text transform="translate(919.75 1591.052)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".028" y="15" textLength="50.944">TCP/IP</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="3.124" y="33.448" textLength="44.752">Model</tspan>
+      </text>
+      <text transform="translate(1058.5 1591.052)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="9.164" y="15" textLength="26.672">OSI</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".124" y="33.448" textLength="44.752">Model</tspan>
+      </text>
+      <text transform="translate(1308.5 1591.052)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="14.652" y="15" textLength="31.696">VPN</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".428" y="33.448" textLength="15.696">Pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="15.836" y="33.448" textLength="44.736">otocol</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

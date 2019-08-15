@@ -1,0 +1,1849 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>负载均衡 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tc.html" />
+    
+    
+    <link rel="prev" href="iptables.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../basic/">
+            
+                <a href="../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../basic/tcpip.html">
+            
+                <a href="../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../basic/arp.html">
+            
+                <a href="../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../basic/icmp.html">
+            
+                <a href="../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../basic/route.html">
+            
+                <a href="../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../basic/switch.html">
+            
+                <a href="../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../basic/udp.html">
+            
+                <a href="../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../basic/dhcp.html">
+            
+                <a href="../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../basic/tcp.html">
+            
+                <a href="../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../basic/vlan.html">
+            
+                <a href="../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../basic/overlay.html">
+            
+                <a href="../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../basic/snmp.html">
+            
+                <a href="../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../basic/lldp.html">
+            
+                <a href="../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="virtual-device.html">
+            
+                <a href="virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="iptables.html">
+            
+                <a href="iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.3" data-path="loadbalance.html">
+            
+                <a href="loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="tc.html">
+            
+                <a href="tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="sr-iov.html">
+            
+                <a href="sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="vrf.html">
+            
+                <a href="vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="bpf/">
+            
+                <a href="bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="bpf/bcc.html">
+            
+                <a href="bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="bpf/troubleshooting.html">
+            
+                <a href="bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="XDP/">
+            
+                <a href="XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="XDP/design.html">
+            
+                <a href="XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="XDP/use-cases.html">
+            
+                <a href="XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="tools.html">
+            
+                <a href="tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="tcpdump.html">
+            
+                <a href="tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="scapy.html">
+            
+                <a href="scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="kernel-network-params.html">
+            
+                <a href="kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ovs/">
+            
+                <a href="../ovs/">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../ovs/">
+            
+                <a href="../ovs/">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../ovs/build.html">
+            
+                <a href="../ovs/build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../ovs/internal.html">
+            
+                <a href="../ovs/internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../ovs/ovn.html">
+            
+                <a href="../ovs/ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="../ovs/ovn-ubuntu.html">
+            
+                <a href="../ovs/ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="../ovs/ovn-internal.html">
+            
+                <a href="../ovs/ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="../ovs/ovn-ha.html">
+            
+                <a href="../ovs/ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="../ovs/ovn-kubernetes.html">
+            
+                <a href="../ovs/ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="../ovs/ovn-docker.html">
+            
+                <a href="../ovs/ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.6" data-path="../ovs/ovn-openstack.html">
+            
+                <a href="../ovs/ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../dpdk/">
+            
+                <a href="../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../dpdk/introduction.html">
+            
+                <a href="../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../dpdk/install.html">
+            
+                <a href="../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../dpdk/forwarding.html">
+            
+                <a href="../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../dpdk/numa.html">
+            
+                <a href="../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../dpdk/ivshmem.html">
+            
+                <a href="../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../dpdk/PCIe.html">
+            
+                <a href="../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../dpdk/hardware.html">
+            
+                <a href="../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../dpdk/queue.html">
+            
+                <a href="../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../dpdk/offload.html">
+            
+                <a href="../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../dpdk/io-virtualization.html">
+            
+                <a href="../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../dpdk/ovs-dpdk.html">
+            
+                <a href="../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../dpdk/spdk.html">
+            
+                <a href="../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../secure/">
+            
+                <a href="../secure/">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../secure/vpn/">
+            
+                <a href="../secure/vpn/">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../secure/vpn/ipsecvpn.html">
+            
+                <a href="../secure/vpn/ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../secure/vpn/sslvpn.html">
+            
+                <a href="../secure/vpn/sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../secure/icg/">
+            
+                <a href="../secure/icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../secure/fw/">
+            
+                <a href="../secure/fw/">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="../secure/fw/principle.html">
+            
+                <a href="../secure/fw/principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../secure/fw/classify.html">
+            
+                <a href="../secure/fw/classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="../secure/fw/evolution.html">
+            
+                <a href="../secure/fw/evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../sdn/">
+            
+                <a href="../sdn/">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../sdn/yang-language.html">
+            
+                <a href="../sdn/yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../sdn/controller/">
+            
+                <a href="../sdn/controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../sdn/controller/odl/">
+            
+                <a href="../sdn/controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../sdn/controller/odl/projects.html">
+            
+                <a href="../sdn/controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../sdn/controller/odl/datastore.html">
+            
+                <a href="../sdn/controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../sdn/controller/onos.html">
+            
+                <a href="../sdn/controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../sdn/controller/floodlight.html">
+            
+                <a href="../sdn/controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../sdn/controller/ryu.html">
+            
+                <a href="../sdn/controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../sdn/controller/pox.html">
+            
+                <a href="../sdn/controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../sdn/sbi/README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../sdn/sbi/openflow.html">
+            
+                <a href="../sdn/sbi/openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../sdn/sbi/of-config.html">
+            
+                <a href="../sdn/sbi/of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../sdn/sbi/netconf.html">
+            
+                <a href="../sdn/sbi/netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.3.1" data-path="../sdn/sbi/netconf-call-home.html">
+            
+                <a href="../sdn/sbi/netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.2" data-path="../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                <a href="../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="../sdn/sbi/netconf-tags.html">
+            
+                <a href="../sdn/sbi/netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../sdn/sbi/p4.html">
+            
+                <a href="../sdn/sbi/p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../sdn/aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../sdn/aaa/radius.html">
+            
+                <a href="../sdn/aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../sdn/dataplane.html">
+            
+                <a href="../sdn/dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../nfv/">
+            
+                <a href="../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../sdwan/">
+            
+                <a href="../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../mininet/">
+            
+                <a href="../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../neutron/">
+            
+                <a href="../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../practice/google.html">
+            
+                <a href="../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../sample/">
+            
+                <a href="../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../sample/application-scenarios.html">
+            
+                <a href="../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../sample/scp.html">
+            
+                <a href="../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../FAQ.html">
+            
+                <a href="../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../reference.html">
+            
+                <a href="../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../CHANGELOG.html">
+            
+                <a href="../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >负载均衡</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><a name="&#x8D1F;&#x8F7D;&#x5747;&#x8861;" class="plugin-anchor" href="#&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</h1>
+<h2 id="lvs"><a name="lvs" class="plugin-anchor" href="#lvs"><i class="fa fa-link" aria-hidden="true"></i></a>lvs</h2>
+<p><code>Linux Virtual Server</code> (<code>lvs</code>) &#x662F;<code>Linux</code>&#x5185;&#x6838;&#x81EA;&#x5E26;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#xFF0C;&#x4E5F;&#x662F;&#x76EE;&#x524D;&#x6027;&#x80FD;&#x6700;&#x597D;&#x7684;&#x8F6F;&#x4EF6;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x4E4B;&#x4E00;&#x3002;<code>lvs</code>&#x5305;&#x62EC;<code>ipvs</code>&#x5185;&#x6838;&#x6A21;&#x5757;&#x548C;<code>ipvsadm</code>&#x7528;&#x6237;&#x7A7A;&#x95F4;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x4E24;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x5728;<code>lvs</code>&#x4E2D;&#xFF0C;&#x8282;&#x70B9;&#x5206;&#x4E3A;<code>Director Server</code>&#x548C;<code>Real Server</code>&#x4E24;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;&#x5176;&#x4E2D;<code>Director Server</code>&#x662F;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;&#x6240;&#x5728;&#x8282;&#x70B9;&#xFF0C;&#x800C;<code>Real Server</code>&#x5219;&#x662F;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x8282;&#x70B9;&#x3002;&#x5F53;&#x7528;&#x6237;&#x7684;&#x8BF7;&#x6C42;&#x5230;&#x8FBE;<code>Director Server</code>&#x65F6;&#xFF0C;&#x5185;&#x6838;<code>netfilter</code>&#x673A;&#x5236;&#x7684;<code>PREROUTING</code>&#x94FE;&#x4F1A;&#x5C06;&#x53D1;&#x5F80;&#x672C;&#x5730;<code>IP</code>&#x7684;&#x5305;&#x8F6C;&#x53D1;&#x7ED9;<code>INPUT</code>&#x94FE;&#xFF08;&#x4E5F;&#x5C31;&#x662F;<code>ipvs</code>&#x7684;&#x5DE5;&#x4F5C;&#x94FE;&#xFF09;&#xFF0C;&#x5728;<code>INPUT</code>&#x94FE;&#x4E0A;&#xFF0C;<code>ipvs</code>&#x6839;&#x636E;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x89C4;&#x5219;&#x5BF9;&#x6570;&#x636E;&#x5305;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF08;&#x5982;&#x4FEE;&#x6539;&#x76EE;&#x7684;IP&#x548C;&#x7AEF;&#x53E3;&#x7B49;&#xFF09;&#xFF0C;&#x5E76;&#x628A;&#x65B0;&#x7684;&#x5305;&#x53D1;&#x9001;&#x5230;<code>POSTROUTING</code>&#x94FE;&#xFF0C;&#x8FDB;&#x800C;&#x518D;&#x8F6C;&#x53D1;&#x7ED9;<code>Real Server</code>&#x3002;</p>
+<h3 id="&#x8F6C;&#x53D1;&#x6A21;&#x5F0F;"><a name="&#x8F6C;&#x53D1;&#x6A21;&#x5F0F;" class="plugin-anchor" href="#&#x8F6C;&#x53D1;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6C;&#x53D1;&#x6A21;&#x5F0F;</h3>
+<p><strong>NAT</strong></p>
+<p><code>NAT</code>&#x6A21;&#x5F0F;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5305;&#x7684;&#x76EE;&#x7684;IP&#x548C;&#x76EE;&#x7684;&#x7AEF;&#x53E3;&#x6765;&#x5C06;&#x5305;&#x8F6C;&#x53D1;&#x7ED9;<code>Real Server</code>&#x3002;&#x5B83;&#x7684;&#x7279;&#x70B9;&#x5305;&#x62EC;</p>
+<ul>
+<li><code>Director Server</code>&#x5FC5;&#x987B;&#x4F5C;&#x4E3A;<code>Real Server</code>&#x7684;&#x7F51;&#x5173;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x4EEC;&#x5FC5;&#x987B;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x7F51;&#x6BB5;&#x5185;</li>
+<li>&#x4E0D;&#x9700;&#x8981;<code>Real Server</code>&#x505A;&#x4EFB;&#x4F55;&#x7279;&#x6B8A;&#x914D;&#x7F6E;</li>
+<li>&#x652F;&#x6301;&#x7AEF;&#x53E3;&#x6620;&#x5C04;</li>
+<li>&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x90FD;&#x9700;&#x8981;&#x7ECF;&#x8FC7;<code>Director Server</code>&#xFF0C;&#x6613;&#x79F0;&#x4E3A;&#x6027;&#x80FD;&#x74F6;&#x9888;</li>
+</ul>
+<p><img src="images/lvs-nat.png" alt="LVS NAT"></p>
+<p><strong>DR</strong></p>
+<p><code>DR</code>&#xFF08;<code>Direct Route</code>&#xFF09;&#x6A21;&#x5F0F;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5305;&#x7684;&#x76EE;&#x7684;<code>MAC</code>&#x5730;&#x5740;&#x5C06;&#x5305;&#x8F6C;&#x53D1;&#x7ED9;<code>Real Server</code>&#x3002;&#x5B83;&#x7684;&#x7279;&#x70B9;&#x5305;&#x62EC;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x5728;<code>Real Server</code>&#x7684;<code>lo</code>&#x4E0A;&#x914D;&#x7F6E;<code>vip</code>&#xFF0C;&#x5E76;&#x914D;&#x7F6E;<code>arp_ignore</code>&#x548C;<code>arp_announce</code>&#x5FFD;&#x7565;&#x5BF9;<code>vip</code>&#x7684;<code>ARP</code>&#x89E3;&#x6790;&#x8BF7;&#x6C42;</li>
+<li><code>Director Server</code>&#x548C;<code>Real Server</code>&#x5FC5;&#x987B;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x5185;&#xFF0C;&#x4E8C;&#x5C42;&#x53EF;&#x8FBE;</li>
+<li>&#x867D;&#x7136;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x5305;&#x90FD;&#x4F1A;&#x7ECF;&#x8FC7;<code>Director Server</code>&#xFF0C;&#x4F46;&#x54CD;&#x5E94;&#x62A5;&#x6587;&#x4E0D;&#x7ECF;&#x8FC7;&#xFF0C;&#x6709;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x4F18;&#x52BF;</li>
+</ul>
+<p><img src="images/lvs-dr.png" alt="LVS DR"></p>
+<p><strong>TUN</strong></p>
+<p>TUN&#x6A21;&#x5F0F;&#x901A;&#x8FC7;&#x5C06;&#x6570;&#x636E;&#x5305;&#x5C01;&#x88C5;&#x5728;&#x53E6;&#x4E00;&#x4E2A;IP&#x5305;&#x4E2D;&#xFF08;&#x6E90;&#x5730;&#x5740;&#x4E3A;<code>DIP</code>&#xFF0C;&#x76EE;&#x7684;&#x4E3A;<code>RIP</code>&#xFF09;&#x5C06;&#x5305;&#x8F6C;&#x53D1;&#x7ED9;<code>Real Server</code>&#x3002;&#x5B83;&#x7684;&#x7279;&#x70B9;&#x5305;&#x62EC;</p>
+<ul>
+<li><code>Real Server</code>&#x9700;&#x8981;&#x5728;<code>lo</code>&#x4E0A;&#x914D;&#x7F6E;<code>vip</code>&#xFF0C;&#x4F46;&#x4E0D;&#x9700;&#x8981;<code>Director Server</code>&#x4F5C;&#x4E3A;&#x7F51;&#x5173;</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x7AEF;&#x53E3;&#x6620;&#x5C04;</li>
+</ul>
+<p><img src="images/lvs-tun.png" alt=""></p>
+<p><strong>FULLNAT</strong></p>
+<p><code>FULLNAT</code>&#x662F;&#x963F;&#x91CC;&#x5728;NAT&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;&#x7684;&#x4E00;&#x4E2A;&#x65B0;&#x8F6C;&#x53D1;&#x6A21;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;&#x5F15;&#x5165;<code>local IP</code>&#xFF08;<code>CIP-VIP&#x8F6C;&#x6362;&#x4E3A;LIP-&gt;RIP</code>&#xFF0C;&#x800C;<code>LIP</code>&#x548C;<code>RIP</code>&#x5747;&#x4E3A;<code>IDC&#x5185;&#x7F51;IP</code>&#xFF09;&#x4F7F;&#x5F97;&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x53EF;&#x4EE5;&#x8DE8;&#x8D8A;&#x4E0D;&#x540C;<code>vlan</code>&#xFF0C;&#x4EE3;&#x7801;&#x7EF4;&#x62A4;&#x5728;<a href="https://github.com/alibaba/LVS" target="_blank">alibaba/LVS</a>&#x4E0A;&#x9762;&#x3002;&#x5176;&#x7279;&#x70B9;&#x662F;</p>
+<ul>
+<li>&#x7269;&#x7406;&#x7F51;&#x7EDC;&#x4EC5;&#x8981;&#x6C42;&#x4E09;&#x5C42;&#x53EF;&#x8FBE;</li>
+<li><code>Real Server</code>&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x7279;&#x6B8A;&#x914D;&#x7F6E;</li>
+<li><code>SYNPROXY</code>&#x9632;&#x6B62;<code>synflooding</code>&#x653B;&#x51FB;</li>
+<li>&#x672A;&#x8FDB;&#x5165;&#x5185;&#x6838;&#x4E3B;&#x7EBF;&#xFF0C;&#x7EF4;&#x62A4;&#x590D;&#x6742;</li>
+</ul>
+<p><img src="images/lvs-fullnat.png" alt="LVS FULLNAT"></p>
+<h3 id="&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;"><a name="&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;" class="plugin-anchor" href="#&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;</h3>
+<ul>
+<li>&#x8F6E;&#x53EB;&#x8C03;&#x5EA6;&#xFF08;<code>Round-Robin Scheduling</code>&#xFF09;</li>
+<li>&#x52A0;&#x6743;&#x8F6E;&#x53EB;&#x8C03;&#x5EA6;&#xFF08;<code>Weighted Round-Robin Scheduling</code>&#xFF09;</li>
+<li>&#x6700;&#x5C0F;&#x8FDE;&#x63A5;&#x8C03;&#x5EA6;&#xFF08;<code>Least-Connection Scheduling</code>&#xFF09;</li>
+<li>&#x52A0;&#x6743;&#x6700;&#x5C0F;&#x8FDE;&#x63A5;&#x8C03;&#x5EA6;&#xFF08;<code>Weighted Least-Connection Scheduling</code>&#xFF09;</li>
+<li>&#x57FA;&#x4E8E;&#x5C40;&#x90E8;&#x6027;&#x7684;&#x6700;&#x5C11;&#x94FE;&#x63A5;&#xFF08;<code>Locality-Based Least Connections Scheduling</code>&#xFF09;</li>
+<li>&#x5E26;&#x590D;&#x5236;&#x7684;&#x57FA;&#x4E8E;&#x5C40;&#x90E8;&#x6027;&#x6700;&#x5C11;&#x94FE;&#x63A5;&#xFF08;<code>Locality-Based Least Connections with Replication Scheduling</code>&#xFF09;</li>
+<li>&#x76EE;&#x6807;&#x5730;&#x5740;&#x6563;&#x5217;&#x8C03;&#x5EA6;&#xFF08;<code>Destination Hashing Scheduling</code>&#xFF09;</li>
+<li>&#x6E90;&#x5730;&#x5740;&#x6563;&#x5217;&#x8C03;&#x5EA6;&#xFF08;<code>Source Hashing Scheduling</code>&#xFF09;</li>
+<li>&#x6700;&#x77ED;&#x9884;&#x671F;&#x5EF6;&#x65F6;&#x8C03;&#x5EA6;&#xFF08;<code>Shortest Expected Delay Scheduling</code>&#xFF09;</li>
+<li>&#x4E0D;&#x6392;&#x961F;&#x8C03;&#x5EA6;&#xFF08;<code>Never Queue Scheduling</code>&#xFF09;</li>
+</ul>
+<h3 id="lvs&#x914D;&#x7F6E;&#x793A;&#x4F8B;"><a name="lvs&#x914D;&#x7F6E;&#x793A;&#x4F8B;" class="plugin-anchor" href="#lvs&#x914D;&#x7F6E;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>lvs&#x914D;&#x7F6E;&#x793A;&#x4F8B;</h3>
+<p>&#x5B89;&#x88C5;<code>ipvs</code>&#x5305;&#x5E76;&#x5F00;&#x542F;<code>ip</code>&#x8F6C;&#x53D1;</p>
+<pre><code class="lang-sh">yum -y install ipvsadm keepalived
+sysctl -w net.ipv4.ip_forward=1
+</code></pre>
+<p>&#x4FEE;&#x6539;<code>/etc/keepalived/keepalived.conf</code>&#xFF0C;&#x589E;&#x52A0;<code>vip</code>&#x548C;<code>lvs</code>&#x7684;&#x914D;&#x7F6E;</p>
+<pre><code>vrrp_instance VI_3 {
+    state MASTER   # &#x53E6;&#x4E00;&#x8282;&#x70B9;&#x4E3A;BACKUP
+    interface eth0
+    virtual_router_id 11
+    priority 100   # &#x53E6;&#x4E00;&#x8282;&#x70B9;&#x4E3A;50
+    advert_int 1
+    authentication {
+        auth_type PASS
+        auth_pass PASSWORD
+    }
+
+    track_script {
+        chk_http_port
+    }
+
+    virtual_ipaddress {
+        192.168.0.100
+    }
+}
+
+virtual_server 192.168.0.100 9696 {
+    delay_loop 30
+    lb_algo rr
+    lb_kind DR
+    persistence_timeout 30
+    protocol TCP
+
+    real_server 192.168.0.101 9696 {
+        weight 3
+        TCP_CHECK {
+            connect_timeout 10
+            nb_get_retry 3
+            delay_before_retry 3
+            connect_port 9696
+        }
+    }
+
+    real_server 192.168.0.102 9696 {
+        weight 3
+        TCP_CHECK {
+            connect_timeout 10
+            nb_get_retry 3
+            delay_before_retry 3
+            connect_port 9696
+        }
+    }
+}
+</code></pre><p>&#x91CD;&#x542F;<code>keepalived</code>&#xFF1A;</p>
+<pre><code class="lang-sh">systemctl reload keepalived
+</code></pre>
+<p>&#x6700;&#x540E;&#x5728;<code>neutron-server</code>&#x6240;&#x5728;&#x673A;&#x5668;&#x4E0A;&#x4E3A;<code>lo</code>&#x914D;&#x7F6E;<code>vip</code>&#xFF0C;&#x5E76;&#x6291;&#x5236;<code>ARP</code>&#x54CD;&#x5E94;&#xFF1A;</p>
+<pre><code class="lang-sh">vip=192.168.0.100
+ifconfig lo:1 <span class="hljs-variable">${vip}</span> broadcast <span class="hljs-variable">${vip}</span> netmask 255.255.255.255
+route add -host <span class="hljs-variable">${vip}</span> dev lo:1
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;1&quot;</span> &gt;/proc/sys/net/ipv4/conf/lo/arp_ignore
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;2&quot;</span> &gt;/proc/sys/net/ipv4/conf/lo/arp_announce
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;1&quot;</span> &gt;/proc/sys/net/ipv4/conf/all/arp_ignore
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;2&quot;</span> &gt;/proc/sys/net/ipv4/conf/all/arp_announce
+</code></pre>
+<h3 id="lvs&#x7F3A;&#x70B9;"><a name="lvs&#x7F3A;&#x70B9;" class="plugin-anchor" href="#lvs&#x7F3A;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>LVS&#x7F3A;&#x70B9;</h3>
+<ul>
+<li><code>Keepalived</code>&#x4E3B;&#x5907;&#x6A21;&#x5F0F;&#x8BBE;&#x5907;&#x5229;&#x7528;&#x7387;&#x4F4E;&#xFF1B;&#x4E0D;&#x80FD;&#x6A2A;&#x5411;&#x6269;&#x5C55;&#xFF1B;<code>VRRP</code>&#x534F;&#x8BAE;&#xFF0C;&#x6709;&#x8111;&#x88C2;&#x7684;&#x98CE;&#x9669;&#x3002;</li>
+<li><code>ECMP</code>&#x7684;&#x65B9;&#x5F0F;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x534F;&#x8BAE;&#xFF0C;<code>LVS</code>&#x548C;&#x4EA4;&#x6362;&#x673A;&#x5747;&#x9700;&#x8981;&#x8F83;&#x590D;&#x6742;&#x914D;&#x7F6E;&#xFF1B;&#x4EA4;&#x6362;&#x673A;&#x7684;<code>HASH</code>&#x7B97;&#x6CD5;&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x589E;&#x52A0;&#x5220;&#x9664;&#x8282;&#x70B9;&#x4F1A;&#x9020;&#x6210;<code>HASH</code>&#x91CD;&#x5206;&#x5E03;&#xFF0C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5F53;&#x524D;<code>TCP</code>&#x8FDE;&#x63A5;&#x5168;&#x90E8;&#x4E2D;&#x65AD;&#xFF1B;&#x90E8;&#x5206;&#x4EA4;&#x6362;&#x673A;&#x7684;<code>ECMP</code>&#x5728;&#x5904;&#x7406;&#x5206;&#x7247;&#x5305;&#x65F6;&#x4F1A;&#x6709;<code>BUG</code>&#x3002;</li>
+</ul>
+<h2 id="haproxy"><a name="haproxy" class="plugin-anchor" href="#haproxy"><i class="fa fa-link" aria-hidden="true"></i></a>Haproxy</h2>
+<p><code>Haproxy</code>&#x4E5F;&#x662F;<code>Linux</code>&#x6700;&#x5E38;&#x7528;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x8F6F;&#x4EF6;&#x4E4B;&#x4E00;&#xFF0C;&#x517C;&#x5177;&#x6027;&#x80FD;&#x548C;&#x529F;&#x80FD;&#x7684;&#x7EC4;&#x5408;&#xFF0C;&#x540C;&#x65F6;&#x652F;&#x6301;<code>TCP</code>&#x548C;<code>HTTP</code>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x548C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x8BF7;&#x89C1;<a href="http://www.haproxy.org/" target="_blank">&#x5B98;&#x7F51;</a>&#x3002;</p>
+<h2 id="nginx"><a name="nginx" class="plugin-anchor" href="#nginx"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx</h2>
+<p><code>Nginx</code>&#x4E5F;&#x662F;<code>Linux</code>&#x6700;&#x5E38;&#x7528;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x8F6F;&#x4EF6;&#x4E4B;&#x4E00;&#xFF0C;&#x5E38;&#x7528;&#x4F5C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x548C;<code>HTTP</code>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF08;&#x5F53;&#x7136;&#x4E5F;&#x652F;&#x6301;<code>TCP</code>&#x548C;<code>UDP</code>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF09;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x548C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x8BF7;&#x89C1;<a href="https://nginx.org/en/" target="_blank">&#x5B98;&#x7F51;</a>&#x3002;</p>
+<h2 id="&#x81EA;&#x7814;&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><a name="&#x81EA;&#x7814;&#x8D1F;&#x8F7D;&#x5747;&#x8861;" class="plugin-anchor" href="#&#x81EA;&#x7814;&#x8D1F;&#x8F7D;&#x5747;&#x8861;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x81EA;&#x7814;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</h2>
+<h3 id="google-maglev"><a name="google-maglev" class="plugin-anchor" href="#google-maglev"><i class="fa fa-link" aria-hidden="true"></i></a>Google Maglev</h3>
+<p><a href="https://research.google.com/pubs/pub44824.html" target="_blank">Maglev</a>&#x662F;<code>Google</code>&#x81EA;&#x7814;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x65B9;&#x6848;&#xFF0C;&#x5728;2008&#x5E74;&#x5C31;&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x3002;<code>Maglev</code>&#x5B89;&#x88C5;&#x540E;&#x4E0D;&#x9700;&#x8981;&#x9884;&#x70ED;5&#x79D2;&#x5185;&#x5C31;&#x80FD;&#x5904;&#x7406;<code>&#x6BCF;&#x79D2;100&#x4E07;&#x6B21;&#x8BF7;&#x6C42;</code>&#x3002;&#x8C37;&#x6B4C;&#x7684;&#x6027;&#x80FD;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;<code>Maglev</code>&#x5B9E;&#x4F8B;&#x8FD0;&#x884C;&#x5728;&#x4E00;&#x4E2A;8&#x6838;CPU&#x4E0B;&#xFF0C;&#x7F51;&#x7EDC;&#x541E;&#x5410;&#x7387;&#x4E0A;&#x9650;&#x4E3A;<code>12M PPS&#xFF08;&#x6570;&#x636E;&#x5305;&#x6BCF;&#x79D2;&#xFF09;</code>&#x3002;&#x5982;&#x679C;<code>Maglev</code>&#x4F7F;&#x7528;<code>Linux</code>&#x5185;&#x6838;&#x7F51;&#x7EDC;&#x5806;&#x6808;&#x5219;&#x901F;&#x5EA6;&#x4F1A;&#x6162;&#x4E0B;&#x6765;&#xFF0C;&#x541E;&#x5410;&#x7387;&#x5C0F;&#x4E8E;<code>4M PPS</code>&#x3002;</p>
+<p><img src="images/maglev.png" alt="google maglev"></p>
+<ul>
+<li>&#x8DEF;&#x7531;&#x5668;<code>ECMP</code> (<code>Equal Cost Multipath</code>) &#x8F6C;&#x53D1;&#x5305;&#x5230;<code>Maglev</code>&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x4F20;&#x7EDF;&#x7684;&#x4E3B;&#x4ECE;&#x7ED3;&#x6784;)</li>
+<li><code>Kernel Bypass</code>, <code>CPU</code>&#x7ED1;&#x5B9A;&#xFF0C;&#x5171;&#x4EAB;&#x5185;&#x5B58;</li>
+<li>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x4FDD;&#x8BC1;&#x8FDE;&#x63A5;&#x4E0D;&#x4E2D;&#x65AD;</li>
+</ul>
+<h3 id="ucloud-vortex"><a name="ucloud-vortex" class="plugin-anchor" href="#ucloud-vortex"><i class="fa fa-link" aria-hidden="true"></i></a>UCloud Vortex</h3>
+<p><code>Vortex</code>&#x53C2;&#x8003;&#x4E86;<code>Maglev</code>&#xFF0C;&#x5927;&#x81F4;&#x7684;&#x67B6;&#x6784;&#x548C;&#x5B9E;&#x73B0;&#x8DDF;<code>Maglev</code>&#x7C7B;&#x4F3C;&#xFF1A;</p>
+<ul>
+<li><code>ECMP</code>&#x5B9E;&#x73B0;&#x96C6;&#x7FA4;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+<li>&#x4E00;&#x81F4;&#x6027;&#x54C8;&#x5E0C;&#x4FDD;&#x8BC1;&#x8FDE;&#x63A5;&#x4E0D;&#x4E2D;&#x65AD;<ul>
+<li>&#x5373;&#x4F7F;&#x662F;&#x4E0D;&#x540C;&#x7684;<code>Vortex</code>&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x4E86;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x4ECD;&#x7136;&#x80FD;&#x591F;&#x5C06;&#x8BE5;&#x6570;&#x636E;&#x5305;&#x8F6C;&#x53D1;&#x5230;&#x540C;&#x4E00;&#x53F0;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;</li>
+<li>&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;&#x8FFD;&#x8E2A;&#x673A;&#x5236;&#x4FDD;&#x8BC1;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x8FDE;&#x63A5;&#x7684;&#x6570;&#x636E;&#x5305;&#x88AB;&#x9001;&#x5F80;&#x4E4B;&#x524D;&#x9009;&#x62E9;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x6240;&#x6709;&#x65B0;&#x5EFA;&#x8FDE;&#x63A5;&#x5219;&#x4F1A;&#x5728;&#x53D8;&#x5316;&#x540E;&#x7684;&#x670D;&#x52A1;&#x5668;&#x96C6;&#x7FA4;&#x4E2D;&#x8FDB;&#x884C;&#x8D1F;&#x8F7D;&#x5206;&#x62C5;</li>
+</ul>
+</li>
+<li><code>DPDK</code>&#x63D0;&#x5347;&#x5355;&#x673A;&#x6027;&#x80FD; (14M PPS&#xFF0C;10G, 64&#x5B57;&#x8282;&#x7EBF;&#x901F;)<ul>
+<li>&#x901A;&#x8FC7;<code>RSS</code>&#x76F4;&#x63A5;&#x5C06;&#x7F51;&#x5361;&#x961F;&#x5217;&#x548C;<code>CPU Core</code>&#x7ED1;&#x5B9A;&#xFF0C;&#x6D88;&#x9664;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x5E26;&#x6765;&#x7684;&#x5F00;&#x9500;</li>
+<li><code>Vortex</code>&#x7EBF;&#x7A0B;&#x95F4;&#x91C7;&#x7528;&#x9AD8;&#x5E76;&#x53D1;&#x65E0;&#x9501;&#x7684;&#x6D88;&#x606F;&#x961F;&#x5217;&#x901A;&#x4FE1;</li>
+</ul>
+</li>
+<li><code>DR</code>&#x6A21;&#x5F0F;&#x907F;&#x514D;&#x989D;&#x5916;&#x5F00;&#x9500;</li>
+</ul>
+<h2 id="&#x53C2;&#x8003;&#x6587;&#x6863;"><a name="&#x53C2;&#x8003;&#x6587;&#x6863;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x6587;&#x6863;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x6587;&#x6863;</h2>
+<ul>
+<li><a href="http://www.linuxvirtualserver.org/" target="_blank">http://www.linuxvirtualserver.org/</a></li>
+<li><a href="http://www.haproxy.org/" target="_blank">http://www.haproxy.org/</a></li>
+<li><a href="https://mp.weixin.qq.com/s?src=3&amp;timestamp=1495372816&amp;ver=1&amp;signature=ifj0PRCsXKHVPiVcl-dNxhSlKKKcX6hwO1rz-hbipIrL2weMxHv0bSysMyY-yB-AXJrUZix9kjQCpvsRJnxF1grXi*O6nZZjaUFFEdA6ROfgicdAvfEFDM4-i42kY*58X1UmOW8WUoQqc6b8iEuUVw==" target="_blank">&#x63ED;&#x79D8;100G&#xFF0B;&#x7EBF;&#x901F;&#x4E91;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;&#xFF1A;&#x4ECE;Maglev&#x5230;Vortex</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTgyMDcwNg%3D%3D&amp;idx=1&amp;mid=2650625837&amp;sn=2b86df07eabba8ff2035583913a0ef41" target="_blank">&#x4F60;&#x771F;&#x7684;&#x638C;&#x63E1;lvs&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x5417;</a></li>
+<li><a href="http://wangxuemin.github.io/2015/07/26/lvs%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1fullnat%20%E6%A8%A1%E5%BC%8Fclientip%20%E6%80%8E%E6%A0%B7%E4%BC%A0%E9%80%92%E7%BB%99%20realserver/" target="_blank">lvs &#x8D1F;&#x8F7D;&#x5747;&#x8861;fullnat &#x6A21;&#x5F0F;clientip &#x600E;&#x6837;&#x4F20;&#x9012;&#x7ED9; realserver</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="iptables.html" class="navigation navigation-prev " aria-label="Previous page: iptables/netfilter">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tc.html" class="navigation navigation-next " aria-label="Next page: 流量控制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"负载均衡","level":"2.2.3","depth":2,"next":{"title":"流量控制","level":"2.2.4","depth":2,"path":"linux/tc.md","ref":"linux/tc.md","articles":[]},"previous":{"title":"iptables/netfilter","level":"2.2.2","depth":2,"path":"linux/iptables.md","ref":"linux/iptables.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/loadbalance.md","mtime":"2019-08-15T08:28:03.200Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

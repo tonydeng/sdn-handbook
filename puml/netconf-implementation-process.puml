@@ -1,0 +1,23 @@
+@startuml
+start
+
+:入口 ：启动SrverSocket主线程;
+: SSH与Socket绑定 ;
+: 监听等待 ;
+: 建立子线程 ;
+: 建立Hello报文 ;
+: 发送Hello报文 ;
+repeat
+if (等待接受报文?) then (收到报文)
+    if (报文正确?) then (yes)
+        : 接受请求报文;
+        : 提取RPC报文;
+        : 进入RPC模块处理，\n得到响应报文;
+        : 发送响应报文;
+    endif
+endif
+repeat while (会话是否有标识关闭?)
+
+:出口: 关闭子线程;
+stop
+@enduml

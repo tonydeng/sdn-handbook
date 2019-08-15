@@ -1,0 +1,19 @@
+@startuml
+title __SCP__资源监控采集流程
+
+participant 监控采集器 as collector
+participant OpenDaylight as odl
+participant "NETCONF代理" as agent
+database "数据库" as db
+
+collector -> collector : 定时器
+collector -> odl : 获取主机列表
+odl --> collector
+collector -> odl : 查询各个主机的信息
+odl -> agent : NETCONF采集信息
+agent --> agent : 采集硬件、虚拟机信息
+agent --> odl : 主机信息(JSON)
+odl --> collector : 主机信息
+collector -> db : 保存实时和历史数据
+
+@enduml

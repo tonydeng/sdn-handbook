@@ -1,0 +1,1806 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>NETCONF Call Home · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yang-module-for-netconf-monitoring.html" />
+    
+    
+    <link rel="prev" href="netconf.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../basic/">
+            
+                <a href="../../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../basic/tcpip.html">
+            
+                <a href="../../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../basic/arp.html">
+            
+                <a href="../../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../basic/icmp.html">
+            
+                <a href="../../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../basic/route.html">
+            
+                <a href="../../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../basic/switch.html">
+            
+                <a href="../../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../basic/udp.html">
+            
+                <a href="../../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../basic/dhcp.html">
+            
+                <a href="../../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../basic/tcp.html">
+            
+                <a href="../../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../basic/vlan.html">
+            
+                <a href="../../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../basic/overlay.html">
+            
+                <a href="../../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../basic/snmp.html">
+            
+                <a href="../../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../basic/lldp.html">
+            
+                <a href="../../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../linux/">
+            
+                <a href="../../linux/">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../linux/config.html">
+            
+                <a href="../../linux/config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../../linux/virtual-device.html">
+            
+                <a href="../../linux/virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../linux/iptables.html">
+            
+                <a href="../../linux/iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../linux/loadbalance.html">
+            
+                <a href="../../linux/loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../linux/tc.html">
+            
+                <a href="../../linux/tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../linux/sr-iov.html">
+            
+                <a href="../../linux/sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../linux/vrf.html">
+            
+                <a href="../../linux/vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../linux/bpf/">
+            
+                <a href="../../linux/bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../../linux/bpf/bcc.html">
+            
+                <a href="../../linux/bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../../linux/bpf/troubleshooting.html">
+            
+                <a href="../../linux/bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../linux/XDP/">
+            
+                <a href="../../linux/XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="../../linux/XDP/design.html">
+            
+                <a href="../../linux/XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="../../linux/XDP/use-cases.html">
+            
+                <a href="../../linux/XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../linux/tools.html">
+            
+                <a href="../../linux/tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../../linux/tcpdump.html">
+            
+                <a href="../../linux/tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../../linux/scapy.html">
+            
+                <a href="../../linux/scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../linux/kernel-network-params.html">
+            
+                <a href="../../linux/kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../ovs/build.html">
+            
+                <a href="../../ovs/build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../ovs/internal.html">
+            
+                <a href="../../ovs/internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../../ovs/ovn.html">
+            
+                <a href="../../ovs/ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="../../ovs/ovn-ubuntu.html">
+            
+                <a href="../../ovs/ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="../../ovs/ovn-internal.html">
+            
+                <a href="../../ovs/ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="../../ovs/ovn-ha.html">
+            
+                <a href="../../ovs/ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="../../ovs/ovn-kubernetes.html">
+            
+                <a href="../../ovs/ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="../../ovs/ovn-docker.html">
+            
+                <a href="../../ovs/ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.6" data-path="../../ovs/ovn-openstack.html">
+            
+                <a href="../../ovs/ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../dpdk/">
+            
+                <a href="../../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../dpdk/introduction.html">
+            
+                <a href="../../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../dpdk/install.html">
+            
+                <a href="../../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../dpdk/forwarding.html">
+            
+                <a href="../../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../dpdk/numa.html">
+            
+                <a href="../../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../dpdk/ivshmem.html">
+            
+                <a href="../../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../dpdk/PCIe.html">
+            
+                <a href="../../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../dpdk/hardware.html">
+            
+                <a href="../../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../dpdk/queue.html">
+            
+                <a href="../../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../dpdk/offload.html">
+            
+                <a href="../../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../dpdk/io-virtualization.html">
+            
+                <a href="../../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../dpdk/ovs-dpdk.html">
+            
+                <a href="../../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../dpdk/spdk.html">
+            
+                <a href="../../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../secure/">
+            
+                <a href="../../secure/">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../secure/vpn/">
+            
+                <a href="../../secure/vpn/">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1.1" data-path="../../secure/vpn/ipsecvpn.html">
+            
+                <a href="../../secure/vpn/ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="../../secure/vpn/sslvpn.html">
+            
+                <a href="../../secure/vpn/sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../secure/icg/">
+            
+                <a href="../../secure/icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../secure/fw/">
+            
+                <a href="../../secure/fw/">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="../../secure/fw/principle.html">
+            
+                <a href="../../secure/fw/principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../../secure/fw/classify.html">
+            
+                <a href="../../secure/fw/classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="../../secure/fw/evolution.html">
+            
+                <a href="../../secure/fw/evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../yang-language.html">
+            
+                <a href="../yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../controller/">
+            
+                <a href="../controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../controller/odl/">
+            
+                <a href="../controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../controller/odl/projects.html">
+            
+                <a href="../controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../controller/odl/datastore.html">
+            
+                <a href="../controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../controller/onos.html">
+            
+                <a href="../controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../controller/floodlight.html">
+            
+                <a href="../controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../controller/ryu.html">
+            
+                <a href="../controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../controller/pox.html">
+            
+                <a href="../controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="openflow.html">
+            
+                <a href="openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="of-config.html">
+            
+                <a href="of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="netconf.html">
+            
+                <a href="netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.3.3.1" data-path="netconf-call-home.html">
+            
+                <a href="netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.2" data-path="yang-module-for-netconf-monitoring.html">
+            
+                <a href="yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="netconf-tags.html">
+            
+                <a href="netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="p4.html">
+            
+                <a href="p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../aaa/radius.html">
+            
+                <a href="../aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../dataplane.html">
+            
+                <a href="../dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../nfv/">
+            
+                <a href="../../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../sdwan/">
+            
+                <a href="../../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../mininet/">
+            
+                <a href="../../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../neutron/">
+            
+                <a href="../../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../practice/google.html">
+            
+                <a href="../../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../sample/">
+            
+                <a href="../../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../sample/application-scenarios.html">
+            
+                <a href="../../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../sample/scp.html">
+            
+                <a href="../../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../reference.html">
+            
+                <a href="../../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >NETCONF Call Home</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="netconf-call-home"><a name="netconf-call-home" class="plugin-anchor" href="#netconf-call-home"><i class="fa fa-link" aria-hidden="true"></i></a>NETCONF Call Home</h1>
+<p><img src="../images/rfc8071-datatracker-status.jpg" alt="rfc8071 datatracker status">
+&#x672C;&#x6587;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x90FD;&#x6765;&#x81EA;&#x4E8E;&#x4ECA;&#x5E74;&#x4E8C;&#x6708;&#x53D1;&#x5E03;&#x7684;<a href="https://tools.ietf.org/html/rfc8071" target="_blank">RFC8071 - NETCONF Call Home and RESTCONF Call Home</a>&#xFF0C;&#x8BE5;RFC&#x4ECE;2015&#x5E74;4&#x6708;&#x63D0;&#x51FA;&#x5230;&#x6700;&#x7EC8;&#x53D1;&#x5E03;&#x4E00;&#x5171;&#x4FEE;&#x6539;&#x4E86;17&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5176;&#x95F4;&#x4FEE;&#x6539;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;<a href="https://datatracker.ietf.org/doc/rfc8071/" target="_blank">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x5185;&#x5BB9;</a>&#x3002;</p>
+<h2 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="plugin-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x7ECD;</h2>
+<p><code>NETCONF Call Home</code>&#x652F;&#x6301;&#x4E24;&#x79CD;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x534F;&#x8BAE;&#x5206;&#x522B;&#x662F;<code>Secure Shell(SSH)</code>&#x548C;&#x4F20;&#x8F93;&#x5C42;&#x5B89;&#x5168;<code>(TLS)</code>&#x3002;  </p>
+<blockquote>
+<p><code>NETCONF</code>&#x534F;&#x8BAE;&#x200B;&#x200B;&#x7684;&#x7ED1;&#x5B9A;&#x5230;<code>SSH</code>&#x5728;<a href="https://tools.ietf.org/html/rfc6242" target="_blank">RFC6242</a>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;
+<code>NETCONF</code>&#x534F;&#x8BAE;&#x200B;&#x200B;&#x7684;&#x7ED1;&#x5B9A;&#x5230;<code>TLS</code>&#x5728;<a href="https://tools.ietf.org/html/rfc7589" target="_blank">RFC7589</a>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;
+<code>SSH</code>&#x534F;&#x8BAE;&#x5728;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253</a>&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;<code>TLS</code>&#x534F;&#x8BAE;&#x662F;&#x5728;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC5246</a>&#x4E2D;&#x5B9A;&#x4E49;&#x3002;<code>SSH</code>&#x548C;<code>TLS</code>&#x534F;&#x8BAE;&#x90FD;&#x662F;<code>TCP</code>&#x534F;&#x8BAE;&#x4E4B;&#x4E0A;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+</blockquote>
+<h3 id="&#x52A8;&#x673A;"><a name="&#x52A8;&#x673A;" class="plugin-anchor" href="#&#x52A8;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x673A;</h3>
+<p><code>call home</code>&#x5BF9;&#x4E8E;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7684;&#x521D;&#x59CB;&#x5316;&#x90E8;&#x7F72;&#x548C;&#x6301;&#x7EED;&#x7BA1;&#x7406;&#x90FD;&#x662F;&#x975E;&#x5E38;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;&#x90A3;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;<code>call home</code>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1F;</p>
+<ul>
+<li>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x542F;&#x52A8;&#x540E;&#x53EF;&#x4EE5;&#x4E3B;&#x52A8;<code>call home</code>&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x5176;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x4E0A;&#x6CE8;&#x518C;&#x3002;</li>
+</ul>
+<ul>
+<li><p>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x4EE5;&#x4E00;&#x79CD;&#x52A8;&#x6001;&#x5206;&#x914D;<code>IP</code>&#x5730;&#x5740;&#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x5C06;&#x5176;&#x5206;&#x914D;&#x7684;IP&#x5730;&#x5740;&#x6CE8;&#x518C;&#x5230;&#x6620;&#x5C04;&#x670D;&#x52A1;(&#x4F8B;&#x5982;&#xFF0C;&#x52A8;&#x6001;<code>DNS</code>)&#x3002;</p>
+</li>
+<li><p>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x5728;&#x5B9E;&#x73B0;&#x6240;&#x6709;&#x5185;&#x90E8;&#x7F51;&#x7EDC;IP&#x5730;&#x5740;&#x7684;&#x7F51;&#x7EDC;&#x5730;&#x5740;&#x8F6C;&#x6362;&#xFF08;NAT&#xFF09;&#x7684;&#x9632;&#x706B;&#x5899;&#x540E;&#x9762;&#x3002;</p>
+</li>
+<li><p>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x5143;&#x4EF6;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x5728;&#x4E0D;&#x5141;&#x8BB8;&#x4EFB;&#x4F55;&#x7BA1;&#x7406;&#x8BBF;&#x95EE;&#x5185;&#x90E8;&#x7F51;&#x7EDC;&#x7684;&#x9632;&#x706B;&#x5899;&#x4E4B;&#x540E;&#x3002;</p>
+</li>
+<li><p>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E3A;&#x201C;&#x9690;&#x8EAB;&#x6A21;&#x5F0F;&#x201D;&#xFF0C;&#x56E0;&#x6B64;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x7684;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x7ED9;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x6253;&#x5F00;&#x8FDE;&#x63A5;&#x3002;</p>
+</li>
+<li><p>&#x8FD0;&#x8425;&#x5546;&#x53EF;&#x80FD;&#x503E;&#x5411;&#x4E8E;&#x8BA9;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x53D1;&#x8D77;&#x7BA1;&#x7406;&#x8FDE;&#x63A5;&#xFF0C;&#x8BA4;&#x4E3A;&#x5728;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x4E2D;&#x4FDD;&#x62A4;&#x4E00;&#x4E2A;&#x5F00;&#x653E;&#x7AEF;&#x53E3;&#x6BD4;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x4E0A;&#x5177;&#x6709;&#x5F00;&#x653E;&#x7AEF;&#x53E3;&#x66F4;&#x5BB9;&#x6613;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6982;&#x8FF0;"><a name="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6982;&#x8FF0;" class="plugin-anchor" href="#&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6982;&#x8FF0;</h3>
+<p>&#x4E0B;&#x56FE;&#x8BF4;&#x660E;&#x4E86;&#x534F;&#x8BAE;&#x5206;&#x5C42;&#x7684;<code>call home</code></p>
+<p><img src="../images/netconf-call-home-sequence.png" alt="NETCONF Call Home Sequence"></p>
+<blockquote>
+<p>&#x6D88;&#x606F;&#x5C42;&#x6D41;&#x7A0B;PlantUML&#x8BF7;&#x67E5;&#x770B;<a href="https://raw.githubusercontent.com/tonydeng/sdn-handbook/master/puml/netconf-call-home.puml" target="_blank">netconf-messages-layer-flow.puml</a></p>
+</blockquote>
+<p>&#x8FD9;&#x5F20;&#x56FE;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ol>
+<li><code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x9996;&#x5148;&#x542F;&#x52A8;&#x4E00;&#x4E2A;<code>TCP</code>&#x8FDE;&#x63A5;&#x5230;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;<code>TCP</code>&#x8FDE;&#x63A5;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;&#x5230;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;<code>SSH/TLS</code>&#x4F1A;&#x8BDD;&#x3002;</li>
+<li>&#x4F7F;&#x7528;&#x6B64;<code>SSH/TLS</code>&#x4F1A;&#x8BDD;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5230;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;<code>NETCONF</code>&#x4F1A;&#x8BDD;&#x3002;</li>
+</ol>
+<h2 id="netconf&#x5BA2;&#x6237;&#x7AEF;"><a name="netconf&#x5BA2;&#x6237;&#x7AEF;" class="plugin-anchor" href="#netconf&#x5BA2;&#x6237;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>NETCONF&#x5BA2;&#x6237;&#x7AEF;</h2>
+<p>&#x672F;&#x8BED;&#x201C;&#x5BA2;&#x6237;&#x7AEF;&#x201D;&#x5728;<a href="https://tools.ietf.org/html/rfc6241#section-1.1" target="_blank">RFC6241&#x7B2C;1.1&#x8282;</a>&#x4E2D;&#x5B9A;&#x4E49;&#x3002; &#x5728;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;&#x4E8B;&#x9879;"><a name="&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;&#x4E8B;&#x9879;" class="plugin-anchor" href="#&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;&#x4E8B;&#x9879;</h3>
+<ul>
+<li>C1 <code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x4FA6;&#x542C;&#x6765;&#x81EA;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x7684;<code>TCP</code>&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x3002; &#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x5728;<a href="https://tools.ietf.org/html/rfc8071#section-6" target="_blank">&#x7B2C;6&#x8282;</a>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#x4E0A;&#x63A5;&#x53D7;<code>TCP</code>&#x8FDE;&#x63A5;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E3A;&#x4FA6;&#x542C;&#x4E0D;&#x540C;&#x7684;&#x7AEF;&#x53E3;&#x3002;</li>
+<li>C2 <code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x53D7;&#x4F20;&#x5165;&#x7684;<code>TCP</code>&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x5EFA;&#x7ACB;<code>TCP</code>&#x8FDE;&#x63A5;&#x3002;</li>
+<li>C3 &#x4F7F;&#x7528;&#x6B64;<code>TCP</code>&#x8FDE;&#x63A5;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;<code>SSH</code>&#x5BA2;&#x6237;&#x7AEF;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253</a>&#x6216;<code>TLS</code>&#x5BA2;&#x6237;&#x7AEF;<a href="https://tools.ietf.org/html/rfc5246" target="_blank">RFC5246</a>&#x534F;&#x8BAE;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5B9A;&#x4F7F;&#x7528;<code>IANA&#x5206;</code>&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5728;&#x7AEF;&#x53E3;<code>4334</code>&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#x65F6;&#x542F;&#x52A8;<code>SSH</code>&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x7AEF;&#x53E3;<code>4335</code>&#x6216;&#x7AEF;&#x53E3;<code>4336</code>&#x4E0A;&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#x65F6;&#x542F;&#x52A8;<code>TLS</code>&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x3002;</li>
+<li>C4 &#x5F53;&#x4F7F;&#x7528;<code>TLS</code>&#x65F6;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x544A;&#x77E5;<code>&quot;peer_allowed_to_send&quot;</code>&#xFF0C;&#x5982;<a href="https://tools.ietf.org/html/rfc6520" target="_blank">RFC6520</a>&#x6240;&#x5B9A;&#x4E49;&#x3002; &#x8FD9;&#x662F;&#x5FC5;&#x9700;&#x7684;&#xFF0C;&#x4EE5;&#x4FBF;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x77E5;&#x9053;&#x5728;<code>call home</code>&#x8FDE;&#x63A5;&#x65F6;&#x9700;&#x8981;&#x53D1;&#x9001;&#x5FC3;&#x8DF3;&#x5305;&#xFF0C;&#x4FDD;&#x6301;&#x957F;&#x8FDE;&#x63A5;&#x3002;</li>
+<li>C5 &#x4F5C;&#x4E3A;&#x5EFA;&#x7ACB;<code>SSH</code>&#x6216;<code>TLS</code>&#x8FDE;&#x63A5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#x3002; &#x8BE5;&#x9A8C;&#x8BC1;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BC1;&#x4E66;&#x8DEF;&#x5F84;&#x9A8C;&#x8BC1;&#x6216;&#x901A;&#x8FC7;&#x5C06;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#x4E0E;&#x5148;&#x524D;&#x4FE1;&#x4EFB;&#x7684;&#x6216;&#x201C;&#x56FA;&#x5B9A;&#x7684;&#x201D;&#x503C;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x6765;&#x5B8C;&#x6210;&#x3002; &#x5982;&#x679C;&#x8BC1;&#x4E66;&#x88AB;&#x63D0;&#x4EA4;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x64A4;&#x9500;&#x68C0;&#x67E5;&#x4FE1;&#x606F;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x8BE5;&#x68C0;&#x67E5;&#x8BC1;&#x4E66;&#x7684;&#x64A4;&#x9500;&#x72B6;&#x6001;&#x3002; &#x5982;&#x679C;&#x786E;&#x5B9A;&#x8BC1;&#x4E66;&#x5DF2;&#x88AB;&#x540A;&#x9500;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x9A6C;&#x4E0A;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</li>
+<li>C6 &#x5982;&#x679C;&#x4F7F;&#x7528;&#x8BC1;&#x4E66;&#x8DEF;&#x5F84;&#x9A8C;&#x8BC1;&#xFF0C;&#x5219;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x7684;&#x8BC1;&#x4E66;&#x5177;&#x6709;&#x5BF9;&#x9884;&#x5148;&#x914D;&#x7F6E;&#x7684;&#x9881;&#x53D1;&#x8005;&#x8BC1;&#x4E66;&#x7684;&#x6709;&#x6548;&#x4FE1;&#x4EFB;&#x94FE;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x5448;&#x73B0;&#x7684;&#x8BC1;&#x4E66;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x524D;&#x77E5;&#x9053;&#x7684;&#x201C;&#x6807;&#x8BC6;&#x7B26;&#x201D;<a href="https://tools.ietf.org/html/rfc6125" target="_blank">RFC6125</a>&#x8FDB;&#x884C;&#x7F16;&#x7801; &#x8FDE;&#x63A5;&#x5C1D;&#x8BD5;&#x3002; &#x5982;&#x4F55;&#x5728;&#x8BC1;&#x4E66;&#x4E2D;&#x7F16;&#x7801;&#x6807;&#x8BC6;&#x7B26;&#x53EF;&#x4EE5;&#x7531;&#x4E0E;&#x8BC1;&#x4E66;&#x9881;&#x53D1;&#x8005;&#x76F8;&#x5173;&#x7684;&#x7B56;&#x7565;&#x6765;&#x786E;&#x5B9A;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x7ED9;&#x5B9A;&#x7684;&#x9881;&#x53D1;&#x8005;&#x53EA;&#x5728;<code>X.509</code>&#x8BC1;&#x4E66;&#x7684;<code>&#x201C;CommonName&#x201D;</code>&#x5B57;&#x6BB5;&#x4E2D;&#x7B7E;&#x7F72;&#x5177;&#x6709;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5E8F;&#x5217;&#x53F7;&#xFF09;&#x7684;<code>IDevID</code>&#x8BC1;&#x4E66;<a href="https://tools.ietf.org/html/rfc8071#ref-Std-802.1AR-2009" target="_blank">Std-802.1AR-2009</a>&#x3002;</li>
+<li>C7 &#x670D;&#x52A1;&#x5668;&#x7684;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#x7ECF;&#x8FC7;&#x9A8C;&#x8BC1;&#x540E;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x4EE5;<code>SSH</code>&#x6216;<code>TLS</code>&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x5EFA;&#x7ACB;<code>SSH</code>&#x6216;<code>TLS</code>&#x8FDE;&#x63A5;&#x3002; &#x5728;&#x4F7F;&#x7528;<code>NETCONF</code> &#x670D;&#x52A1;&#x5668;&#x6267;&#x884C;&#x5BA2;&#x6237;&#x7AEF;&#x8BA4;&#x8BC1;&#x65F6;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x4EC5;&#x4F7F;&#x7528;&#x5148;&#x524D;&#x4E3A;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x670D;&#x52A1;&#x5668;&#x8BC1;&#x4E66;&#x5173;&#x8054;&#x7684;&#x51ED;&#x8BC1;&#x3002;</li>
+<li>C8 &#x4E00;&#x65E6;<code>SSH</code>&#x6216;<code>TLS</code>&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#xFF0C;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;<a href="https://tools.ietf.org/html/rfc6241" target="_blank">RFC6241</a>&#x6216;<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;<a href="https://tools.ietf.org/html/rfc8040" target="_blank">RFC8040</a>&#x534F;&#x8BAE;&#x3002; &#x5047;&#x8BBE;&#x4F7F;&#x7528;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5F53;&#x5728;&#x7AEF;&#x53E3;<code>4334</code>&#x6216;&#x7AEF;&#x53E3;<code>4335</code>&#x4E0A;&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#x65F6;&#x542F;&#x52A8;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x5728;&#x7AEF;&#x53E3;<code>4336</code>&#x4E0A;&#x63A5;&#x53D7;&#x8FDE;&#x63A5;&#x65F6;&#x542F;&#x52A8;<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x534F;&#x8BAE;&#x3002;</li>
+</ul>
+<h3 id="&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;" class="plugin-anchor" href="#&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;</h3>
+<p>&#x5982;&#x4F55;&#x914D;&#x7F6E;<code>NETCONF</code>&#x6216;<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x8D85;&#x51FA;&#x4E86;&#x672C;&#x6587;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x914D;&#x7F6E;&#x6765;&#x542F;&#x7528;&#x5BF9;<code>call home</code>&#x7684;&#x76D1;&#x542C;&#xFF0C;&#x914D;&#x7F6E;&#x53EF;&#x4FE1;&#x8BC1;&#x4E66;&#x9881;&#x53D1;&#x8005;&#xFF0C;&#x6216;&#x8005;&#x4E3A;&#x9884;&#x671F;&#x7684;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#x6807;&#x8BC6;&#x7B26;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5728;<a href="https://tools.ietf.org/html/rfc8071#ref-NETCONF-MODELS" target="_blank">NETCONF-MODELS</a>&#x548C;<a href="https://tools.ietf.org/html/rfc8071#ref-RESTCONF-MODELS" target="_blank">RESTCONF-MODELS</a>&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x7528;&#x4E8E;&#x914D;&#x7F6E;<code>NETCONF</code>&#x548C;<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x7684;<code>YANG</code> <a href="https://tools.ietf.org/html/rfc7950" target="_blank">RFC7950</a>&#x6570;&#x636E;&#x6A21;&#x5757;&#xFF0C;&#x5305;&#x62EC;<code>call home</code>&#x3002;</p>
+<h2 id="netconf&#x670D;&#x52A1;&#x5668;"><a name="netconf&#x670D;&#x52A1;&#x5668;" class="plugin-anchor" href="#netconf&#x670D;&#x52A1;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>NETCONF&#x670D;&#x52A1;&#x5668;</h2>
+<p>&#x672F;&#x8BED;&#x201C;&#x670D;&#x52A1;&#x5668;&#x201D;&#x5728;<a href="https://tools.ietf.org/html/rfc6241#section-1.1" target="_blank">RFC6241&#x7B2C;1.1&#x8282;</a>&#x4E2D;&#x5B9A;&#x4E49;&#x3002; &#x5728;&#x7F51;&#x7EDC;&#x7BA1;&#x7406;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x53EF;&#x80FD;&#x662F;&#x7F51;&#x7EDC;&#x5143;&#x4EF6;&#x6216;&#x8BBE;&#x5907;&#x3002;</p>
+<h3 id="&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;"><a name="&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;" class="plugin-anchor" href="#&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x64CD;&#x4F5C;</h3>
+<ul>
+<li>S1 <code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x5411;<code>NETCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;<code>TCP</code>&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x3002; &#x6E90;&#x7AEF;&#x53E3;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x672C;&#x5730;&#x7B56;&#x7565;&#x6216;&#x7531;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x968F;&#x673A;&#x5206;&#x914D;&#x3002; &#x670D;&#x52A1;&#x5668;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x8FDE;&#x63A5;&#x5230;<a href="https://tools.ietf.org/html/rfc8071#section-6" target="_blank">&#x7B2C;6&#x8282;</a>&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x4E3A;&#x8FDE;&#x63A5;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7AEF;&#x53E3;&#x3002; &#x4F7F;&#x7528;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x901A;&#x8FC7;<code>SSH</code>&#x8FDE;&#x63A5;&#x5230;<code>NETCONF</code>&#x7684;&#x7AEF;&#x53E3;<code>4334</code>&#xFF0C;&#x901A;&#x8FC7;<code>TLS</code>&#x8FDE;&#x63A5;&#x5230;<code>NETCONF</code>&#x7684;&#x7AEF;&#x53E3;<code>4335</code>&#x548C;&#x901A;&#x8FC7;<code>TLS</code>&#x7684;<code>RESTCONF</code>&#x7684;&#x7AEF;&#x53E3;<code>4336</code>&#x3002;</li>
+<li>S2 <code>TCP</code>&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x88AB;&#x63A5;&#x53D7;&#xFF0C;<code>TCP</code>&#x8FDE;&#x63A5;&#x88AB;&#x5EFA;&#x7ACB;&#x3002;</li>
+<li>S3 &#x4F7F;&#x7528;&#x6B64;<code>TCP</code>&#x8FDE;&#x63A5;&#xFF0C;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x5C06;&#x542F;&#x52A8;<code>SSH</code>&#x670D;&#x52A1;&#x5668;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253</a>&#x6216;<code>TLS</code>&#x670D;&#x52A1;&#x5668;<a href="https://tools.ietf.org/html/rfc5246" target="_blank">RFC5246</a>&#x534F;&#x8BAE;&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x51B3;&#x4E8E;&#x5B83;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x5B9A;&#x4F7F;&#x7528;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4334</code>&#x4E4B;&#x540E;&#x4F7F;&#x7528;<code>SSH</code>&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4335</code>&#x6216;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4336</code>&#x4E4B;&#x540E;&#x4F7F;&#x7528;<code>TLS</code>&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x3002;</li>
+<li>S4 &#x4F5C;&#x4E3A;&#x5EFA;&#x7ACB;<code>SSH</code>&#x6216;<code>TLS</code>&#x8FDE;&#x63A5;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x5C06;&#x5176;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002; &#x5982;&#x679C;&#x53D1;&#x9001;&#x4E86;&#x4E00;&#x4E2A;&#x8BC1;&#x4E66;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x8FD8;&#x5FC5;&#x987B;&#x53D1;&#x9001;&#x6240;&#x6709;&#x4E2D;&#x95F4;&#x8BC1;&#x4E66;&#x5230;&#x4E00;&#x4E2A;&#x77E5;&#x540D;&#x548C;&#x53EF;&#x4FE1;&#x8D56;&#x7684;&#x53D1;&#x884C;&#x8005;&#x3002; &#x5982;&#x4F55;&#x53D1;&#x9001;&#x8BC1;&#x4E66;&#x5217;&#x8868;&#x5728;<a href="https://tools.ietf.org/html/rfc6187#section-2.1" target="_blank">RFC6187&#x7B2C;2.1&#x8282;</a>&#x4E2D;&#x4E3A;<code>SSH</code>&#x5B9A;&#x4E49;&#xFF0C;&#x5728;<a href="https://tools.ietf.org/html/rfc5246#section-7.4.2" target="_blank">RFC5246&#x7B2C;7.4.2&#x8282;</a>&#x4E2D;&#x4E3A;<code>TLS</code>&#x5B9A;&#x4E49;&#x3002;</li>
+<li>S5 &#x5EFA;&#x7ACB;<code>SSH</code>&#x6216;<code>TLS</code>&#x4F1A;&#x8BDD;&#x9700;&#x8981;&#x5728;&#x6240;&#x6709;&#x60C5;&#x51B5;&#x4E0B;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x4E66;&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x5668;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x4F46;<code>RESTCONF</code>&#x9664;&#x5916;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E9B;&#x5BA2;&#x6237;&#x7AEF;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65B9;&#x6848;&#x5728;<code>&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x8FDE;&#x63A5;&#xFF08;TLS&#xFF09;</code>&#x5EFA;&#x7ACB;&#x540E;&#x53D1;&#x751F;&#x3002; &#x5982;&#x679C;&#x9700;&#x8981;&#x4F20;&#x8F93;&#x7EA7;&#xFF08;<code>SSH</code>&#x6216;<code>TLS</code>&#xFF09;&#x5BA2;&#x6237;&#x7AEF;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x5E76;&#x4E14;&#x5BA2;&#x6237;&#x7AEF;&#x65E0;&#x6CD5;&#x5728;&#x672C;&#x5730;&#x7B56;&#x7565;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x95F4;&#x5185;&#x6210;&#x529F;&#x5411;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x5219;&#x670D;&#x52A1;&#x5668;&#x5FC5;&#x987B;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;</li>
+<li>S6 &#x4E00;&#x65E6;&#x5EFA;&#x7ACB;&#x4E86;<code>SSH</code>&#x6216;<code>TLS</code>&#x8FDE;&#x63A5;&#xFF0C;<code>NETCONF</code>/<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x5C06;&#x542F;&#x52A8;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;<a href="https://tools.ietf.org/html/rfc6241" target="_blank">RFC6241</a>&#x6216;<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;<a href="https://tools.ietf.org/html/rfc8040" target="_blank">RFC8040</a>&#x534F;&#x8BAE;&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x51B3;&#x4E8E;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x3002; &#x5047;&#x8BBE;&#x4F7F;&#x7528;<code>IANA</code>&#x5206;&#x914D;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4334</code>&#x6216;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4335</code>&#x4E4B;&#x540E;&#x4F7F;&#x7528;<code>NETCONF</code>&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8FDE;&#x63A5;&#x5230;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;<code>4336</code>&#x4E4B;&#x540E;&#x4F7F;&#x7528;<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x534F;&#x8BAE;&#x3002;</li>
+<li>S7 &#x5982;&#x679C;&#x9700;&#x8981;&#x957F;&#x8FDE;&#x63A5;&#xFF0C;&#x4F5C;&#x4E3A;&#x8FDE;&#x63A5;&#x53D1;&#x8D77;&#x8005;&#x7684;<code>NETCONF</code>/<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;<code>keep-alive</code>&#x673A;&#x5236;&#x4E3B;&#x52A8;&#x6D4B;&#x8BD5;&#x8FDE;&#x63A5;&#x7684;&#x6D3B;&#x8DC3;&#x6027;&#x3002; &#x5BF9;&#x4E8E;&#x57FA;&#x4E8E;<code>TLS</code>&#x7684;&#x8FDE;&#x63A5;&#xFF0C;<code>NETCONF</code>/<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x53D1;&#x9001;<a href="https://tools.ietf.org/html/rfc6520" target="_blank">RFC6520</a>&#x5B9A;&#x4E49;&#x7684;<code>HeartbeatRequest</code>&#x6D88;&#x606F;&#x3002; &#x5BF9;&#x4E8E;&#x57FA;&#x4E8E;<code>SSH</code>&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x6839;&#x636E;<a href="https://tools.ietf.org/html/rfc4254#section-4" target="_blank">RFC4254&#x7684;&#x7B2C;4&#x8282;</a>&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x8BE5;&#x53D1;&#x9001;&#x4E00;&#x4E2A;<code>SSH_MSG_GLOBAL_REQUEST</code>&#x6D88;&#x606F;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x4E0D;&#x5B58;&#x5728;&#x7684;<code>&quot;request name&quot;</code>&#x503C;&#xFF08;&#x4F8B;&#x5982;keepalive@ietf.org&#xFF09;&#x548C;<code>&quot;want reply&quot;</code>&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>&quot;1&quot;</code>&#x3002;</li>
+</ul>
+<h3 id="&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;"><a name="&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;" class="plugin-anchor" href="#&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6A21;&#x578B;</h3>
+<p>&#x5982;&#x4F55;&#x914D;&#x7F6E;<code>NETCONF</code>&#x6216;<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x8D85;&#x51FA;&#x4E86;&#x672C;&#x6587;&#x7684;&#x8303;&#x56F4;&#x3002;</p>
+<p>&#x8FD9;&#x5305;&#x62EC;&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x4E3B;&#x673A;&#x540D;&#xFF0C;<code>IP</code>&#x5730;&#x5740;&#xFF0C;&#x7AEF;&#x53E3;&#xFF0C;&#x7B97;&#x6CD5;&#x6216;&#x5176;&#x4ED6;&#x76F8;&#x5173;&#x53C2;&#x6570;&#x7684;&#x914D;&#x7F6E;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<a href="https://tools.ietf.org/html/rfc8071#ref-NETCONF-MODELS" target="_blank">NETCONF-MODELS</a>&#x548C;<a href="https://tools.ietf.org/html/rfc8071#ref-RESTCONF-MODELS" target="_blank">RESTCONF-MODELS</a>&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x7528;&#x4E8E;&#x914D;&#x7F6E;NETCONF&#x548C;RESTCONF&#x670D;&#x52A1;&#x5668;&#x7684;YANG <a href="https://tools.ietf.org/html/rfc7950" target="_blank">RFC7950</a>&#x6570;&#x636E;&#x6A21;&#x5757;&#xFF0C;&#x5305;&#x62EC;<code>call home</code>&#x3002;</p>
+<h2 id="&#x5B89;&#x5168;&#x8003;&#x8651;"><a name="&#x5B89;&#x5168;&#x8003;&#x8651;" class="plugin-anchor" href="#&#x5B89;&#x5168;&#x8003;&#x8651;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x8003;&#x8651;</h2>
+<p><a href="https://tools.ietf.org/html/rfc6242" target="_blank">RFC6242</a>&#x548C;<a href="https://tools.ietf.org/html/rfc7589" target="_blank">RFC7589</a>&#x4EE5;&#x53CA;&#x6269;&#x5C55;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253</a>&#xFF0C;<a href="https://tools.ietf.org/html/rfc5246" target="_blank">RFC5246 </a>&#x548C;<a href="https://tools.ietf.org/html/rfc8040" target="_blank">RFC8040</a>&#x4E2D;&#x63CF;&#x8FF0;&#x7684;&#x5B89;&#x5168;&#x8003;&#x8651;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x6B64;&#x5904;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;<code>RFC</code>&#x4E0E;<code>SSH</code>/<code>TLS</code>&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x5E95;&#x5C42;TCP&#x8FDE;&#x63A5;&#x7684;&#x65B9;&#x5F0F;&#x80CC;&#x79BB;&#x4E86;&#x6807;&#x51C6;&#x7684;<code>SSH</code>&#x548C;<code>TLS</code>&#x7684;&#x4F7F;&#x7528;&#x3002; &#x8FD9;&#x79CD;&#x9006;&#x8F6C;&#x4E0E;<a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253</a>&#x4E2D;&#x7684;&#x201C;&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;&#x8FDE;&#x63A5;&#x201D;&#x548C;<a href="https://tools.ietf.org/html/rfc6125" target="_blank">RFC6125</a>&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x5B83;&#x4EEC;&#x8868;&#x793A;<strong>&#x201C;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x6784;&#x5EFA;&#x53EF;&#x63A5;&#x53D7;&#x7684;&#x5F15;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#x5217;&#x8868;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x72EC;&#x7ACB;&#x4E8E;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x201C;</strong> &#x3002;</p>
+<p>&#x4E0E;&#x8FD9;&#x4E9B;&#x5DEE;&#x5F02;&#x6709;&#x5173;&#x7684;&#x98CE;&#x9669;&#x4E3B;&#x8981;&#x96C6;&#x4E2D;&#x5728;&#x670D;&#x52A1;&#x5668;&#x8BA4;&#x8BC1;&#x4E0A;&#xFF0C;&#x5BA2;&#x6237;&#x65E0;&#x6CD5;&#x5C06;&#x72EC;&#x7ACB;&#x6784;&#x5EFA;&#x7684;&#x5F15;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x7684;&#x5F15;&#x7528;&#x6807;&#x8BC6;&#x7B26;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x4E3A;&#x4E86;&#x51CF;&#x8F7B;&#x8FD9;&#x4E9B;&#x98CE;&#x9669;&#xFF0C;&#x8981;&#x6C42;<code>NETCONF</code>/<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x9A8C;&#x8BC1;&#x670D;&#x52A1;&#x5668;&#x7684;<code>SSH</code>&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x9884;&#x5148;&#x914D;&#x7F6E;&#x7684;&#x53D1;&#x884C;&#x8005;&#x8BC1;&#x4E66;&#x8FDB;&#x884C;&#x8BC1;&#x4E66;&#x8DEF;&#x5F84;&#x9A8C;&#x8BC1;&#xFF0C;&#x6216;&#x8005;&#x901A;&#x8FC7;&#x5C06;&#x4E3B;&#x673A;&#x5BC6;&#x94A5;&#x6216;&#x8BC1;&#x4E66;&#x4E0E;&#x5148;&#x524D;&#x4FE1;&#x4EFB;&#x6216;&#x201C;&#x56FA;&#x5B9A;&#x201D;&#x503C;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x8BC1;&#x4E66;&#x65F6;&#xFF0C;&#x8981;&#x6C42;&#x5BA2;&#x6237;&#x7AEF;&#x80FD;&#x591F;&#x5C06;&#x5728;&#x63D0;&#x4F9B;&#x7684;&#x8BC1;&#x4E66;&#x4E2D;&#x7F16;&#x7801;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x9884;&#x5148;&#x914D;&#x7F6E;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5E8F;&#x5217;&#x53F7;&#xFF09;&#x76F8;&#x5339;&#x914D;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;<code>NETCONF</code>/<code>RESTCONF</code>&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;<code>X.509</code>&#x8BC1;&#x4E66;&#x7684;&#x60C5;&#x51B5;&#xFF0C;<code>NETCONF</code>/<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x5E94;&#x786E;&#x4FDD;&#x7528;&#x4E8E;&#x8BC1;&#x4E66;&#x8DEF;&#x5F84;&#x9A8C;&#x8BC1;&#x7684;<code>&quot;\&quot;</code>&#x9884;&#x914D;&#x7F6E;&#x9881;&#x53D1;&#x8005;&#x8BC1;&#x4E66;&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5236;&#x9020;&#x5546;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8BC1;&#x4E66;&#x4E0D;&#x5E94;&#x8BE5;&#x5C5E;&#x4E8E;&#x53EF;&#x80FD;&#x4E3A;&#x591A;&#x4E2A;&#x5236;&#x9020;&#x5546;&#x9881;&#x53D1;&#x8BC1;&#x4E66;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x8BA4;&#x8BC1;&#x673A;&#x6784;&#x3002;&#x5F53;&#x4F7F;&#x7528;&#x5C06;&#x5171;&#x4EAB;&#x79D8;&#x5BC6;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5BC6;&#x7801;&#xFF09;&#x4F20;&#x9012;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BA2;&#x6237;&#x673A;&#x8BA4;&#x8BC1;&#x673A;&#x5236;&#x65F6;&#xFF0C;&#x8FD9;&#x662F;&#x7279;&#x522B;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x5BA2;&#x6237;&#x7AEF;&#x5C06;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#x53D1;&#x9001;&#x5230;&#x6070;&#x597D;&#x4E0E;&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x671F;&#x671B;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5177;&#x6709;&#x76F8;&#x540C;&#x8EAB;&#x4EFD;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5E8F;&#x5217;&#x53F7;&#xFF09;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x8003;&#x8651;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65E0;&#x5173;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x8FD0;&#x884C;<code>NETCONF Call Home</code>&#x6216;<code>RESTCONF Call Home</code>&#x7684;&#x9762;&#x5411;<code>Internet</code>&#x7684;&#x4E3B;&#x673A;&#x5C06;&#x901A;&#x8FC7;&#x8BF8;&#x5982;&quot;<a href="https://tools.ietf.org/html/rfc8071#ref-zmap" target="_blank">zmap</a>&quot;&#x4E4B;&#x7C7B;&#x7684;&#x626B;&#x63CF;&#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x6307;&#x7EB9;&#x8BC6;&#x522B;&#x3002; <code>SSH</code>&#x548C;<code>TLS</code>&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x8FDB;&#x884C;&#x6307;&#x7EB9;&#x8BC6;&#x522B;&#x3002; <code>SSH</code>&#x548C;<code>TLS</code>&#x670D;&#x52A1;&#x5668;&#x76F8;&#x5F53;&#x6210;&#x719F;&#xFF0C;&#x80FD;&#x591F;&#x62B5;&#x5FA1;&#x653B;&#x51FB;&#xFF0C;&#x4F46;&#x662F;<code>SSH</code>&#x548C;<code>TLS</code>&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x80FD;&#x4E0D;&#x591F;&#x5F3A;&#x5927;&#x3002;&#x5B9E;&#x65BD;&#x8005;&#x548C;&#x90E8;&#x7F72;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x63D0;&#x4F9B;&#x8F6F;&#x4EF6;&#x66F4;&#x65B0;&#x673A;&#x5236;&#xFF0C;&#x4EE5;&#x4FBF;&#x53CA;&#x65F6;&#x4FEE;&#x590D;&#x6F0F;&#x6D1E;&#x3002;</p>
+<p>&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x5728;&#x63A8;&#x65AD;&#x51FA;&#x653B;&#x51FB;&#x8005;&#x6CA1;&#x6709;&#x62E5;&#x6709;&#x6709;&#x6548;&#x5BC6;&#x94A5;&#x4E4B;&#x524D;&#xFF0C;&#x5BF9;<code>NETCONF</code>/<code>RESTCONF</code>&#x5BA2;&#x6237;&#x7AEF;&#x8FDB;&#x884C;&#x62D2;&#x7EDD;&#x670D;&#x52A1;&#xFF08;<code>DoS</code>&#xFF09;&#x653B;&#x51FB;&#xFF0C;&#x6267;&#x884C;&#x8BA1;&#x7B97;&#x91CF;&#x5927;&#x7684;&#x64CD;&#x4F5C;&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x5728;<a href="">TLS1.3</a>&#x4E2D;&#xFF0C;<code>ClientHello</code>&#x6D88;&#x606F;&#x5305;&#x542B;&#x6210;&#x672C;&#x5F88;&#x9AD8;&#x7684;&#x975E;&#x5BF9;&#x79F0;&#x5BC6;&#x94A5;&#x64CD;&#x4F5C;&#x7684;&#x5BC6;&#x94A5;&#x5171;&#x4EAB;&#x503C;&#x3002; &#x63A8;&#x8350;&#x4F7F;&#x7528;&#x5E38;&#x89C1;&#x7684;&#x51CF;&#x8F7B;<code>DoS</code>&#x653B;&#x51FB;&#x7684;&#x9884;&#x9632;&#x63AA;&#x65BD;&#xFF0C;&#x4F8B;&#x5982;&#x5728;&#x4E00;&#x7CFB;&#x5217;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x767B;&#x5F55;&#x5C1D;&#x8BD5;&#x540E;&#x6682;&#x65F6;&#x5C06;&#x6E90;&#x5730;&#x5740;&#x5217;&#x5165;&#x9ED1;&#x540D;&#x5355;&#x3002;</p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x5E26;&#x6709;<code>RESTCONF</code>&#x534F;&#x8BAE;&#x7684;<code>call home</code>&#x65F6;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;<code>HTTP</code>&#x8BA4;&#x8BC1;&#x65B9;&#x6848;&#x65F6;&#xFF0C;&#x7279;&#x522B;&#x8981;&#x6CE8;&#x610F;&#x4F20;&#x9001;&#x5171;&#x4EAB;&#x5BC6;&#x94A5;&#xFF08;&#x4F8B;&#x5982;&#x5BC6;&#x7801;&#xFF09;&#x7684;<code>Basic</code> <a href="https://tools.ietf.org/html/rfc7617" target="_blank">RFC7617</a>&#x548C;<code>Digest</code> <a href="https://tools.ietf.org/html/rfc7616" target="_blank">RFC7616</a>&#x65B9;&#x6848;&#x3002; &#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x4EFB;&#x4F55;<code>HTTP</code>&#x5BA2;&#x6237;&#x673A;&#x8BA4;&#x8BC1;&#x65B9;&#x6848;&#xFF0C;&#x5B9E;&#x65BD;&#x8005;&#x548C;&#x90E8;&#x7F72;&#x90FD;&#x5E94;&#x786E;&#x4FDD;&#x67E5;&#x770B;<code>RFC</code>&#x4E2D;&#x7684;&#x201C;&#x5B89;&#x5168;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x201D;&#x90E8;&#x5206;&#x3002;</p>
+<h2 id="iana&#x8003;&#x8651;&#x4E8B;&#x9879;"><a name="iana&#x8003;&#x8651;&#x4E8B;&#x9879;" class="plugin-anchor" href="#iana&#x8003;&#x8651;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>IANA&#x8003;&#x8651;&#x4E8B;&#x9879;</h2>
+<p>IANA&#x5DF2;&#x7ECF;&#x5728;&#x201C;&#x7528;&#x6237;&#x7AEF;&#x53E3;&#x201D;&#x8303;&#x56F4;&#x5185;&#x4E3A;&#x670D;&#x52A1;&#x540D;&#x79F0;&#x201C;<code>netconf-ch-ssh</code>&#x201D;&#xFF0C;&#x201C;<code>netconf-ch-tls</code>&#x201D;&#x548C;&#x201C;<code>restconf-ch-tls</code>&#x201D;&#x5206;&#x914D;&#x4E86;&#x4E09;&#x4E2A;<code>TCP</code>&#x7AEF;&#x53E3;&#x53F7;&#x3002; &#x8FD9;&#x4E9B;&#x7AEF;&#x53E3;&#x5C06;&#x662F;<code>NETCONF Call Home</code>&#x548C;<code>RESTCONF Call Home</code>&#x534F;&#x8BAE;&#x7684;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x3002; &#x4EE5;&#x4E0B;&#x662F;&#x9075;&#x5FAA;<a href="https://tools.ietf.org/html/rfc6335" target="_blank">RFC6335</a>&#x4E2D;&#x7684;&#x89C4;&#x5219;&#x7684;&#x6CE8;&#x518C;&#x6A21;&#x677F;&#x3002;</p>
+<pre><code class="lang-txt">Service Name:           netconf-ch-ssh
+Port Number:            4334
+Transport Protocol(s):  TCP
+Description:            NETCONF Call Home (SSH)
+Assignee:               IESG &lt;iesg@ietf.org&gt;
+Contact:                IETF Chair &lt;chair@ietf.org&gt;
+Reference:              RFC 8071
+
+Service Name:           netconf-ch-tls
+Port Number:            4335
+Transport Protocol(s):  TCP
+Description:            NETCONF Call Home (TLS)
+Assignee:               IESG &lt;iesg@ietf.org&gt;
+Contact:                IETF Chair &lt;chair@ietf.org&gt;
+Reference:              RFC 8071
+
+Service Name:           restconf-ch-tls
+Port Number:            4336
+Transport Protocol(s):  TCP
+Description:            RESTCONF Call Home (TLS)
+Assignee:               IESG &lt;iesg@ietf.org&gt;
+Contact:                IETF Chair &lt;chair@ietf.org&gt;
+Reference:              RFC 8071
+</code></pre>
+<h2 id="&#x53C2;&#x8003;&#x5B9E;&#x73B0;"><a name="&#x53C2;&#x8003;&#x5B9E;&#x73B0;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x5B9E;&#x73B0;</h2>
+<p>&#x5173;&#x4E8E;<code>NETCONF Call Home</code>&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<code>Juniper</code>&#x5728;<a href="https://github.com/Juniper" target="_blank">github</a>&#x4E0A;&#x5F00;&#x6E90;&#x7684;<a href="https://github.com/Juniper/netconf-call-home" target="_blank">netconf-call-home</a>&#x3002;</p>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://tools.ietf.org/html/rfc8071" target="_blank">RFC 8071 - NETCONF Call Home and RESTCONF Call Home</a></li>
+<li><a href="https://tools.ietf.org/html/rfc6242" target="_blank">RFC6242 - Using the NETCONF Protocol over Secure Shell (SSH)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7589" target="_blank">RFC7589 - Using the NETCONF Protocol over Transport Layer Security (TLS) with Mutual X.509 Authentication</a></li>
+<li><a href="https://tools.ietf.org/html/rfc4253" target="_blank">RFC4253 -  The Secure Shell (SSH) Transport Layer Protocol</a></li>
+<li><a href="https://tools.ietf.org/html/rfc5246" target="_blank">RFC5246 -  The Transport Layer Security (TLS) Protocol Version 1.2</a></li>
+<li><a href="https://tools.ietf.org/html/rfc8040" target="_blank">RFC8040 - RESTCONF Protocol</a></li>
+<li><a href="https://github.com/Juniper/netconf-call-home" target="_blank">Juniper netconf-call-home</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="netconf.html" class="navigation navigation-prev " aria-label="Previous page: NETCONF">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yang-module-for-netconf-monitoring.html" class="navigation navigation-next " aria-label="Next page: YANG Module for NETCONF Monitoring">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"NETCONF Call Home","level":"3.1.3.3.1","depth":4,"next":{"title":"YANG Module for NETCONF Monitoring","level":"3.1.3.3.2","depth":4,"path":"sdn/sbi/yang-module-for-netconf-monitoring.md","ref":"sdn/sbi/yang-module-for-netconf-monitoring.md","articles":[]},"previous":{"title":"NETCONF","level":"3.1.3.3","depth":3,"path":"sdn/sbi/netconf.md","ref":"sdn/sbi/netconf.md","articles":[{"title":"NETCONF Call Home","level":"3.1.3.3.1","depth":4,"path":"sdn/sbi/netconf-call-home.md","ref":"sdn/sbi/netconf-call-home.md","articles":[]},{"title":"YANG Module for NETCONF Monitoring","level":"3.1.3.3.2","depth":4,"path":"sdn/sbi/yang-module-for-netconf-monitoring.md","ref":"sdn/sbi/yang-module-for-netconf-monitoring.md","articles":[]},{"title":"NETCONF请求和响应中的标签","level":"3.1.3.3.3","depth":4,"path":"sdn/sbi/netconf-tags.md","ref":"sdn/sbi/netconf-tags.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sdn/sbi/netconf-call-home.md","mtime":"2019-08-15T08:28:03.236Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

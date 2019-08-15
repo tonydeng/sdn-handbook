@@ -1,0 +1,28 @@
+@startuml
+title __SCP__业务编排流程
+
+participant 项目管理 as projects
+participant "用户管理\n资源管理\n业务管理" as resource
+participant "策略管理" as policy
+participant "ODL PM" as pm
+participant "ODL SCM" as scm
+participant "OpenStack" as openstack
+participant "ODL控制器" as control
+
+projects -> resource : 指定用户流量
+projects -> resource : 选择业务模板
+projects -> policy : 读取策略模板
+projects -> projects : 激活项目
+projects -> pm : 下发策略
+scm -> pm : 获取策略
+pm --> scm : 返回策略
+openstack -> scm : VM开启
+scm -> control : 下发流表
+control --> scm : 下发成功
+scm --> pm : 下发成功
+pm --> projects : 下发成功
+projects -> pm : 会话查询
+resource -> projects : 用户上下线
+projects -> pm : 更新策略
+
+@enduml

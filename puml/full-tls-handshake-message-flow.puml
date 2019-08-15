@@ -1,0 +1,12 @@
+@startuml
+title: Full __TLS__ handshake message flow
+
+participant "TLS Client" as client
+participant "TLS Server" as server
+
+client -> server : ClientHello
+server -> client : ServerHello\nCertificate\nServerKeyExchange\nCertificateRequest\nServerHelloDone
+client -> server : Certificate\nClientKeyExchange(ChangeCipherSper)\nFinished
+server -> client : (ChangeCipherSpec)\nFinished
+client <--> server : Application Data
+@enduml

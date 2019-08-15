@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="-21.722656 109.83333 1287.3893 799.9479" width="1287.3893pt" height="799.9479pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.4.2 
+    <dc:date>2017-11-14 08:07:49 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="DejaVu Sans Mono" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="18" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="23" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="DejaVu Sans Mono" font-size="17" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="553.22266" cap-height="735.3516" ascent="928.2227" descent="-235.83984" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="DejaVuSansMono-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Google B4 Arth</title>
+    <rect fill="white" width="1287.3893" height="799.9479"/>
+    <g>
+      <title>图层 1</title>
+      <path d="M 383.124 623.8237 C 469.6255 667.1719 469.6255 737.4531 383.124 780.8013 C 296.6229 824.1497 156.37709 824.1497 69.87602 780.8013 C -16.625488 737.4531 -16.625488 667.1719 69.87602 623.8237 C 156.37709 580.47535 296.6229 580.47535 383.124 623.8237" fill="#c0ffc0"/>
+      <path d="M 383.124 623.8237 C 469.6255 667.1719 469.6255 737.4531 383.124 780.8013 C 296.6229 824.1497 156.37709 824.1497 69.87602 780.8013 C -16.625488 737.4531 -16.625488 667.1719 69.87602 623.8237 C 156.37709 580.47535 296.6229 580.47535 383.124 623.8237" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="287.0737" y1="360.33333" x2="288.28257" y2="622.73064" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="282.45413" y1="360.33333" x2="174.77134" y2="739.342" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="280.67537" y1="360.33333" x2="176.95246" y2="622.73064" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="344.33333" y="119.66667" width="130.5" height="77" fill="#999"/>
+      <rect x="344.33333" y="119.66667" width="130.5" height="77" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(349.33333 148.66667)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="26.535156" y="15" textLength="67.42969">Gateway</tspan>
+      </text>
+      <line x1="322.35734" y1="748.216" x2="536.8673" y2="621.1164" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="322.35734" y1="642.57816" x2="498.2405" y2="602.12784" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="5" y="248.5" width="547" height="132" fill="#c0ffff"/>
+      <path d="M 5 248.5 L 552 248.5 L 552 380.5 L 5 380.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <rect x="352" y="113" width="130.5" height="77" fill="#999"/>
+      <rect x="352" y="113" width="130.5" height="77" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(357 142)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="26.535156" y="15" textLength="67.42969">Gateway</tspan>
+      </text>
+      <rect x="666.25" y="119.28125" width="130.5" height="77" fill="#ccc"/>
+      <rect x="666.25" y="119.28125" width="130.5" height="77" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(671.25 138.78125)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="16.902344" y="15" textLength="96.32812">Cental TE </tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="31.351562" y="34" textLength="57.796875">Server</tspan>
+      </text>
+      <rect x="659.5" y="110.33333" width="130.5" height="77" fill="#ccc"/>
+      <rect x="659.5" y="110.33333" width="130.5" height="77" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(664.5 129.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="16.902344" y="15" textLength="96.32812">Cental TE </tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="31.351562" y="34" textLength="57.796875">Server</tspan>
+      </text>
+      <rect x="64.17867" y="447.08333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="64.17867" y="447.08333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(69.17867 459.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="31.66797" y="15" textLength="48.16406">NSC 3</tspan>
+      </text>
+      <rect x="161.67867" y="422.08333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="161.67867" y="422.08333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(166.67867 434.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="31.66797" y="15" textLength="48.16406">NSC 2</tspan>
+      </text>
+      <rect x="265.17867" y="397.58333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="265.17867" y="397.58333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(270.17867 410.33333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="31.66797" y="15" textLength="48.16406">NSC 1</tspan>
+      </text>
+      <text transform="translate(25.63481 262.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" x=".46777344" y="17" textLength="195.06445">Site A Controllers</tspan>
+      </text>
+      <rect x="566" y="247.64062" width="279" height="132" fill="#c0ffff"/>
+      <path d="M 566 247.64062 L 845 247.64062 L 845 379.64062 L 566 379.64062 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <text transform="translate(571 292.64062)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="101.98926" y="17" textLength="65.021484">Site B</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="74.89697" y="38" textLength="119.20605">Controllers</tspan>
+      </text>
+      <rect x="859" y="248.5" width="279" height="132" fill="#c0ffff"/>
+      <path d="M 859 248.5 L 1138 248.5 L 1138 380.5 L 859 380.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <text transform="translate(864 293.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="101.98926" y="17" textLength="65.021484">Site C</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="74.89697" y="38" textLength="119.20605">Controllers</tspan>
+      </text>
+      <rect x="132.0734" y="622.73064" width="67.89474" height="55.309735" fill="white"/>
+      <rect x="132.0734" y="622.73064" width="67.89474" height="55.309735" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(137.0734 621.8855)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="14.49815" y="15" textLength="28.898438">OFA</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x=".04893092" y="53" textLength="57.796875">Switch</tspan>
+      </text>
+      <path d="M 199.96814 649.2548 L 199.96814 649.2548 L 132.0734 649.5933 L 132.0734 649.5933" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <rect x="254.4626" y="740.6753" width="67.89474" height="55.309735" fill="white"/>
+      <rect x="254.4626" y="740.6753" width="67.89474" height="55.309735" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(259.4626 739.8302)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="14.49815" y="15" textLength="28.898438">OFA</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".04893092" y="53" textLength="57.796875">Switch</tspan>
+      </text>
+      <rect x="132.96676" y="739.342" width="67.89474" height="55.309735" fill="white"/>
+      <rect x="132.96676" y="739.342" width="67.89474" height="55.309735" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(137.96676 738.4969)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="14.49815" y="15" textLength="28.898438">OFA</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".04893092" y="53" textLength="57.796875">Switch</tspan>
+      </text>
+      <rect x="254.4626" y="622.73064" width="67.89474" height="55.309735" fill="white"/>
+      <rect x="254.4626" y="622.73064" width="67.89474" height="55.309735" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(259.4626 621.8855)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="14.49815" y="15" textLength="28.898438">OFA</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".04893092" y="53" textLength="57.796875">Switch</tspan>
+      </text>
+      <path d="M 254.4626 650.957 L 322.35734 650.5625 L 288.40997 650.3855" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="132.96676" y1="767.418" x2="200.8615" y2="768.1172" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <path d="M 254.4626 766.2383 L 322.35734 766.2383 L 288.40997 768.3302" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="4,4"/>
+      <line x1="199.96814" y1="650.3855" x2="254.4626" y2="650.3855" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="166.23264" y1="678.0404" x2="166.70227" y2="739.342" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="288.40997" y1="678.0404" x2="288.40997" y2="740.6753" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="254.4626" y1="767.95765" x2="200.8615" y2="767.3694" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="259.59673" y1="678.0404" x2="195.72737" y2="739.342" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="194.71776" y1="678.0404" x2="259.713" y2="740.6753" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(33 693.3125)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" x=".4892578" y="17" textLength="65.021484">Site A</tspan>
+      </text>
+      <ellipse cx="613.75" cy="575.5625" rx="131.00021" ry="56.25009" fill="#c0ffc0"/>
+      <ellipse cx="613.75" cy="575.5625" rx="131.00021" ry="56.25009" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(513.95 565.0625)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="67.28926" y="17" textLength="65.021484">Site B</tspan>
+      </text>
+      <ellipse cx="998.5" cy="709.8125" rx="131.00021" ry="61.7501" fill="#c0ffc0"/>
+      <ellipse cx="998.5" cy="709.8125" rx="131.00021" ry="61.7501" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(898.7 699.3125)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="18" font-weight="400" fill="black" x="67.28926" y="17" textLength="65.021484">Site C</tspan>
+      </text>
+      <path d="M -10 213.0625 L 1259.9453 213.28125 L 1253.9922 212" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <path d="M -10 512.5625 L 1259.9453 512.78125 L 1253.9922 511.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <path d="M -21.222656 845.0208 L 1248.7227 845.2396 L 1242.7695 843.9583" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5"/>
+      <line x1="376.66667" y1="196.66667" x2="320.7475" y2="303" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="411.5625" y1="198.33333" x2="718" y2="247.64062" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="407.33333" y1="198.33333" x2="1030" y2="247.64062" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="659.5" y1="149.39919" x2="482.5" y2="150.93415" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="744.75" y1="587.9792" x2="906.7255" y2="665.7487" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 697.4931 618.8229 L 867.5 706.6458 L 864 702.7933" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(445 621)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".234375" y="15" textLength="38.53125">iBGP</tspan>
+      </text>
+      <text transform="translate(979 798.3125)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".234375" y="15" textLength="38.53125">eBGP</tspan>
+      </text>
+      <text transform="translate(959.5 885.2812)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".46875" y="15" textLength="77.0625">Clusters</tspan>
+      </text>
+      <text transform="translate(582.97266 790.3125)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="23" font-weight="400" x=".4584961" y="21" textLength="83.08301">B4 WAN</tspan>
+      </text>
+      <rect x="622.75" y="433.0703" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="622.75" y="433.0703" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="644.75" y="425.0703" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="644.75" y="425.0703" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="666.75" y="413.5703" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="666.75" y="413.5703" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="915.75" y="432.08333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="915.75" y="432.08333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="937.75" y="424.08333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="937.75" y="424.08333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="959.75" y="412.58333" width="121.5" height="44.5" fill="#ffc0c0"/>
+      <rect x="959.75" y="412.58333" width="121.5" height="44.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1131.9453 118.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x=".09082031" y="16" textLength="122.81836">Global Layer</tspan>
+      </text>
+      <text transform="translate(1096.6667 217)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x=".12109375" y="16" textLength="163.75781">Site Contorllers</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x="51.29541" y="36" textLength="61.40918"> Layer</tspan>
+      </text>
+      <text transform="translate(1100.9453 528)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x=".2385254" y="16" textLength="153.52295">Switch hardware</tspan>
+        <tspan font-family="DejaVu Sans Mono" font-size="17" font-weight="bold" x="46.29541" y="36" textLength="61.40918"> Layer</tspan>
+      </text>
+      <rect x="15.63481" y="317" width="140" height="50" fill="white"/>
+      <rect x="15.63481" y="317" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(20.63481 332.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" fill="black" x="36.101562" y="15" textLength="57.796875">Quagga</tspan>
+      </text>
+      <rect x="21.845337" y="306.14062" width="140" height="50" fill="white"/>
+      <rect x="21.845337" y="306.14062" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(26.845337 321.64062)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="36.101562" y="15" textLength="57.796875">Quagga</tspan>
+      </text>
+      <rect x="30.63481" y="296.14062" width="140" height="50" fill="white"/>
+      <rect x="30.63481" y="296.14062" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(35.63481 311.64062)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="36.101562" y="15" textLength="57.796875">Quagga</tspan>
+      </text>
+      <rect x="200.83333" y="303" width="63.5" height="32" fill="white"/>
+      <rect x="200.83333" y="303" width="63.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(205.83333 309.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="12.300781" y="15" textLength="28.898438">RAP</tspan>
+      </text>
+      <rect x="264.33333" y="303" width="96" height="32" fill="white"/>
+      <rect x="264.33333" y="303" width="96" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(269.33333 309.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="4.46875" y="15" textLength="77.0625">TE Agent</tspan>
+      </text>
+      <rect x="200.83333" y="335" width="159" height="32" fill="white"/>
+      <rect x="200.83333" y="335" width="159" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(205.83333 341.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="60.05078" y="15" textLength="28.898438">OFC</tspan>
+      </text>
+      <rect x="207.5" y="296.33333" width="63.5" height="32" fill="white"/>
+      <rect x="207.5" y="296.33333" width="63.5" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(212.5 302.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="12.300781" y="15" textLength="28.898438">RAP</tspan>
+      </text>
+      <rect x="271" y="296.33333" width="96" height="32" fill="white"/>
+      <rect x="271" y="296.33333" width="96" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(276 302.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="4.46875" y="15" textLength="77.0625">TE Agent</tspan>
+      </text>
+      <rect x="207.5" y="328.33333" width="159" height="32" fill="white"/>
+      <rect x="207.5" y="328.33333" width="159" height="32" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(212.5 334.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="60.05078" y="15" textLength="28.898438">OFC</tspan>
+      </text>
+      <rect x="391.33333" y="317" width="140" height="50" fill="white"/>
+      <rect x="391.33333" y="317" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(396.33333 332.5)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="36.101562" y="15" textLength="57.796875">Quagga</tspan>
+      </text>
+      <rect x="400.33333" y="306.33333" width="140" height="50" fill="white"/>
+      <rect x="400.33333" y="306.33333" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(405.33333 321.83333)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.91797" y="15" textLength="48.16406">Paxos</tspan>
+      </text>
+      <rect x="407" y="295.66667" width="140" height="50" fill="white"/>
+      <rect x="407" y="295.66667" width="140" height="50" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(412 311.16667)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x="40.91797" y="15" textLength="48.16406">Paxos</tspan>
+      </text>
+      <line x1="1087.3333" y1="754.6458" x2="1107.3333" y2="909.2812" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="964" y1="771.5625" x2="903.3333" y2="909.2812" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 173.94525 794.6517 L 199.96814 897.0052 L 199.96814 892.5521" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="305.46625" y1="795.9851" x2="367" y2="895.7552" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(234 863.62)" fill="black">
+        <tspan font-family="DejaVu Sans Mono" font-size="16" font-weight="400" x=".46875" y="15" textLength="77.0625">Clusters</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+@startuml
+title __NETCONF Call home overview__ over WebSocket
+
+
+box "Client" #LightGreen
+participant "NETCONF Client" as nc
+participant "WS Client" as wc
+end box
+
+
+box "Server" #LightBlue
+participant "WS Server" as ws
+participant "NETCONF Server" as ns
+end box
+
+nc -> wc : Load html file
+wc -> ws : TLS handshake
+ws -> ns : NETCONF username
+ws -> wc :
+wc -> ws : GET
+ws -> wc :
+wc -> nc :
+nc -> wc : Start WebSocket(API)
+wc -> ws : GET\nupgrade: WebSocket\nprotocol:NETCONF
+ws -> ns :
+ns -> ws :
+ws -> wc : HTTP/1.1 101\nupgrade: WebSocket\nprotocol: NETCONF
+wc -> nc :
+nc -> ns : <hello>
+ns -> nc : <hello>
+nc -> ns : <create-subsciption>
+ns -> nc : <notification>
+ns -> nc :
+ns -> nc :
+@enduml

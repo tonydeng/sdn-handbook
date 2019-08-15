@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="80.08203 3 1305.918 804.5" width="1305.918pt" height="804.5pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.5 
+    <dc:date>2017-11-12 14:49:04 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="500">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="PingFang SC" font-size="16" panose-1="2 11 4 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="58" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="500">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Regular"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="PingFang SC" font-size="20" panose-1="2 11 8 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-150" underline-thickness="80" slope="0" x-height="600" cap-height="860" ascent="1060.0021" descent="-340.0007" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="PingFangSC-Semibold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="20" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="bold">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>OpenDaylight Lithium Arth</title>
+    <rect fill="white" width="1305.918" height="804.5"/>
+    <g>
+      <title>以OpenStack为例的Lithium版本架构示意</title>
+      <rect x="107" y="270.5" width="484" height="108" fill="white"/>
+      <path d="M 107 270.5 L 591 270.5 L 591 378.5 L 107 378.5 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke-dasharray="8,5,8,5,1,5"/>
+      <rect x="499.25" y="127.5" width="104" height="45.5" fill="#ffc6a5"/>
+      <rect x="499.25" y="127.5" width="104" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(504.25 131.802)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="6.984" y="15" textLength="80.032">OpenStack</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="18.4" y="33.448" textLength="39.408">Neutr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="57.52" y="33.448" textLength="18.08">on</tspan>
+      </text>
+      <rect x="377.5" y="127.5" width="104" height="45.5" fill="#ffc6a5"/>
+      <rect x="377.5" y="127.5" width="104" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(382.5 141.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="26.256" y="15" textLength="41.488">DLUX</tspan>
+      </text>
+      <rect x="107" y="193" width="601" height="34" fill="#f9ff67"/>
+      <rect x="107" y="193" width="601" height="34" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(112 200.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="234.612" y="15" textLength="121.776">AAA-AuthN Filter</tspan>
+      </text>
+      <rect x="107" y="227" width="601" height="34" fill="#9effbd"/>
+      <rect x="107" y="227" width="601" height="34" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(112 234.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="207.94" y="15" textLength="175.12">OpenDaylight API(REST)</tspan>
+      </text>
+      <rect x="109.25" y="325" width="69.5" height="45.5" fill="#acb6e0"/>
+      <rect x="109.25" y="325" width="69.5" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(114.25 325.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="17" textLength="32">拓扑</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="39" textLength="32">管理</tspan>
+      </text>
+      <rect x="211.75" y="325" width="69.5" height="45.5" fill="#acb6e0"/>
+      <rect x="211.75" y="325" width="69.5" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(216.75 325.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="17" textLength="32">统计</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="39" textLength="32">管理</tspan>
+      </text>
+      <rect x="314.25" y="325" width="69.5" height="45.5" fill="#acb6e0"/>
+      <rect x="314.25" y="325" width="69.5" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(319.25 325.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="5.75" y="17" textLength="48">交换机</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="39" textLength="32">管理</tspan>
+      </text>
+      <rect x="416.75" y="325" width="69.5" height="45.5" fill="#acb6e0"/>
+      <rect x="416.75" y="325" width="69.5" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(421.75 336.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="12.67" y="17" textLength="34.16">FRM</tspan>
+      </text>
+      <rect x="519.25" y="325" width="69.5" height="45.5" fill="#acb6e0"/>
+      <rect x="519.25" y="325" width="69.5" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(524.25 325.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="17" textLength="32">主机</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="13.75" y="39" textLength="32">跟踪</tspan>
+      </text>
+      <text transform="translate(123.25 286.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="0" y="17" textLength="128">基础网络服务功能</tspan>
+      </text>
+      <rect x="608.5" y="270.5" width="99.5" height="49.5" fill="#ffcce8"/>
+      <rect x="608.5" y="270.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(613.5 286.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.198" y="15" textLength="31.104">AAA</tspan>
+      </text>
+      <rect x="608.5" y="329" width="99.5" height="49.5" fill="#ffcce8"/>
+      <rect x="608.5" y="329" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(613.5 335.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="17.486" y="15" textLength="58.976">OVSDB </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="16.15" y="33.448" textLength="39.408">Neutr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="55.27" y="33.448" textLength="18.08">on</tspan>
+      </text>
+      <rect x="738.5" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="738.5" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 199.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="27.862" y="15" textLength="33.776">LISP</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="19.422" y="33.448" textLength="50.656">service</tspan>
+      </text>
+      <rect x="848" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="848" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 199.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="28.014" y="15" textLength="33.472">GBP</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="19.422" y="33.448" textLength="50.656">service</tspan>
+      </text>
+      <rect x="957.5" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="957.5" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 199.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="14.822" y="15" textLength="64.304">DOCSIS </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="4.598" y="33.448" textLength="80.304">abstraction</tspan>
+      </text>
+      <rect x="1067" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1067" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 208.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="5.342" y="15" textLength="5.328">r</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="10.382" y="15" textLength="73.776">eservation</tspan>
+      </text>
+      <rect x="1176.5" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1176.5" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1181.5 208.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="28.902" y="15" textLength="31.696">VPN</tspan>
+      </text>
+      <rect x="1286" y="193" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1286" y="193" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1291 208.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="1.638" y="15" textLength="86.224">persisitence</tspan>
+      </text>
+      <rect x="738.5" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="738.5" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 265.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="24.158" y="15" textLength="41.184">LACP</tspan>
+      </text>
+      <rect x="848" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="848" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 265.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.198" y="15" textLength="31.104">SFC</tspan>
+      </text>
+      <rect x="957.5" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="957.5" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 265.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="11.566" y="15" textLength="66.368">L2Switch</tspan>
+      </text>
+      <rect x="1067" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1067" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 255.802)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="26.382" y="15" textLength="41.184">SDNi </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="5.79" y="33.448" textLength="32.288">aggr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="37.79" y="33.448" textLength="45.92">egator</tspan>
+      </text>
+      <rect x="1176.5" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1176.5" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1181.5 265.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="24.446" y="15" textLength="40.608">DIDM</tspan>
+      </text>
+      <rect x="1286" y="249.5" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1286" y="249.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1291 255.802)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="22.814" y="15" textLength="48.32">TOPO </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="5.486" y="33.448" textLength="14.816">pr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="20.014" y="33.448" textLength="64">ocessing</tspan>
+      </text>
+      <rect x="738.5" y="306" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="738.5" y="306" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 321.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="8.886" y="15" textLength="68.752">MSC Mgr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="76.166" y="15" textLength="4.448">.</tspan>
+      </text>
+      <rect x="848" y="306" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="848" y="306" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 312.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.494" y="15" textLength="34.96">VTN </tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="13.334" y="33.448" textLength="62.832">manager</tspan>
+      </text>
+      <rect x="957.5" y="306" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="957.5" y="306" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 321.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="31.126" y="15" textLength="27.248">NIC</tspan>
+      </text>
+      <rect x="1067" y="306" width="99.5" height="49.5" fill="#c0ffff"/>
+      <rect x="1067" y="306" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 321.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="23.862" y="15" textLength="41.776">TSDR</tspan>
+      </text>
+      <rect x="145" y="399.5" width="424.5" height="60" fill="#ffc0c0"/>
+      <rect x="145" y="399.5" width="424.5" height="60" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(150 407.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="167.25" y="17" textLength="80">业务抽象层</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="55.25" y="39" textLength="304">（插件管理、能力管理、流编程、库存等）</tspan>
+      </text>
+      <rect x="608.5" y="399.5" width="99.5" height="60" fill="#3a8eed"/>
+      <rect x="608.5" y="399.5" width="99.5" height="60" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(613.5 409.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="16.15" y="15" textLength="39.408">Neutr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="55.27" y="15" textLength="18.08">on</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="28.75" y="35.448" textLength="32">北向</tspan>
+      </text>
+      <rect x="428.5" y="512.5" width="99.5" height="60" fill="#dead26"/>
+      <rect x="428.5" y="512.5" width="99.5" height="60" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(433.5 533.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="17.486" y="15" textLength="54.528">OVSDB</tspan>
+      </text>
+      <rect x="220.75" y="511.5" width="198" height="60" fill="#dead26"/>
+      <rect x="220.75" y="511.5" width="198" height="60" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <rect x="228.25" y="541" width="55" height="23.5" fill="#dead26"/>
+      <rect x="228.25" y="541" width="55" height="23.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(233.25 543.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="11.38" y="15" textLength="22.24">1.0</tspan>
+      </text>
+      <rect x="290.25" y="541" width="55" height="23.5" fill="#dead26"/>
+      <rect x="290.25" y="541" width="55" height="23.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(295.25 543.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="11.38" y="15" textLength="22.24">1.3</tspan>
+      </text>
+      <rect x="356.25" y="541" width="55" height="23.5" fill="#dead26"/>
+      <rect x="356.25" y="541" width="55" height="23.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(361.25 543.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="8.132" y="15" textLength="28.736">TTP</tspan>
+      </text>
+      <rect x="281.75" y="511" width="84" height="30" fill="#dead26"/>
+      <text transform="translate(286.75 516.776)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".408" y="15" textLength="73.184">OpenFlow</tspan>
+      </text>
+      <text transform="translate(569 493.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x=".184" y="17" textLength="32">启动</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="32.184" y="17" textLength="31.104">AAA</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="63.288" y="17" textLength="16">、</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="79.288" y="17" textLength="54.528">OVSDB</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="6.4" y="39" textLength="16">和</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="22.4" y="39" textLength="39.408">Neutr</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="61.52" y="39" textLength="18.08">on</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="79.6" y="39" textLength="48">服务，</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="2.984" y="61" textLength="16">为</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="18.984" y="61" textLength="80.032">OpenStack</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="99.016" y="61" textLength="32">提供</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="19" y="83" textLength="96">所需功能支持</tspan>
+      </text>
+      <text transform="translate(112 494.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="7" y="17" textLength="80">基础服务和</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x=".472" y="39" textLength="61.056">MD-SAL</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="61.528" y="39" textLength="32">负责</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="15" y="61" textLength="64">提供核心</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="7" y="83" textLength="80">控制器操作</tspan>
+      </text>
+      <rect x="738.5" y="457" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="738.5" y="457" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 472.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="11.022" y="15" textLength="47.104">CAPW</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="57.742" y="15" textLength="20.736">AP</tspan>
+      </text>
+      <rect x="848" y="457" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="848" y="457" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 472.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="24.014" y="15" textLength="41.472">CoAP</tspan>
+      </text>
+      <rect x="957.5" y="457" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="957.5" y="457" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 472.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="7.27" y="15" textLength="74.96">NETCONF</tspan>
+      </text>
+      <rect x="1067" y="457" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="1067" y="457" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 463.302)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="17.19" y="15" textLength="55.12">PCMM/</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="22.526" y="33.448" textLength="44.448">COPS</tspan>
+      </text>
+      <rect x="1176.5" y="457" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="1176.5" y="457" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1181.5 472.526)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="28.014" y="15" textLength="33.472">USC</tspan>
+      </text>
+      <rect x="738.5" y="512.75" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="738.5" y="512.75" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 528.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="24.606" y="15" textLength="40.288">HTTP</tspan>
+      </text>
+      <rect x="848" y="512.75" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="848" y="512.75" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 528.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="21.638" y="15" textLength="46.224">SNMP</tspan>
+      </text>
+      <rect x="957.5" y="512.75" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="957.5" y="512.75" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 528.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="29.494" y="15" textLength="30.512">SXP</tspan>
+      </text>
+      <rect x="1067" y="512.75" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="1067" y="512.75" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 528.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="25.182" y="15" textLength="19.264">AL</tspan>
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="42.974" y="15" textLength="21.344">TO</tspan>
+      </text>
+      <rect x="1176.5" y="512.75" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="1176.5" y="512.75" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1181.5 528.276)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="19.118" y="15" textLength="51.264">OpFlex</tspan>
+      </text>
+      <rect x="738.5" y="568.5" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="738.5" y="568.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(743.5 584.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="23.718" y="15" textLength="42.064">PCEP</tspan>
+      </text>
+      <rect x="848" y="568.5" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="848" y="568.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(853 584.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="26.534" y="15" textLength="36.432">SNBi</tspan>
+      </text>
+      <rect x="957.5" y="568.5" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="957.5" y="568.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(962.5 584.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="27.862" y="15" textLength="33.776">LISP</tspan>
+      </text>
+      <rect x="1067" y="568.5" width="99.5" height="49.5" fill="#ffffc0"/>
+      <rect x="1067" y="568.5" width="99.5" height="49.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(1072 584.026)" fill="black">
+        <tspan font-family="Helvetica Neue" font-size="16" font-weight="500" x="28.014" y="15" textLength="33.472">BGP</tspan>
+      </text>
+      <rect x="107" y="593.5" width="590.5" height="60" fill="#ccc"/>
+      <rect x="107" y="593.5" width="590.5" height="60" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(112 601.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="2.074" y="17" textLength="576.352">OpenFlow和OVSDB插件实现了对OVS代理控制，使之可以为每个OpenStack VM</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="242.25" y="39" textLength="96">提供网络服务</tspan>
+      </text>
+      <rect x="186.5" y="665" width="383" height="45.5" fill="#ccc"/>
+      <rect x="186.5" y="665" width="383" height="45.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(191.5 676.75)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="46.724" y="17" textLength="279.552">每台OpenStack主机上的Open vSwitch</tspan>
+      </text>
+      <text transform="translate(769 423.25)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="0" y="17" textLength="224">可供基础用例扩展使用的插件：</tspan>
+      </text>
+      <text transform="translate(761 156.5)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="0" y="17" textLength="240">可以添加到基本用例的其他服务：</tspan>
+      </text>
+      <text transform="translate(112 8)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="25.304" y="17" textLength="159.392">ODL Neutron API连接</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x=".032" y="39" textLength="209.936">OpenStack Neutron服务器，</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="41" y="61" textLength="128">处理网络服务请求</tspan>
+      </text>
+      <text transform="translate(112 128.25)" fill="black">
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="10.84" y="17" textLength="186.32">DLUX为简化安装和管理，</tspan>
+        <tspan font-family="PingFang SC" font-size="16" font-weight="500" x="0" y="39" textLength="208">提供了现代化的图形用户管理</tspan>
+      </text>
+      <path d="M 107 538.5 L 80.58203 538.5 L 80.58203 465.41406 L 80.58203 429.5 L 135.1 429.5" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 708 537.5 L 726.4219 537.5 L 726.4219 479.2617 L 726.4219 441.2617 L 717.9 441.2617" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path d="M 327 41 L 651.4531 41 L 651.4531 98.60156 L 651.4531 138.60156 L 613.15 138.60156" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <line x1="325" y1="150.25" x2="367.6" y2="150.25" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <text transform="translate(469.75 774)" fill="black">
+        <tspan font-family="PingFang SC" font-size="20" font-weight="bold" x=".18" y="21" textLength="20">以</tspan>
+        <tspan font-family="Helvetica Neue" font-size="20" font-weight="bold" x="20.18" y="21" textLength="105.58">OpenStack</tspan>
+        <tspan font-family="PingFang SC" font-size="20" font-weight="bold" x="125.76" y="21" textLength="60">为例的</tspan>
+        <tspan font-family="Helvetica Neue" font-size="20" font-weight="bold" x="185.76" y="21" textLength="71.06">Lithium</tspan>
+        <tspan font-family="PingFang SC" font-size="20" font-weight="bold" x="256.82" y="21" textLength="120">版本架构示意</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

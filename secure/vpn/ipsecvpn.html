@@ -1,0 +1,1754 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IPSec VPN · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sslvpn.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1. 前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../basic/">
+            
+                <a href="../../basic/">
+            
+                    
+                    2. 网络基础理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../basic/tcpip.html">
+            
+                <a href="../../basic/tcpip.html">
+            
+                    
+                    TCP/IP网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../basic/arp.html">
+            
+                <a href="../../basic/arp.html">
+            
+                    
+                    ARP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../basic/icmp.html">
+            
+                <a href="../../basic/icmp.html">
+            
+                    
+                    ICMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../basic/route.html">
+            
+                <a href="../../basic/route.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../basic/switch.html">
+            
+                <a href="../../basic/switch.html">
+            
+                    
+                    交换机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../../basic/udp.html">
+            
+                <a href="../../basic/udp.html">
+            
+                    
+                    UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../../basic/dhcp.html">
+            
+                <a href="../../basic/dhcp.html">
+            
+                    
+                    DHCP/DNS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../../basic/tcp.html">
+            
+                <a href="../../basic/tcp.html">
+            
+                    
+                    TCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../../basic/vlan.html">
+            
+                <a href="../../basic/vlan.html">
+            
+                    
+                    VLAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../../basic/overlay.html">
+            
+                <a href="../../basic/overlay.html">
+            
+                    
+                    Overlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../../basic/snmp.html">
+            
+                <a href="../../basic/snmp.html">
+            
+                    
+                    SNMP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../../basic/lldp.html">
+            
+                <a href="../../basic/lldp.html">
+            
+                    
+                    LLDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../linux/">
+            
+                <a href="../../linux/">
+            
+                    
+                    3. Linux网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../linux/config.html">
+            
+                <a href="../../linux/config.html">
+            
+                    
+                    Linux网络配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../../linux/virtual-device.html">
+            
+                <a href="../../linux/virtual-device.html">
+            
+                    
+                    虚拟网络设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../linux/iptables.html">
+            
+                <a href="../../linux/iptables.html">
+            
+                    
+                    iptables/netfilter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../../linux/loadbalance.html">
+            
+                <a href="../../linux/loadbalance.html">
+            
+                    
+                    负载均衡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../../linux/tc.html">
+            
+                <a href="../../linux/tc.html">
+            
+                    
+                    流量控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../../linux/sr-iov.html">
+            
+                <a href="../../linux/sr-iov.html">
+            
+                    
+                    SR-IOV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../../linux/vrf.html">
+            
+                <a href="../../linux/vrf.html">
+            
+                    
+                    内核VRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../../linux/bpf/">
+            
+                <a href="../../linux/bpf/">
+            
+                    
+                    eBPF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.7.1" data-path="../../linux/bpf/bcc.html">
+            
+                <a href="../../linux/bpf/bcc.html">
+            
+                    
+                    bcc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7.2" data-path="../../linux/bpf/troubleshooting.html">
+            
+                <a href="../../linux/bpf/troubleshooting.html">
+            
+                    
+                    故障排查
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../../linux/XDP/">
+            
+                <a href="../../linux/XDP/">
+            
+                    
+                    XDP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.8.1" data-path="../../linux/XDP/design.html">
+            
+                <a href="../../linux/XDP/design.html">
+            
+                    
+                    XDP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8.2" data-path="../../linux/XDP/use-cases.html">
+            
+                <a href="../../linux/XDP/use-cases.html">
+            
+                    
+                    使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../../linux/tools.html">
+            
+                <a href="../../linux/tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.9.1" data-path="../../linux/tcpdump.html">
+            
+                <a href="../../linux/tcpdump.html">
+            
+                    
+                    网络抓包tcpdump
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9.2" data-path="../../linux/scapy.html">
+            
+                <a href="../../linux/scapy.html">
+            
+                    
+                    scapy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../../linux/kernel-network-params.html">
+            
+                <a href="../../linux/kernel-network-params.html">
+            
+                    
+                    内核网络参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    4. Open vSwitch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../ovs/">
+            
+                <a href="../../ovs/">
+            
+                    
+                    OVS介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../ovs/build.html">
+            
+                <a href="../../ovs/build.html">
+            
+                    
+                    OVS编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../ovs/internal.html">
+            
+                <a href="../../ovs/internal.html">
+            
+                    
+                    OVS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../../ovs/ovn.html">
+            
+                <a href="../../ovs/ovn.html">
+            
+                    
+                    Open Virtual Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="../../ovs/ovn-ubuntu.html">
+            
+                <a href="../../ovs/ovn-ubuntu.html">
+            
+                    
+                    OVN在Ubuntu编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="../../ovs/ovn-internal.html">
+            
+                <a href="../../ovs/ovn-internal.html">
+            
+                    
+                    OVN实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.3" data-path="../../ovs/ovn-ha.html">
+            
+                <a href="../../ovs/ovn-ha.html">
+            
+                    
+                    OVN高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.4" data-path="../../ovs/ovn-kubernetes.html">
+            
+                <a href="../../ovs/ovn-kubernetes.html">
+            
+                    
+                    OVN Kubernetes插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.5" data-path="../../ovs/ovn-docker.html">
+            
+                <a href="../../ovs/ovn-docker.html">
+            
+                    
+                    OVN Docker插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.6" data-path="../../ovs/ovn-openstack.html">
+            
+                <a href="../../ovs/ovn-openstack.html">
+            
+                    
+                    OVN OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../dpdk/">
+            
+                <a href="../../dpdk/">
+            
+                    
+                    5. DPDK
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../dpdk/introduction.html">
+            
+                <a href="../../dpdk/introduction.html">
+            
+                    
+                    DPDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../../dpdk/install.html">
+            
+                <a href="../../dpdk/install.html">
+            
+                    
+                    DPDK安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../../dpdk/forwarding.html">
+            
+                <a href="../../dpdk/forwarding.html">
+            
+                    
+                    报文转发模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../../dpdk/numa.html">
+            
+                <a href="../../dpdk/numa.html">
+            
+                    
+                    NUMA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../../dpdk/ivshmem.html">
+            
+                <a href="../../dpdk/ivshmem.html">
+            
+                    
+                    Ring和共享内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../../dpdk/PCIe.html">
+            
+                <a href="../../dpdk/PCIe.html">
+            
+                    
+                    PCIe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../../dpdk/hardware.html">
+            
+                <a href="../../dpdk/hardware.html">
+            
+                    
+                    网卡性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../../dpdk/queue.html">
+            
+                <a href="../../dpdk/queue.html">
+            
+                    
+                    多队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../../dpdk/offload.html">
+            
+                <a href="../../dpdk/offload.html">
+            
+                    
+                    硬件offload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../../dpdk/io-virtualization.html">
+            
+                <a href="../../dpdk/io-virtualization.html">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../../dpdk/ovs-dpdk.html">
+            
+                <a href="../../dpdk/ovs-dpdk.html">
+            
+                    
+                    OVS DPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../../dpdk/spdk.html">
+            
+                <a href="../../dpdk/spdk.html">
+            
+                    
+                    SPDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../../dpdk/OpenFastPath.md">
+            
+                <span>
+            
+                    
+                    OpenFastPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    6. 安全设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.5.1.1" data-path="ipsecvpn.html">
+            
+                <a href="ipsecvpn.html">
+            
+                    
+                    IPSec VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.1.2" data-path="sslvpn.html">
+            
+                <a href="sslvpn.html">
+            
+                    
+                    SSL VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../icg/">
+            
+                <a href="../icg/">
+            
+                    
+                    ICG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../fw/">
+            
+                <a href="../fw/">
+            
+                    
+                    Firewall
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="../fw/principle.html">
+            
+                <a href="../fw/principle.html">
+            
+                    
+                    工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="../fw/classify.html">
+            
+                <a href="../fw/classify.html">
+            
+                    
+                    常见分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.3" data-path="../fw/evolution.html">
+            
+                <a href="../fw/evolution.html">
+            
+                    
+                    演进过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN&NFV</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../sdn/">
+            
+                <a href="../../sdn/">
+            
+                    
+                    7. SDN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../sdn/yang-language.html">
+            
+                <a href="../../sdn/yang-language.html">
+            
+                    
+                    YANG Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../../sdn/controller/">
+            
+                <a href="../../sdn/controller/">
+            
+                    
+                    SDN控制器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../../sdn/controller/odl/">
+            
+                <a href="../../sdn/controller/odl/">
+            
+                    
+                    OpenDaylight
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1.1" data-path="../../sdn/controller/odl/projects.html">
+            
+                <a href="../../sdn/controller/odl/projects.html">
+            
+                    
+                    OpenDaylight Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.1.2" data-path="../../sdn/controller/odl/datastore.html">
+            
+                <a href="../../sdn/controller/odl/datastore.html">
+            
+                    
+                    DataStore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../../sdn/controller/onos.html">
+            
+                <a href="../../sdn/controller/onos.html">
+            
+                    
+                    ONOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.3" data-path="../../sdn/controller/floodlight.html">
+            
+                <a href="../../sdn/controller/floodlight.html">
+            
+                    
+                    Floodlight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.4" data-path="../../sdn/controller/ryu.html">
+            
+                <a href="../../sdn/controller/ryu.html">
+            
+                    
+                    Ryu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.5" data-path="../../sdn/controller/pox.html">
+            
+                <a href="../../sdn/controller/pox.html">
+            
+                    
+                    NOX/POX
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../../sdn/sbi/README.md">
+            
+                <span>
+            
+                    
+                    南向接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="../../sdn/sbi/openflow.html">
+            
+                <a href="../../sdn/sbi/openflow.html">
+            
+                    
+                    OpenFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.2" data-path="../../sdn/sbi/of-config.html">
+            
+                <a href="../../sdn/sbi/of-config.html">
+            
+                    
+                    OF-Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3" data-path="../../sdn/sbi/netconf.html">
+            
+                <a href="../../sdn/sbi/netconf.html">
+            
+                    
+                    NETCONF
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.3.1" data-path="../../sdn/sbi/netconf-call-home.html">
+            
+                <a href="../../sdn/sbi/netconf-call-home.html">
+            
+                    
+                    NETCONF Call Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.2" data-path="../../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                <a href="../../sdn/sbi/yang-module-for-netconf-monitoring.html">
+            
+                    
+                    YANG Module for NETCONF Monitoring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.3.3" data-path="../../sdn/sbi/netconf-tags.html">
+            
+                <a href="../../sdn/sbi/netconf-tags.html">
+            
+                    
+                    NETCONF请求和响应中的标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.4" data-path="../../sdn/sbi/p4.html">
+            
+                <a href="../../sdn/sbi/p4.html">
+            
+                    
+                    P4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3.5" data-path="../../sdn/aaa/README.md">
+            
+                <span>
+            
+                    
+                    AAA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.5.1" data-path="../../sdn/aaa/radius.html">
+            
+                <a href="../../sdn/aaa/radius.html">
+            
+                    
+                    Radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../../sdn/dataplane.html">
+            
+                <a href="../../sdn/dataplane.html">
+            
+                    
+                    数据平面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../nfv/">
+            
+                <a href="../../nfv/">
+            
+                    
+                    8. NFV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../sdwan/">
+            
+                <a href="../../sdwan/">
+            
+                    
+                    9. SDWAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN实践</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../mininet/">
+            
+                <a href="../../mininet/">
+            
+                    
+                    11. Mininet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../neutron/">
+            
+                <a href="../../neutron/">
+            
+                    
+                    12. Neutron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../practice/READMEmd">
+            
+                <span>
+            
+                    
+                    13. SDN实践案例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.3.1" data-path="../../practice/google.html">
+            
+                <a href="../../practice/google.html">
+            
+                    
+                    Google数据中心网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SDN业务类型示例</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../sample/">
+            
+                <a href="../../sample/">
+            
+                    
+                    14. 业务示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../sample/application-scenarios.html">
+            
+                <a href="../../sample/application-scenarios.html">
+            
+                    
+                    SDN控制器应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../sample/scp.html">
+            
+                <a href="../../sample/scp.html">
+            
+                    
+                    业务控制平台-SCP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文档</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    15. FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../../reference.html">
+            
+                <a href="../../reference.html">
+            
+                    
+                    16. 参考文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">ChangeLog</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../CHANGELOG.html">
+            
+                <a href="../../CHANGELOG.html">
+            
+                    
+                    ChangeLog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >IPSec VPN</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ipsec-vpn"><a name="ipsec-vpn" class="plugin-anchor" href="#ipsec-vpn"><i class="fa fa-link" aria-hidden="true"></i></a>IPSec VPN</h1>
+<p>IPSec VPN&#x662F;&#x76EE;&#x524D;VPN&#x6280;&#x672F;&#x4E2D;&#x70B9;&#x51FB;&#x7387;&#x975E;&#x5E38;&#x9AD8;&#x7684;&#x4E00;&#x79CD;&#x6280;&#x672F;&#xFF0C;&#x540C;&#x65F6;&#x63D0;&#x4F9B;VPN&#x548C;&#x4FE1;&#x606F;&#x52A0;&#x5BC6;&#x4E24;&#x9879;&#x6280;&#x672F;&#x3002;</p>
+<h2 id="ipsec-vpn&#x5E94;&#x7528;&#x573A;&#x666F;"><a name="ipsec-vpn&#x5E94;&#x7528;&#x573A;&#x666F;" class="plugin-anchor" href="#ipsec-vpn&#x5E94;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>IPSec VPN&#x5E94;&#x7528;&#x573A;&#x666F;</h2>
+<p><img src="images/IPSecVPN-application-scenario.jpg" alt="IPSec VPN&#x5E94;&#x7528;&#x573A;&#x666F;"></p>
+<p>IPSec VPN&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x5206;&#x4E3A;3&#x79CD;&#xFF1A;</p>
+<ol>
+<li><code>Site-to-Site</code>&#xFF08;&#x7AD9;&#x70B9;&#x5230;&#x7AD9;&#x70B9;&#x6216;&#x8005;&#x7F51;&#x5173;&#x5230;&#x7F51;&#x5173;&#xFF09;&#xFF1A;&#x5982;&#x5F2F;&#x66F2;&#x8BC4;&#x8BBA;&#x7684;3&#x4E2A;&#x673A;&#x6784;&#x5206;&#x5E03;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x7684;3&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5404;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5546;&#x52A1;&#x9886;&#x822A;&#x7F51;&#x5173;&#x76F8;&#x4E92;&#x5EFA;&#x7ACB;VPN&#x96A7;&#x9053;&#xFF0C;&#x4F01;&#x4E1A;&#x5185;&#x7F51;&#xFF08;&#x82E5;&#x5E72;PC&#xFF09;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x7F51;&#x5173;&#x5EFA;&#x7ACB;&#x7684;IPSec&#x96A7;&#x9053;&#x5B9E;&#x73B0;&#x5B89;&#x5168;&#x4E92;&#x8054;&#x3002;</li>
+<li><code>End-to-End</code>&#xFF08;&#x7AEF;&#x5230;&#x7AEF;&#x6216;&#x8005;PC&#x5230;PC&#xFF09;&#xFF1A; &#x4E24;&#x4E2A;PC&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x7531;&#x4E24;&#x4E2A;PC&#x4E4B;&#x95F4;&#x7684;IPSec&#x4F1A;&#x8BDD;&#x4FDD;&#x62A4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7F51;&#x5173;&#x3002;</li>
+<li><p><code>End-to-Site</code>&#xFF08;&#x7AEF;&#x5230;&#x7AD9;&#x70B9;&#x6216;&#x8005;PC&#x5230;&#x7F51;&#x5173;&#xFF09;&#xFF1A;&#x4E24;&#x4E2A;PC&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x7531;&#x7F51;&#x5173;&#x548C;&#x5F02;&#x5730;PC&#x4E4B;&#x95F4;&#x7684;IPSec&#x8FDB;&#x884C;&#x4FDD;&#x62A4;&#x3002;
+4.
+VPN&#x53EA;&#x662F;IPSec&#x7684;&#x4E00;&#x79CD;&#x5E94;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;IPSec&#x5176;&#x5B9E;&#x662F;<code>IP Security</code>&#x7684;&#x7B80;&#x79F0;&#xFF0C;&#x5B83;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4E3A;IP&#x63D0;&#x4F9B;&#x9AD8;&#x5B89;&#x5168;&#x6027;&#x7279;&#x6027;&#xFF0C;VPN&#x5219;&#x662F;&#x5728;&#x5B9E;&#x73B0;&#x8FD9;&#x79CD;&#x5B89;&#x5168;&#x7279;&#x6027;&#x7684;&#x65B9;&#x5F0F;&#x4E0B;&#x4EA7;&#x751F;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;IPSec&#x662F;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x6027;&#x67B6;&#x6784;&#xFF0C;&#x5177;&#x4F53;&#x7531;&#x4E24;&#x7C7B;&#x534F;&#x8BAE;&#x7EC4;&#x6210;&#xFF1A;</p>
+</li>
+<li><p>AH&#x534F;&#x8BAE;&#xFF08;<code>Authentication Header</code>&#xFF0C;&#x4F7F;&#x7528;&#x8F83;&#x5C11;&#xFF09;&#xFF1A;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x6027;&#x786E;&#x8BA4;&#x3001;&#x6570;&#x636E;&#x6765;&#x6E90;&#x786E;&#x8BA4;&#x3001;&#x9632;&#x91CD;&#x653E;&#x7B49;&#x5B89;&#x5168;&#x7279;&#x6027;&#xFF1B;AH&#x5E38;&#x7528;&#x6458;&#x8981;&#x7B97;&#x6CD5;&#xFF08;&#x5355;&#x5411;Hash&#x51FD;&#x6570;&#xFF09;MD5&#x548C;SHA1&#x5B9E;&#x73B0;&#x8BE5;&#x7279;&#x6027;&#x3002;</p>
+</li>
+<li>ESP&#x534F;&#x8BAE;&#xFF08;<code>Encapsulated Security Payload</code>&#xFF0C;&#x4F7F;&#x7528;&#x8F83;&#x5E7F;&#xFF09;&#xFF1A;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x6027;&#x786E;&#x8BA4;&#x3001;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x3001;&#x9632;&#x91CD;&#x653E;&#x7B49;&#x5B89;&#x5168;&#x7279;&#x6027;&#xFF1B;ESP&#x901A;&#x5E38;&#x4F7F;&#x7528;DES&#x3001;3DES&#x3001;AES&#x7B49;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#xFF0C;&#x4F7F;&#x7528;MD5&#x6216;SHA1&#x6765;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x5B8C;&#x6574;&#x6027;&#x3002;</li>
+</ol>
+<p>&#x4E3A;&#x4F55;AH&#x4F7F;&#x7528;&#x8F83;&#x5C11;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;AH&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#xFF0C;&#x6240;&#x6709;&#x6570;&#x636E;&#x5728;&#x4F20;&#x8F93;&#x65F6;&#x4EE5;&#x660E;&#x6587;&#x4F20;&#x8F93;&#xFF0C;&#x800C;ESP&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#xFF1B;&#x5176;&#x6B21;AH&#x56E0;&#x4E3A;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x6765;&#x6E90;&#x786E;&#x8BA4;&#xFF08;&#x6E90;IP&#x5730;&#x5740;&#x4E00;&#x65E6;&#x6539;&#x53D8;&#xFF0C;AH&#x6821;&#x9A8C;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x7A7F;&#x8D8A;NAT&#x3002;&#x5F53;&#x7136;&#xFF0C;IPSec&#x5728;&#x6781;&#x7AEF;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x4F7F;&#x7528;AH&#x548C;ESP&#x5B9E;&#x73B0;&#x6700;&#x5B8C;&#x6574;&#x7684;&#x5B89;&#x5168;&#x7279;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x6B64;&#x79CD;&#x65B9;&#x6848;&#x6781;&#x5176;&#x5C11;&#x89C1;&#x3002;</p>
+<h2 id="ipsec&#x5C01;&#x88C5;&#x6A21;&#x5F0F;"><a name="ipsec&#x5C01;&#x88C5;&#x6A21;&#x5F0F;" class="plugin-anchor" href="#ipsec&#x5C01;&#x88C5;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>IPSec&#x5C01;&#x88C5;&#x6A21;&#x5F0F;</h2>
+<p>&#x4ECB;&#x7ECD;&#x5B8C;IPSec VPN&#x7684;&#x573A;&#x666F;&#x548C;IPSec&#x534F;&#x8BAE;&#x7EC4;&#x6210;&#xFF0C;&#x518D;&#x6765;&#x770B;&#x4E00;&#x4E0B;IPSec&#x63D0;&#x4F9B;&#x7684;&#x4E24;&#x79CD;&#x5C01;&#x88C5;&#x6A21;&#x5F0F;&#xFF08;&#x4F20;&#x8F93;<code>Transport</code>&#x6A21;&#x5F0F;&#x548C;&#x96A7;&#x9053;<code>Tunnel</code>&#x6A21;&#x5F0F;&#xFF09;</p>
+<p><img src="images/IPSecVPN-transport-mode.jpg" alt="IPSec VPN&#x4F20;&#x8F93;&#x6A21;&#x5F0F;"></p>
+<p><img src="images/IPSecVPN-tunnel-mode.jpg" alt="IPSec VPN&#x96A7;&#x9053;&#x6A21;&#x5F0F;"></p>
+<p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x548C;&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x7684;&#x533A;&#x522B;&#xFF1A;</p>
+<ol>
+<li>&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x5728;AH&#x3001;ESP&#x5904;&#x7406;&#x524D;&#x540E;IP&#x5934;&#x90E8;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;End-to-End&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</li>
+<li>&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x5219;&#x5728;AH&#x3001;ESP&#x5904;&#x7406;&#x4E4B;&#x540E;&#x518D;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E2A;&#x5916;&#x7F51;IP&#x5934;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;Site-to-Site&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;</li>
+</ol>
+<p><img src="images/IPSecVPN-encapsulation-model-application-scenario.jpg" alt="IPSec VPN&#x5C01;&#x88C5;&#x6A21;&#x5F0F;&#x9002;&#x7528;&#x573A;&#x666F;"></p>
+<p>&#x4ECE;&#x8FD9;&#x5F20;&#x56FE;&#x7684;&#x5BF9;&#x6BD4;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF1A;</p>
+<ol>
+<li>&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x573A;&#x666F;</li>
+<li>&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x53EA;&#x80FD;&#x9002;&#x5408;PC&#x5230;PC&#x7684;&#x573A;&#x666F;</li>
+</ol>
+<p>&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x573A;&#x666F;&#xFF0C;&#x4F46;&#x662F;&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x9700;&#x8981;&#x591A;&#x4E00;&#x5C42;IP&#x5934;&#xFF08;&#x901A;&#x5E38;&#x4E3A;20&#x5B57;&#x8282;&#x957F;&#x5EA6;&#xFF09;&#x5F00;&#x9500;&#xFF0C;&#x6240;&#x4EE5;&#x5728;PC&#x5230;PC&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5EFA;&#x8BAE;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x5927;&#x5BB6;&#x6709;&#x4E2A;&#x66F4;&#x76F4;&#x89C2;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x770B;&#x4E0B;&#x56FE;&#xFF0C;&#x5206;&#x6790;&#x4E00;&#x4E0B;&#x4E3A;&#x4F55;&#x5728;Site-to-Site&#x573A;&#x666F;&#x4E2D;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<p><img src="images/IPSecVPN-transmission-mode-depth-resolution.jpg" alt="IPSec VPN&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x6DF1;&#x5EA6;&#x89E3;&#x6790;"></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x8D77;&#x65B9;&#x5185;&#x7F51;PC&#x53D1;&#x5F80;&#x54CD;&#x5E94;&#x65B9;&#x5185;&#x7F51;PC&#x7684;&#x6D41;&#x91CF;&#x6EE1;&#x8DB3;&#x7F51;&#x5173;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x5339;&#x914D;&#x6761;&#x4EF6;&#xFF0C;&#x53D1;&#x8D77;&#x65B9;&#x4F7F;&#x7528;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF1A;</p>
+<ol>
+<li>IPSec&#x4F1A;&#x8BDD;&#x5EFA;&#x7ACB;&#x5728;&#x53D1;&#x8D77;&#x65B9;&#x3001;&#x54CD;&#x5E94;&#x65B9;&#x4E24;&#x4E2A;&#x7F51;&#x5173;&#x4E4B;&#x95F4;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;IP&#x5934;&#x90E8;&#x5E76;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x53D8;&#x5316;&#xFF0C;IP&#x6E90;&#x5730;&#x5740;&#x662F;192.168.1.2&#xFF0C;&#x76EE;&#x7684;&#x5730;&#x5740;&#x662F;10.1.1.2&#x3002;</li>
+<li>&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5305;&#x53D1;&#x5230;&#x4E92;&#x8054;&#x7F51;&#x540E;&#xFF0C;&#x5176;&#x547D;&#x8FD0;&#x6CE8;&#x5B9A;&#x662F;&#x676F;&#x5177;&#x7684;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x4E48;&#x8BB2;&#xFF0C;&#x5C31;&#x56E0;&#x4E3A;&#x5176;&#x76EE;&#x7684;&#x5730;&#x5740;&#x662F;10.1.1.2&#x5417;&#xFF1F;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x6839;&#x6E90;&#xFF0C;&#x6839;&#x6E90;&#x5728;&#x4E8E;&#x4E92;&#x8054;&#x7F51;&#x5E76;&#x4E0D;&#x4F1A;&#x7EF4;&#x62A4;&#x4F01;&#x4E1A;&#x7F51;&#x7EDC;&#x7684;&#x8DEF;&#x7531;&#xFF0C;&#x6240;&#x4EE5;&#x4E22;&#x5F03;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x5F88;&#x5927;&#x3002;</li>
+<li>&#x5373;&#x4F7F;&#x6570;&#x636E;&#x5305;&#x6CA1;&#x6709;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E2D;&#x4E22;&#x5F03;&#xFF0C;&#x5E76;&#x4E14;&#x5E78;&#x8FD0;&#x5730;&#x62B5;&#x8FBE;&#x4E86;&#x54CD;&#x5E94;&#x65B9;&#x7F51;&#x5173;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6307;&#x671B;&#x54CD;&#x5E94;&#x65B9;&#x7F51;&#x5173;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x5DE5;&#x4F5C;&#x5417;&#xFF1F;&#x51ED;&#x4EC0;&#x4E48;&#xFF0C;&#x7684;&#x786E;&#x6CA1;&#x4EC0;&#x4E48;&#x597D;&#x7684;&#x51ED;&#x636E;&#xFF0C;&#x6570;&#x636E;&#x5305;&#x7684;&#x76EE;&#x7684;&#x5730;&#x5740;&#x662F;&#x5185;&#x7F51;PC&#x7684;10.1.1.2&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x8F6C;&#x53D1;&#x4E86;&#x4E8B;&#x3002;</li>
+<li>&#x6700;&#x676F;&#x5177;&#x7684;&#x662F;&#x54CD;&#x5E94;&#x65B9;&#x5185;&#x7F51;PC&#x6536;&#x5230;&#x6570;&#x636E;&#x5305;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x53C2;&#x4E0E;IPSec&#x4F1A;&#x8BDD;&#x7684;&#x534F;&#x5546;&#x4F1A;&#x8BAE;&#xFF0C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7684;SA&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5305;&#x65E0;&#x6CD5;&#x89E3;&#x5BC6;&#xFF0C;&#x800C;&#x88AB;&#x4E22;&#x5F03;&#x3002;</li>
+</ol>
+<p>&#x6211;&#x4EEC;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x53CD;&#x8BC1;&#x6CD5;&#xFF0C;&#x5DE7;&#x5999;&#x5730;&#x89E3;&#x91CA;&#x4E86;&#x5728;Site-to-Site&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x7684;&#x539F;&#x56E0;&#x3002;&#x5E76;&#x4E14;&#x63D0;&#x51FA;&#x4E86;&#x4F7F;&#x7528;&#x4F20;&#x8F93;&#x6A21;&#x5F0F;&#x7684;&#x5145;&#x8981;&#x6761;&#x4EF6;&#xFF1A;&#x5174;&#x8DA3;&#x6D41;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x5728;&#x53D1;&#x8D77;&#x65B9;&#x3001;&#x54CD;&#x5E94;&#x65B9;IP&#x5730;&#x5740;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6D41;&#x91CF;&#x3002;&#x6BD4;&#x5982;&#x5728;&#x56FE;&#x4E2D;&#xFF0C;&#x53D1;&#x8D77;&#x65B9;IP&#x5730;&#x5740;&#x4E3A;6.24.1.2&#xFF0C;&#x54CD;&#x5E94;&#x65B9;IP&#x5730;&#x5740;&#x4E3A;2.17.1.2&#xFF0C;&#x90A3;&#x4E48;&#x5174;&#x8DA3;&#x6D41;&#x53EF;&#x4EE5;&#x662F;&#x6E90;6.24.1.2/32&#x3001;&#x76EE;&#x7684;&#x662F;2.17.1.2/32&#xFF0C;&#x534F;&#x8BAE;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x7684;&#xFF0C;&#x5018;&#x82E5;&#x6570;&#x636E;&#x5305;&#x7684;&#x6E90;&#x3001;&#x76EE;&#x7684;IP&#x5730;&#x5740;&#x7A0D;&#x6709;&#x4E0D;&#x540C;&#xFF0C;&#x5BF9;&#x4E0D;&#x8D77;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x3002;</p>
+<h2 id="ipsec&#x534F;&#x5546;"><a name="ipsec&#x534F;&#x5546;" class="plugin-anchor" href="#ipsec&#x534F;&#x5546;"><i class="fa fa-link" aria-hidden="true"></i></a>IPSec&#x534F;&#x5546;</h2>
+<p><img src="images/IPSecVPN-solutions.jpg" alt="IPSec VPN&#x65B9;&#x6848;"></p>
+<p>IPSec&#x9664;&#x4E86;&#x4E00;&#x4E9B;&#x534F;&#x8BAE;&#x539F;&#x7406;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x66F4;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x534F;&#x8BAE;&#x4E2D;&#x6D89;&#x53CA;&#x5230;&#x65B9;&#x6848;&#x5236;&#x5B9A;&#x7684;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ol>
+<li>&#x5174;&#x8DA3;&#x6D41;&#xFF1A;IPSec&#x662F;&#x9700;&#x8981;&#x6D88;&#x8017;&#x8D44;&#x6E90;&#x7684;&#x4FDD;&#x62A4;&#x63AA;&#x65BD;&#xFF0C;&#x5E76;&#x975E;&#x6240;&#x6709;&#x6D41;&#x91CF;&#x90FD;&#x9700;&#x8981;IPSec&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x800C;&#x9700;&#x8981;IPSec&#x8FDB;&#x884C;&#x4FDD;&#x62A4;&#x7684;&#x6D41;&#x91CF;&#x5C31;&#x79F0;&#x4E3A;&#x5174;&#x8DA3;&#x6D41;&#xFF0C;&#x6700;&#x540E;&#x534F;&#x5546;&#x51FA;&#x6765;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x662F;&#x7531;&#x53D1;&#x8D77;&#x65B9;&#x548C;&#x54CD;&#x5E94;&#x65B9;&#x6240;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5982;&#x53D1;&#x8D77;&#x65B9;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x4E3A;192.168.1.0/24-&gt;10.0.0.0/8&#xFF0C;&#x800C;&#x54CD;&#x5E94;&#x65B9;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x4E3A;10.0.0.0/8-&gt;192.168.0.0/16&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x4EA4;&#x96C6;&#x662F;192.168.1.0/24&lt;--&gt;10.0.0.0/8&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x6700;&#x540E;&#x4F1A;&#x88AB;IPSec&#x6240;&#x4FDD;&#x62A4;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x3002;</li>
+<li>&#x53D1;&#x8D77;&#x65B9;&#xFF1A;Initiator&#xFF0C;IPSec&#x4F1A;&#x8BDD;&#x534F;&#x5546;&#x7684;&#x89E6;&#x53D1;&#x65B9;&#xFF0C;IPSec&#x4F1A;&#x8BDD;&#x901A;&#x5E38;&#x662F;&#x7531;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x89E6;&#x53D1;&#x534F;&#x5546;&#xFF0C;&#x89E6;&#x53D1;&#x7684;&#x8FC7;&#x7A0B;&#x901A;&#x5E38;&#x662F;&#x5C06;&#x6570;&#x636E;&#x5305;&#x4E2D;&#x7684;&#x6E90;&#x3001;&#x76EE;&#x7684;&#x5730;&#x5740;&#x3001;&#x534F;&#x8BAE;&#x4EE5;&#x53CA;&#x6E90;&#x3001;&#x76EE;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x4E0E;&#x63D0;&#x524D;&#x6307;&#x5B9A;&#x7684;IPSec&#x5174;&#x8DA3;&#x6D41;&#x5339;&#x914D;&#x6A21;&#x677F;&#x5982;ACL&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x5339;&#x914D;&#x6210;&#x529F;&#x5219;&#x5C5E;&#x4E8E;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x3002;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x89E6;&#x53D1;&#x534F;&#x5546;&#xFF0C;&#x81F3;&#x4E8E;&#x662F;&#x5426;&#x4F1A;&#x88AB;IPSec&#x4FDD;&#x62A4;&#x8981;&#x770B;&#x662F;&#x5426;&#x5339;&#x914D;&#x534F;&#x5546;&#x5174;&#x8DA3;&#x6D41;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x901A;&#x5E38;&#x5B9E;&#x65BD;&#x65B9;&#x6848;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x8BBE;&#x8BA1;&#x6210;&#x53D1;&#x8D77;&#x65B9;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#x5C5E;&#x4E8E;&#x534F;&#x5546;&#x5174;&#x8DA3;&#x6D41;&#x3002;</li>
+<li>&#x54CD;&#x5E94;&#x65B9;&#xFF1A;Responder&#xFF0C;IPSec&#x4F1A;&#x8BDD;&#x534F;&#x5546;&#x7684;&#x63A5;&#x6536;&#x65B9;&#xFF0C;&#x54CD;&#x5E94;&#x65B9;&#x662F;&#x88AB;&#x52A8;&#x534F;&#x5546;&#xFF0C;&#x54CD;&#x5E94;&#x65B9;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5174;&#x8DA3;&#x6D41;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x6307;&#x5B9A;&#xFF08;&#x5B8C;&#x5168;&#x7531;&#x53D1;&#x8D77;&#x65B9;&#x6307;&#x5B9A;&#xFF09;&#x3002;</li>
+<li>&#x53D1;&#x8D77;&#x65B9;&#x548C;&#x54CD;&#x5E94;&#x65B9;&#x534F;&#x5546;&#x7684;&#x5185;&#x5BB9;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;&#x53CC;&#x65B9;&#x8EAB;&#x4EFD;&#x7684;&#x786E;&#x8BA4;&#x548C;&#x5BC6;&#x94A5;&#x79CD;&#x5B50;&#x5237;&#x65B0;&#x5468;&#x671F;&#x3001;AH/ESP&#x7684;&#x7EC4;&#x5408;&#x65B9;&#x5F0F;&#x53CA;&#x5404;&#x81EA;&#x4F7F;&#x7528;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x5174;&#x8DA3;&#x6D41;&#x3001;&#x5C01;&#x88C5;&#x6A21;&#x5F0F;&#x7B49;&#x3002;</li>
+<li>SA&#xFF1A;&#x53D1;&#x8D77;&#x65B9;&#x3001;&#x54CD;&#x5E94;&#x65B9;&#x534F;&#x5546;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x66DD;&#x5149;&#x7387;&#x5F88;&#x9AD8;&#x7684;SA&#xFF0C;SA&#x901A;&#x5E38;&#x662F;&#x5305;&#x62EC;&#x5BC6;&#x94A5;&#x53CA;&#x5BC6;&#x94A5;&#x751F;&#x5B58;&#x671F;&#x3001;&#x7B97;&#x6CD5;&#x3001;&#x5C01;&#x88C5;&#x6A21;&#x5F0F;&#x3001;&#x53D1;&#x8D77;&#x65B9;&#x3001;&#x54CD;&#x5E94;&#x65B9;&#x5730;&#x5740;&#x3001;&#x5174;&#x8DA3;&#x6D41;&#x7B49;&#x5185;&#x5BB9;&#x3002;</li>
+</ol>
+<p>&#x6211;&#x4EEC;&#x4EE5;&#x6700;&#x5E38;&#x89C1;&#x7684;IPSec&#x96A7;&#x9053;&#x6A21;&#x5F0F;&#x4E3A;&#x4F8B;&#xFF0C;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;<strong>IPSec&#x7684;&#x534F;&#x5546;&#x8FC7;&#x7A0B;</strong>&#xFF1A;</p>
+<p><img src="images/The-negotiation-process-of-IPSec.gif" alt="IPSec&#x7684;&#x534F;&#x5546;&#x8FC7;&#x7A0B;"></p>
+<p>&#x4E0A;&#x56FE;&#x63CF;&#x8FF0;&#x4E86;&#x7531;&#x5174;&#x8DA3;&#x6D41;&#x89E6;&#x53D1;&#x7684;IPSec&#x534F;&#x5546;&#x6D41;&#x7A0B;&#xFF0C;&#x539F;&#x751F;IPSec&#x5E76;&#x65E0;&#x8EAB;&#x4EFD;&#x786E;&#x8BA4;&#x7B49;&#x534F;&#x5546;&#x8FC7;&#x7A0B;&#xFF0C;&#x5728;&#x65B9;&#x6848;&#x4E0A;&#x5B58;&#x5728;&#x8BF8;&#x591A;&#x7F3A;&#x9677;&#xFF0C;&#x5982;&#x65E0;&#x6CD5;&#x652F;&#x6301;&#x53D1;&#x8D77;&#x65B9;&#x5730;&#x5740;&#x52A8;&#x6001;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x8EAB;&#x4EFD;&#x786E;&#x8BA4;&#x3001;&#x5BC6;&#x94A5;&#x52A8;&#x6001;&#x66F4;&#x65B0;&#x7B49;&#x3002;&#x4F34;&#x968F;IPSec&#x51FA;&#x73B0;&#x7684;IKE&#xFF08;Internet Key Exchange&#xFF09;&#x534F;&#x8BAE;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x5F25;&#x8865;&#x8FD9;&#x4E9B;&#x4E0D;&#x8DB3;&#xFF1A;</p>
+<ol>
+<li>&#x53D1;&#x8D77;&#x65B9;&#x5B9A;&#x4E49;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x662F;&#x6E90;192.168.1.0/24&#x76EE;&#x7684;10.0.0.0/8&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x63A5;&#x53E3;&#x53D1;&#x9001;&#x53D1;&#x8D77;&#x65B9;&#x5185;&#x7F51;PC&#x53D1;&#x7ED9;&#x54CD;&#x5E94;&#x65B9;&#x5185;&#x7F51;PC&#x7684;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x80FD;&#x591F;&#x5F97;&#x4EE5;&#x5339;&#x914D;&#x3002;</li>
+<li>&#x6EE1;&#x8DB3;&#x5174;&#x8DA3;&#x6D41;&#x6761;&#x4EF6;&#xFF0C;&#x5728;&#x8F6C;&#x53D1;&#x63A5;&#x53E3;&#x4E0A;&#x68C0;&#x67E5;SA&#x4E0D;&#x5B58;&#x5728;&#x3001;&#x8FC7;&#x671F;&#x6216;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x90FD;&#x4F1A;&#x8FDB;&#x884C;&#x534F;&#x5546;&#xFF0C;&#x5426;&#x5219;&#x4F7F;&#x7528;&#x5F53;&#x524D;SA&#x5BF9;&#x6570;&#x636E;&#x5305;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x534F;&#x5546;&#x7684;&#x8FC7;&#x7A0B;&#x901A;&#x5E38;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x662F;&#x4E3A;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x670D;&#x52A1;&#xFF0C;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x662F;&#x771F;&#x6B63;&#x7684;&#x4E3A;&#x5174;&#x8DA3;&#x6D41;&#x670D;&#x52A1;&#x7684;SA&#xFF0C;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#x534F;&#x5546;&#x7684;&#x4FA7;&#x91CD;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#x4E3B;&#x8981;&#x786E;&#x8BA4;&#x53CC;&#x65B9;&#x8EAB;&#x4EFD;&#x7684;&#x6B63;&#x786E;&#x6027;&#xFF0C;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x5219;&#x662F;&#x4E3A;&#x5174;&#x8DA3;&#x6D41;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5B89;&#x5168;&#x5957;&#x4EF6;&#xFF0C;&#x5176;&#x6700;&#x663E;&#x8457;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x4E2D;&#x7684;&#x5174;&#x8DA3;&#x6D41;&#x5728;&#x4F1A;&#x8BDD;&#x4E2D;&#x662F;&#x5BC6;&#x6587;&#x3002;</li>
+</ol>
+<p>IPSec&#x4E2D;&#x5B89;&#x5168;&#x6027;&#x8FD8;&#x4F53;&#x73B0;&#x5728;<strong>&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;SA&#x6C38;&#x8FDC;&#x662F;&#x5355;&#x5411;&#x7684;</strong>&#xFF1A;</p>
+<p><img src="images/IPSec-interactive-process.jpg" alt="IPSec&#x7684;&#x4EA4;&#x4E92;&#x8FC7;&#x7A0B;"></p>
+<p>&#x4ECE;&#x4E0A;&#x56FE;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x534F;&#x5546;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;SA&#x65F6;&#xFF0C;SA&#x662F;&#x5206;&#x65B9;&#x5411;&#x6027;&#x7684;&#xFF0C;&#x53D1;&#x8D77;&#x65B9;&#x5230;&#x54CD;&#x5E94;&#x65B9;&#x6240;&#x7528;SA&#x548C;&#x54CD;&#x5E94;&#x653E;&#x5230;&#x53D1;&#x8D77;&#x65B9;SA&#x662F;&#x5355;&#x72EC;&#x534F;&#x5546;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x597D;&#x5904;&#x5728;&#x4E8E;&#x5373;&#x4F7F;&#x67D0;&#x4E2A;&#x65B9;&#x5411;&#x7684;SA&#x88AB;&#x7834;&#x89E3;&#x5E76;&#x4E0D;&#x4F1A;&#x6CE2;&#x53CA;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x7684;SA&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x7C7B;&#x4F3C;&#x4E8E;&#x53CC;&#x5411;&#x8F66;&#x9053;&#x8BBE;&#x8BA1;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: VPN">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sslvpn.html" class="navigation navigation-next " aria-label="Next page: SSL VPN">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IPSec VPN","level":"2.5.1.1","depth":3,"next":{"title":"SSL VPN","level":"2.5.1.2","depth":3,"path":"secure/vpn/sslvpn.md","ref":"secure/vpn/sslvpn.md","articles":[]},"previous":{"title":"VPN","level":"2.5.1","depth":2,"path":"secure/vpn/README.md","ref":"secure/vpn/README.md","articles":[{"title":"IPSec VPN","level":"2.5.1.1","depth":3,"path":"secure/vpn/ipsecvpn.md","ref":"secure/vpn/ipsecvpn.md","articles":[]},{"title":"SSL VPN","level":"2.5.1.2","depth":3,"path":"secure/vpn/sslvpn.md","ref":"secure/vpn/sslvpn.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors","ga","github-buttons"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"tonydeng","repo":"sdn-handbook","type":"star","size":"small","count":true},{"user":"tonydeng","type":"follow","size":"small","width":"170","count":true},{"user":"tonydeng","repo":"sdn-handbook","type":"watch","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-80673215-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"secure/vpn/ipsecvpn.md","mtime":"2019-08-15T08:28:03.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-15T08:29:11.175Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
