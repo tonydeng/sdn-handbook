@@ -20,7 +20,7 @@
 
 ## VLAN 的不足
 
-- `VLAN` 使用 `12-bit` 的 `VLAN ID`，因此第一个不足之处就是最多只支持 `4096` 个 `VLAN` 网络
+- `VLAN` 使用 `12-bit` 的 `VLAN ID`，12位的值`0x000`和`0xFFF`为保留值，其他的值都可用来做`VLAN`的识别符，因此第一个不足之处就是最多只支持 `4094` 个 `VLAN` 网络
 - `VLAN` 是基于 `L2` 的，因此很难跨越 `L2` 的边界，限制了网络的灵活性
 - `VLAN` 的配置需手动介入较多
 
@@ -33,3 +33,4 @@
 - [Neutron 理解 (2): 使用 Open vSwitch + VLAN 组网 [Netruon Open vSwitch + VLAN Virutal Network]](http://www.cnblogs.com/sammyliu/p/4626419.html)
 - [UnitedStack® UNP 技术白皮书 - VLAN](https://docs.ustack.com/unp/src/architecture/vlan.html)
 - [QinQ vs VLAN vs VXLAN](https://community.fs.com/blog/qinq-vs-vlan-vs-vxlan.html)
+- [IEEE 802.1Q - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1Q)
